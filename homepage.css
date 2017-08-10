@@ -23,7 +23,7 @@ html, *{
 }
 
 
-@media screen and (min-width:320px) and (max-width:768px){
+@media screen and (min-width:320px) and (max-width:919px){
 
     /*HEADER*/
 
@@ -92,6 +92,17 @@ html, *{
         display: block;
         text-align: center;
         padding: 0.3em;
+    }
+
+    #breadcrumb{
+        padding:0.7em 0.9em 0.7em 0.9em;
+        border-style: solid;
+        border-width: 0.063em;
+    }
+
+    #breadcrumb p{
+        text-align:center;
+        font-weight:bold;
     }
 
     /*TOPCENTER*/
@@ -248,29 +259,21 @@ html, *{
         padding-right:0.5em;
 
     }
-
-
-
-
-
-
 }
 
-@media screen and (min-width: 1280px) and (max-width: 1440px) {
-
+@media screen and (min-width:920px) and (max-width:1199px){
     /*HEADER*/
 
     #logo{
         float:left;
         height: 9em;
         width: 12.5em;
-        padding-top: 2%;
-        padding-right:6%;
-        padding-left:3%;
+        padding-top: 1%;
+        padding-right:5%;
+        padding-left:1%;
 
     }
     #header{
-        padding-top:0em;
         padding-bottom: 5em;
         margin-bottom: 6em; /*era 6em, solo per lavorare 12em*/
     }
@@ -283,32 +286,54 @@ html, *{
 
     #header li{
         float: left;
-        padding:0.9em 0.9em 4.5em 5em;
-        margin-top:4%;
+        padding:1% 2% 1% 5%;
+        margin-top:2em;
+    }
+
+    #menubutton{
+        display: none;
+    }
+
+
+    #breadcrumb{
+        margin-top:1em;
+        padding:0.7em 0.9em 0.7em 0.9em;
+        border-style: solid;
+        border-width: 0.063em;
+    }
+
+    #breadcrumb p{
+        text-align:left;
+        font-weight:bold;
     }
 
     /*TOPCENTER*/
 
     #topcenter{
-        margin-top:1em;
-        margin-bottom:4em;
-        padding-top:2em;
-        padding-bottom:6.25em;
+        margin-top:3em;
+        margin-bottom:3em;
     }
     #photocontainer{
-        margin-left:26em;
-        margin-right:18em;
+        margin-left:20%;
+        margin-right:20%;
         padding:12em;
-        text-align:center;
+        text-align:left;
         border-style: dotted;
         border-width: 0.1em;
 
     }
 
+    /*CENTER*/
+    #center{
+        margin-bottom:60%;
+
+    }
+
+
     /*LOWCENTER*/
     #rectangle1{
-        margin-left:23%;
-        margin-right:10%;
+        margin-left:15%;
+        margin-right:2%;
         width: 22em;
         height: 31em;
         border-style: solid;
@@ -316,6 +341,19 @@ html, *{
         float:left;
 
     }
+
+    #rect2{
+        margin-top:3%;
+        margin-left:2%;
+        margin-right:4%;
+        margin-bottom:2%;
+        width: 22em;
+        height:31em;
+        border-style: solid;
+        border-width:0.06em;
+        float:left;
+    }
+
     .content h3{
         text-align: center;
         font-size:1.2em;
@@ -329,8 +367,190 @@ html, *{
         font-size:1.15em;
     }
 
+    /*FOOTER*/
+
+    #footer{
+        text-align:center;
+    }
+
+    #Fleft h3{
+        padding-top:5%;
+    }
+    #Fleft ul{
+        margin-top:2%;
+        margin-bottom:1.5em;
+    }
+
+    #Fleft li{
+        margin-top:0.625em;
+        padding-bottom:0.3em;
+        list-style-type: none;
+        font-size: 1.15em;
+    }
+
+    #Fleft a:link{
+        text-decoration:none;
+        color: black;
+    }
+
+    #Fleft a:visited{
+        color:lightslategray;
+    }
+
+    #Fleft a:hover{
+        color:orangered;
+    }
+
+    #Fcenter{
+        margin-bottom:7em;
+        margin-left:auto;
+        margin-right:auto;
+        width: 12em;
+        height: 6em;
+        border-style: none;
+    }
+
+    #Fcenter img{
+        height: 6.5em;
+        width: 8.5em;
+        margin-bottom: 1em;
+
+    }
+
+    #Fcenter h3{
+        font-size:1.3em;
+    }
+
+    #content{
+        margin-bottom:0.5em;
+    }
+
+    #zero{
+        padding-left:0.2em;
+        margin-bottom:0.3em;
+        font-weight:bolder;
+        display:block;
+    }
+
+    #four{
+        padding-left:0.2em;
+        margin-top:0.3em;
+        margin-bottom:0.3em;
+        font-weight:bolder;
+        display:block;
+    }
+
+
+    #Fright h3{
+        padding-top:1.5em;
+    }
+
+    #fblogo{
+        display: block;
+        margin: auto;
+        height: 4em;
+        width: 4.5em;
+        padding-top:2em;
+        padding-right:0.5em;
+    }
+
+    #instalogo{
+        display:block;
+        margin:auto;
+        height: 4.3em;
+        width: 4.3em;
+        padding-top:1em;
+        padding-right:0.5em;
+
+    }
+
+}
+
+@media screen and (min-width:1200px) and (max-width: 1700px) {
+
+    /*HEADER*/
+
+    #logo{
+        float:left;
+        height: 9em;
+        width: 12.5em;
+        padding-top: 1%;
+        padding-right:5%;
+        padding-left:1%;
+
+    }
+    #header{
+        padding-bottom: 5em;
+        margin-bottom: 6em; /*era 6em, solo per lavorare 12em*/
+    }
+
+    #header ul{
+        list-style-type: none;
+        font-size: 1.2em;
+    }
+
+
+    #header li{
+        float: left;
+        padding:1% 4% 1% 5%;
+        margin-top:2em;
+    }
+
+    #menubutton{
+        display: none;
+    }
+
+
+    #breadcrumb{
+        margin-top:1em;
+        padding:0.7em 0.9em 0.7em 0.9em;
+        border-style: solid;
+        border-width: 0.063em;
+    }
+
+    #breadcrumb p{
+        text-align:left;
+        font-weight:bold;
+    }
+
+    /*TOPCENTER*/
+
+    #topcenter{
+        margin-top:1em;
+        margin-bottom:3em;
+        padding-top:2em;
+        padding-bottom:6.25em;
+    }
+    #photocontainer{
+        margin-left:20%;
+        margin-right:10%;
+        padding:12em;
+        text-align:left;
+        border-style: dotted;
+        border-width: 0.1em;
+
+    }
+
+    /*CENTER*/
+
+
+    /*LOWCENTER*/
+    #rectangle1{
+        margin-left:15%;
+        margin-right:6em;
+        width: 22em;
+        height: 31em;
+        border-style: solid;
+        border-width: 0.06em;
+        float:left;
+
+    }
+
     #rect2{
         margin-top:3.75em;
+        margin-left: 8%;
+        margin-right:10%;
+        margin-bottom:10%;
         width: 22em;
         height:31em;
         overflow: hidden;
@@ -339,17 +559,29 @@ html, *{
         float:left;
     }
 
+    .content h3{
+        text-align: center;
+        font-size:1.2em;
+        margin: 0.75em;
+    }
+
+    .content p{
+        text-align: center;
+        margin:1.25em;
+        margin-top: 35%;
+        font-size:1.15em;
+    }
+
 
     /*FOOTER*/
 
     #footer{
-        margin-top: 50%;
         margin-bottom:28%;
         padding: 1em 3em 3em 3em;
     }
 
     #Fleft{
-        margin-right: 25%;
+        margin-right: 8%;
         margin-bottom: 9em;
         width: 15em;
         height: 6.25em;
@@ -387,7 +619,8 @@ html, *{
 
     #Fcenter{
         margin-bottom:9em;
-        margin-left:3em;
+        margin-left:12%;
+        margin-right:10%;
         width: 12em;
         height: 6em;
         border-style: none;
@@ -403,11 +636,11 @@ html, *{
         width: 8.5em;
     }
 
-    #content{
+    .content{
         margin-top:2em;
     }
 
-    #content span{
+    .content span{
         padding-top:0.2em;
         font-size:1.3em;
     }
@@ -486,12 +719,13 @@ html, *{
 
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1701px) {
+
     #logo{
         float:left;
         height: 9em;
         width: 12.5em;
-        padding-top: 2%;
+        padding-top: 1%;
         padding-right:6%;
         padding-left:3%;
 
@@ -512,11 +746,24 @@ html, *{
 
     #header li{
         float: left;
-        padding:0.875em 6em 0.875em 6em;
+        padding: 0% 5% 0% 5%;
         margin-top:4%;
     }
 
+    #menubutton{
+        display: none;
+    }
 
+    #breadcrumb{
+        padding:0.7em 0.9em 0.7em 0.9em;
+        border-style: solid;
+        border-width: 0.063em;
+    }
+
+    #breadcrumb p{
+        text-align:left;
+        font-weight:bold;
+    }
 
     /*TOPCENTER*/
 
@@ -533,6 +780,10 @@ html, *{
         border-width: 0.125em;
     }
 
+    /*CENTER*/
+    #center{
+        margin-bottom:35%;
+    }
 
     /*LOWCENTER*/
 
@@ -634,22 +885,20 @@ html, *{
     #Fcenter img{
         height: 6.5em;
         width: 8.5em;
-        padding-left:0.3em;
-        padding-right:0.5em;
 
     }
 
-    #content{
+    .content{
         margin-top:2em;
     }
 
-    #content span{
+    .content span{
         padding-top:0.2em;
         font-size:1.3em;
     }
 
     #zero{
-        margin-left:1em;
+        margin-left:0.75em;
         margin-bottom:0.3em;
         font-weight:bolder;
         display:block;
@@ -660,7 +909,7 @@ html, *{
     }
 
     #two{
-        margin-left:2em;
+        margin-left:1.9em;
     }
 
     #three{
@@ -671,7 +920,7 @@ html, *{
     #four{
         margin-top:0.5em;
         margin-bottom:0.5em;
-        margin-left: 1.6em;
+        margin-left: 1.5em;
         font-weight: bolder;
         display:block;
     }
@@ -683,12 +932,12 @@ html, *{
 
     #six{
         display:block;
-        margin-left:1em;
+        margin-left:1.1em;
         text-align:left;
     }
 
     #seven{
-        margin-left:2.3em;
+        margin-left:2.4em;
         display:block;
         padding-top:0.2em;
     }
@@ -696,19 +945,21 @@ html, *{
 
     #Fright{
         margin-bottom:9.375em;
+        font-size:1.3em;
         width: 21.875em;
         height: 6.250em;
         border-style: none;
         float:right;
     }
 
-    #Fright{
-        font-size:1.3em;
+    #Fright h3{
+        margin-left:8.5em;
     }
 
     #fblogo{
         height: 4em;
         width: 4.5em;
+        margin-left:10em;
         padding-top:1em;
         padding-left:0.3em;
         padding-right:0.5em;
@@ -717,6 +968,7 @@ html, *{
     #instalogo{
         height: 4.3em;
         width: 4.3em;
+        margin-left:10em;
         padding-top:1em;
         padding-left:0.3em;
         padding-right:0.5em;
