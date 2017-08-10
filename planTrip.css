@@ -1,0 +1,82 @@
+﻿/* TRIP CSS*/
+
+
+
+.mainBody {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    padding: 0;
+    clear: both;
+}
+
+.textBlock {
+    display: inline-block;
+    float: left;
+    margin-right: 2em;
+    margin-bottom: 2em;
+}
+
+h1 {
+    padding: .5em;
+    font-size: 4em;
+}
+.paragraph {
+    clear:both;
+    display: inline-block;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 80%;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: left;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border: 2px solid black;
+}
+   
+    .paragraph h2 {
+        font-size: 2em;
+        color: red;
+        margin-bottom: 0.5em;
+    }
+
+    .paragraph h3 {
+        font-size: 1.5em;
+        margin-top: 0.4em;
+        margin-bottom: 0.3em;
+    }
+
+    .paragraph p {
+        font-size: 1em;
+        margin-bottom: .5em;
+    }
+    .paragraph img {
+        max-width: 200px;
+        float: right;
+        display: inline-block;
+    }
+
+
+.mainBody h1 {
+    text-align: center;
+    margin: auto;
+}
+
+@media screen and (min-width:320px) and (max-width:768px) {
+    h1 {
+        font-size: 2em;
+    }
+    .paragraph img {
+        max-width: 200px;
+        float: left;
+        display: inline-block;
+    }
+    .textBlock {
+        display: inline-block;
+        float: left;
+    }
+}
+
+    /*END trip css*/
