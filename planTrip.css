@@ -3,59 +3,80 @@
 
 
 .mainBody {
-    margin-top: 10%;
-    margin-bottom: 10%;
+    margin-top: 0;
+    margin-bottom: 2em;
     padding: 0;
     clear: both;
+    display: inline-block;
+    width: 100%;
 }
 
 .textBlock {
     display: inline-block;
-    float: left;
-    margin-right: 2em;
+
+    margin-right: auto;
+    margin-left: auto;
     margin-bottom: 2em;
 }
 
-h1 {
-    padding: .5em;
+#topTitle h1 {
     font-size: 4em;
+    padding: 0;
+    width: 100%;
+    background-color: #ffaa2d;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    margin-bottom: 1em;
+    text-align: center;
+    margin-top: 0;
+
 }
+
 .paragraph {
-    clear:both;
+    clear: both;
     display: inline-block;
     padding-top: 2em;
     padding-bottom: 2em;
     padding-left: 5%;
     padding-right: 5%;
-    width: 80%;
+    width: 78%;
     margin-left: 5%;
     margin-right: 5%;
-    text-align: left;
+    text-align: center;
     margin-top: 1em;
     margin-bottom: 1em;
-    border: 2px solid black;
+    border: 1vw solid #ffaa2d;
 }
    
     .paragraph h2 {
         font-size: 2em;
-        color: red;
+
         margin-bottom: 0.5em;
+
     }
 
     .paragraph h3 {
         font-size: 1.5em;
         margin-top: 0.4em;
         margin-bottom: 0.3em;
+
     }
 
     .paragraph p {
         font-size: 1em;
         margin-bottom: .5em;
+        margin-left: auto;
+        margin-right: auto;
+
     }
     .paragraph img {
-        max-width: 200px;
+        max-width: 500px;
+        width: 50%;
         float: right;
         display: inline-block;
+        border: 1vw solid #ffaa2d;
+        margin-left: 25%;
+        margin-right: 25%;
     }
 
 
