@@ -1,0 +1,325 @@
+/*COMMON*/
+
+html, *{
+    padding: 0;
+    margin: 0;
+    font-family:'helveticaneue';
+    background-color:#ffcc66;
+}
+
+#header a:link{
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+#header a:visited{
+    color:lightslategray;
+}
+
+#header a:hover{
+    color:orangered;
+}
+/*HEADER*/
+
+
+#logo{
+    float:left;
+    height: 9em;
+    width: 12.5em;
+    padding-top: 1%;
+    padding-right:5%;
+    padding-left:1%;
+
+}
+#header{
+    padding-bottom: 5em;
+    margin-bottom: 6em; /*era 6em, solo per lavorare 12em*/
+}
+
+#header ul{
+    list-style-type: none;
+    font-size: 1.2em;
+}
+
+
+#header li{
+    float: left;
+    padding:1% 4% 1% 5%;
+    margin-top:2em;
+}
+
+#menubutton{
+    display: none;
+}
+
+
+#breadcrumb{
+    margin-top:1em;
+    padding:0.7em 0.9em 0.7em 0.9em;
+    border-style: solid;
+    border-width: 0.063em;
+}
+
+#breadcrumb p{
+    text-align:left;
+    font-weight:bold;
+}
+
+/*BODY*/
+
+#border {
+    border-bottom: 1px solid black;
+}
+
+#contenT{
+    margin-left: 25%;
+    border-left: 1px solid black;
+    padding-top: 1em;
+
+
+}
+
+#contenT h1{
+
+    font: normal 25px / 36px "Merriweather", Helvetica, Arial, Verdana, sans-serif;
+    font-size: 34px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    padding-top: 1em;
+    margin-left: 2em;
+}
+
+#contenT h3{
+    margin-left: 0.5em;
+    margin-top: 0.5em;
+    color: black;
+}
+#contenT p{
+    margin-left: 0.6em;
+    margin-top: 0.5em;
+    font: normal 15px / 20px "Merriweather", Helvetica, Arial, Verdana, sans-serif;
+}
+
+#contenT article{
+
+    margin: 1em 1em 0em 1em;
+
+}
+
+#contatti{
+    float:left;
+    margin-top: 0em;
+    margin-left: 2em;
+
+
+}
+
+#contatti p{
+    margin-top: 1em;
+}
+
+#contatti h3{
+    margin-top: 1.5em;
+    padding-top: 2em;
+    font-size: 24px;
+}
+
+#contatti h4{
+    padding-top: 2em;
+    font-size: 24px;
+}
+
+
+#compile{
+    margin-left: 25%;
+    border-left: 1px solid black;
+    padding-left: 1.5em;
+    padding-bottom: 3em;
+    padding-top: 3em;
+}
+
+#insert {
+    margin-left: 22em;
+}
+
+#insert p {
+    margin-bottom: 1.5em;
+}
+
+#compile h3 {
+    font: normal 25px / 36px "Merriweather", Helvetica, Arial, Verdana, sans-serif;
+}
+
+
+#motivaz{
+    height: 1.5em;
+    padding-right: 19.8em;
+    background-color: white;
+    margin-bottom: 0.5em;
+
+}
+
+
+#riempi{
+    border-bottom: 1em;
+    padding-bottom: 1em;
+
+}
+
+.insert{
+    background-color: white;
+    padding-right: 14em;
+    margin-bottom: 0.5em;
+}
+
+#messaggio{
+    background-color: white;
+    padding-right: 14em;
+    height: 7em;
+}
+
+/*FOOTER*/
+
+#footer{
+    margin-bottom:28%;
+    padding: 1em 3em 3em 3em;
+}
+
+#Fleft{
+    margin-right: 8%;
+    margin-bottom: 9em;
+    width: 15em;
+    height: 6.25em;
+    border-style: none;
+    float:left;
+}
+#Fleft h3{
+    font-size:1.3em;
+}
+
+#Fleft ul{
+    margin-left: 1.8em;
+    margin-top:0.6em;
+    margin-bottom: 3em;
+}
+#Fleft li{
+    margin-top:0.625em;
+    padding-bottom:0.3em;
+    list-style-type: none;
+    font-size: 1.15em;
+}
+
+#Fleft a:link{
+    text-decoration:none;
+    color: black;
+}
+
+#Fleft a:visited{
+    color:lightslategray;
+}
+
+#Fleft a:hover{
+    color:orangered;
+}
+
+#Fcenter{
+    margin-bottom:9em;
+    margin-left:12%;
+    margin-right:10%;
+    width: 12em;
+    height: 6em;
+    border-style: none;
+    float:left;
+}
+
+#Fcenter h3{
+    font-size:1.3em;
+}
+
+#Fcenter img{
+    height: 6.5em;
+    width: 8.5em;
+}
+
+.contento{
+    margin-top:2em;
+}
+
+.contento span{
+    padding-top:0.2em;
+    font-size:1.3em;
+}
+
+#zero{
+    padding-left:0.8em;
+    font-weight:bolder;
+    display:block;
+}
+
+
+#one{
+    margin-right:1em;
+    display:block;
+}
+#two{
+    padding-left:2.1em;
+    display:block;
+}
+#three{
+    padding-left:2em;
+    display:block;
+}
+
+#four{
+    margin-top:0.4em;
+    padding-left:1.7em;
+    font-weight: bolder;
+    display:block;
+}
+
+#five{
+    padding-left:1.2em;
+}
+
+#six{
+    display:block;
+    padding-left:1.25em;
+}
+
+#seven{
+    display:block;
+    padding-left:2.5em;
+}
+
+
+#Fright{
+    margin-bottom:9em;
+    margin-right:10em;
+    width: 2em;
+    height: 6.25em;
+    border-style: none;
+    float:right;
+}
+
+#Fright{
+    font-size:1.3em;
+}
+
+#fblogo{
+    height: 4em;
+    width: 4.5em;
+    padding-top:1em;
+    padding-left:0.3em;
+    padding-right:0.5em;
+}
+
+#instalogo{
+    height: 4.3em;
+    width: 4.3em;
+    padding-top:1em;
+    padding-left:0.3em;
+    padding-right:0.5em;
+    display:block;
+}
