@@ -1,6 +1,8 @@
 ﻿/* TRIP CSS*/
 
-
+img {
+    max-width: 500px;
+}
 
 .mainBody {
     margin-top: 0;
@@ -78,7 +80,11 @@
         margin-left: 25%;
         margin-right: 25%;
     }
-
+.imageWrapper:hover {
+    opacity: 0.4;
+    filter: alpha(opacity= 0.40);
+    zoom: 1;
+}
 
 .mainBody h1 {
     text-align: center;
@@ -86,18 +92,28 @@
 }
 
 @media screen and (min-width:320px) and (max-width:768px) {
-    h1 {
+    #topTitle h1 {
         font-size: 2em;
+
     }
     .paragraph img {
-        max-width: 200px;
-        float: left;
+        max-width: 300px;
+
         display: inline-block;
+        width: 50%;
+        margin-left: auto;
+        margin-right: 25%;
     }
-    .textBlock {
-        display: inline-block;
-        float: left;
+    .paragraph {
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 10%;
+        padding-right: 10%;
+        border-left: 0px solid;
+        border-right: 0px solid;
+        width: 80%;
     }
+   
 }
 
     /*END trip css*/
