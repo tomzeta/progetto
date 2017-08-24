@@ -6,6 +6,7 @@
         <meta name="title" content="As Soon As Possible-Festival" />
         <meta name="description" content="Sito festival musicale" />
         <meta name="keywords" content="asap, festival, biglietti, lineup, info"/>
+        <meta name=viewport content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="homepage.css" />
         <link rel="shortcut icon" href="asapdef.png"/>
     </head>
@@ -16,13 +17,14 @@
 
         <div id="header">
             <img src="asapdef.png" id="logo" alt="ASAP festival logo"/>
-            <div class="dropdown">
-                <button id="menubutton">
+            <div class="click">
+                <button class="button" id="menubutton" onclick="showmenu()">
                     <span class="bar"></span>
                     <span class="bar"></span>
                     <span class="bar"></span>
                 </button>
-                <div class="dropdown-content">
+
+                <div id="click-content">
                     <ul>
                         <li><a href="#lineup">LINE-UP</a></li>
                         <li><a href="#tickets">TICKETS</a></li>
@@ -34,6 +36,18 @@
             </div>
         </div>
 
+    <script type="text/javascript">
+        function showmenu() {
+            var div = document.getElementById('click-content');
+            if (div.style.display !== 'none') {
+                div.style.display = 'none';
+            }
+            else {
+                div.style.display = 'block';
+            }
+        }
+    </script>
+
         <div id="breadcrumb">
             <p>Ti trovi in: <span xml:lang="eng">Homepage</span></p>
         </div>
@@ -41,20 +55,154 @@
     <!--CENTER-->
 
         <div id="topcenter">
-            <div id="photocontainer">
-            
-                <h1>"FOTO A SCORRIMENTO BAND"</h1>
-        
+            <h2>ARTISTI</h2>
+
+
+
+            <div class="slideshow">
+
+                <div class="container">
+                    <img class="lineupimg" id="first" src="artisti/liam.png">
+                    <div class="overlay">
+                        <span class="caption">LIAM GALLAGHER</span>
+                    </div>
+                </div>
+                <div class="container">
+                    <img class="lineupimg" src="artisti/jovanotti.png">
+                    <div class="overlay">
+                        <span class="caption">JOVANOTTI</span>
+                    </div>
+                </div>
+                <div class="container">
+                    <img class="lineupimg" src="artisti/adele.png">
+                    <div class="overlay">
+                        <span class="caption">ADELE</span>
+                    </div>
+                </div>
+                <div class="container">
+                    <img class="lineupimg" src="artisti/tyler.png">
+                    <div class="overlay">
+                        <span class="caption">TYLER THE CREATOR</span>
+                    </div>
+                </div>
+                <div class="container">
+                    <img class="lineupimg" src="artisti/boniver.png">
+                    <div class="overlay">
+                        <span class="caption">BON IVER</span>
+                    </div>
+                </div>
+                <div class="container">
+                    <img class="lineupimg" src="artisti/steveaoki.png">
+                    <div class="overlay">
+                        <span class="caption">STEVE AOKI</span>
+                    </div>
+                </div>
+                <div class="container">
+                    <img class="lineupimg" src="artisti/marrague.png">
+                    <div class="overlay">
+                        <span class="caption">MARRACASH E GUE' PEQUENO</span>
+                    </div>
+                </div>
+                <div class="container">
+                    <img class="lineupimg" src="artisti/demarco.png">
+                    <div class="overlay">
+                        <span class="caption">MAC DEMARCO</span>
+                    </div>
+                </div>
+                <div class="container">
+                    <img class="lineupimg" src="artisti/lamar.png">
+                    <div class="overlay">
+                        <span class="caption">KENDRICK LAMAR</span>
+                    </div>
+                </div>
+                <div class="container">
+                    <img class="lineupimg" src="artisti/elio.png">
+                    <div class="overlay">
+                        <span class="caption">ELIO E LE STORIE TESE</span>
+                    </div>
+                </div>
+                <div class="container">
+                    <img class="lineupimg" src="artisti/rihanna.png">
+                    <div class="overlay">
+                        <span class="caption">RIHANNA</span>
+                    </div>
+                </div>
+                <div class="container">
+                    <img class="lineupimg" src="artisti/redhot.png">
+                    <div class="overlay">
+                        <span class="caption">RED HOT CHILI PEPPERS</span>
+                    </div>
+                </div>
+                <div class="container">
+                    <img class="lineupimg" src="artisti/battiato.png">
+                    <div class="overlay">
+                        <span class="caption">FRANCO BATTIATO</span>
+                    </div>
+                </div>
+                <div class="container">
+                    <img class="lineupimg" src="artisti/legend.png">
+                    <div class="overlay">
+                        <span class="caption">JOHN LEGEND</span>
+                    </div>
+                </div>
+                <div class="container">
+                    <img class="lineupimg" src="artisti/budspencer.png">
+                    <div class="overlay">
+                        <span class="caption">BUD SPENCER BLUES EXPLOSION</span>
+                    </div>
+                </div>
+                <div class="container">
+                    <img class="lineupimg" src="artisti/garrix.png">
+                    <div class="overlay">
+                        <span class="caption">MARTIN GARRIX</span>
+                    </div>
+                </div>
+                <div class="container">
+                    <img class="lineupimg" src="artisti/stones.png">
+                    <div class="overlay">
+                        <span class="caption">ROLLING STONES</span>
+                    </div>
+                </div>
+                <div class="container">
+                    <img class="lineupimg" src="artisti/stromae.png">
+                    <div class="overlay">
+                        <span class="caption">STROMAE</span>
+                    </div>
+                </div>
             </div>
+
+            <button class="prev" onclick="plusDivs(-1)">previous</button>
+            <button class="next" onclick="plusDivs(+1)">next</button>
+
+            <script type="text/javascript">
+                var slideIndex = 1;
+                showDivs(slideIndex);
+
+                function plusDivs(n) {
+                    showDivs(slideIndex += n);
+                }
+
+                function showDivs(n) {
+                    var i;
+                    var x = document.getElementsByClassName("lineupimg");
+                    if (n > x.length) {slideIndex = 1}
+                    if (n < 1) {slideIndex = x.length}
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    x[slideIndex-1].style.display = "block";
+                }
+            </script>
+
         
         </div>
         
         <div id="center">
             <div id="rectangle1">
                 <div class="content">
-                    <h2>
+                    <h3>
                         LORENZO EMME TROVATO NUDO NEL BRENTA
-                    </h2>
+                    </h3>
                     <p>
                         Al ritrovamento non ha detto una parola, sembrava in lontanza che inveisse contro un certo "signor magi".
                         Presto ulteriori info.
@@ -65,9 +213,9 @@
             </div>
             <div id="rect2">
                 <div class="content">
-                    <h2>
+                    <h3>
                         PIERA DEGLI SPIRITI TROPPO ALTA!
-                    </h2>
+                    </h3>
                     <p>
                         Si sta allestendo una comune di taglialegna per segare le gambe alla suddetta
                         in modo tale da farle abbassare la cresta.
