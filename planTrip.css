@@ -15,7 +15,6 @@ img {
 
 .textBlock {
     display: inline-block;
-
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 2em;
@@ -31,7 +30,6 @@ img {
     margin-bottom: 1em;
     text-align: center;
     margin-top: 0;
-
 }
 
 .paragraph {
@@ -49,28 +47,25 @@ img {
     margin-bottom: 1em;
     border: 1vw solid #ffaa2d;
 }
-   
+
     .paragraph h2 {
         font-size: 2em;
-
         margin-bottom: 0.5em;
-
     }
 
     .paragraph h3 {
         font-size: 1.5em;
         margin-top: 0.4em;
         margin-bottom: 0.3em;
-
     }
 
     .paragraph p {
         font-size: 1em;
-        margin-bottom: .5em;
+        margin-bottom: 0.5em;
         margin-left: auto;
         margin-right: auto;
-
     }
+
     .paragraph img {
         max-width: 500px;
         width: 50%;
@@ -80,6 +75,7 @@ img {
         margin-left: 25%;
         margin-right: 25%;
     }
+
 .imageWrapper:hover {
     opacity: 0.4;
     filter: alpha(opacity= 0.40);
@@ -91,19 +87,146 @@ img {
     margin: auto;
 }
 
-@media screen and (min-width:320px) and (max-width:768px) {
-    #topTitle h1 {
-        font-size: 2em;
+
+
+/*END trip css*/
+
+
+
+
+/*Tickets CSS*/
+#lineUpBody {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 3em;
+}
+
+.lineUpSumUp {
+    float: left;
+    text-align: center;
+    width: 27%;
+    margin: 1%;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+    .lineUpSumUp h3 {
+        font-size: 3em;
+        margin-top: 0.5em;
 
     }
+
+.purButton {
+    margin-bottom: 2em;
+    margin-top: 2em;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #ffaa2d;
+    border: 0px solid;
+}
+
+    
+
+.artists {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+
+#Prezzi {
+    
+    margin-left: 5%;
+    margin-right: 10%;
+    margin-top: 3em;
+    margin-bottom: 2em;
+    padding: 0;
+}
+
+    #Prezzi h2 {
+        font-size: 3em;
+        margin-bottom: 1em;
+    }
+.purTicket {
+    font-size: 2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 100%;
+    overflow: hidden;
+    display: inline-block;
+}
+    .purTicket input {
+        margin: 0;
+        float: right;
+    }
+.ticketDay {
+    display: inline-block;
+    width: 50%;
+    }
+.ticketPrice {
+   display: inline-block;
+   margin: 0;
+   width: 30%;
+}
+
+.strongText {
+    font-weight: bold;
+}
+/*TABLET layout*/
+@media screen and (min-width:768px) and (max-width:1024px) {
+    
+    .paragraph {
+        border-width: 0.5vw;
+    }
+    #Prezzi {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 3em;
+        padding: 0;
+        text-align: center;
+    }
+        #Prezzi h2 {
+            
+        }
+    .purTicket {
+        text-align: center;
+        padding-bottom: 1em;
+    }
+        .purTicket input {
+            position:center;
+            width: 28%;
+
+            margin-left: 36%;
+            margin-right: 36%;
+        }
+    .ticketDay {
+        width: 100%;
+        margin-bottom: 1em;
+    }
+    .ticketPrice {
+        width: 100%;
+        margin-bottom: 0.5em;
+    }
+}
+
+/*PHONE layout*/
+@media screen and (min-width:320px) and (max-width:767px) {
+
+    /*TRIP*/
+    #topTitle h1 {
+        font-size: 2em;
+    }
+
+
     .paragraph img {
         max-width: 300px;
-
         display: inline-block;
         width: 50%;
         margin-left: auto;
         margin-right: 25%;
     }
+
     .paragraph {
         margin-left: 0;
         margin-right: 0;
@@ -112,8 +235,53 @@ img {
         border-left: 0px solid;
         border-right: 0px solid;
         width: 80%;
+        border-width: 0.2vw;
     }
-   
+
+    /*TICKETS*/
+
+    .lineUpSumUp {
+        width: 100%;
+        margin: auto;
+        padding: 0;
+    }
+
+    #Prezzi {
+        text-align: center;
+        margin-left: 0;
+        margin-right: 0;
+    }
+        #Prezzi h2 {
+            font-size: 3em;
+            margin-bottom: 0.5em;
+            background-color: #ffaa2d;
+            padding-bottom: 5px;
+            padding-top: 5px;
+        }
+    .purTicket {
+        
+        padding-bottom: 1em;
+    }
+
+        .purTicket input {
+            position: center;
+            width: 50%;
+            margin-left: 25%;
+            margin-right: 25%;
+        }
+
+    .ticketDay {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 1em;
+    }
+
+    .ticketPrice {
+        width: 100%;
+        margin-bottom: 0.5em;
+    }
 }
 
-    /*END trip css*/
+
+/*END tickets CSS*/
