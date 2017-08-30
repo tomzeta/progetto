@@ -1,9 +1,11 @@
 ﻿/* TRIP CSS*/
 
+/*Comune a due pagine*/
 img {
     max-width: 500px;
 }
 
+/*Comune a due pagine*/
 .mainBody {
     margin-top: 0;
     margin-bottom: 2em;
@@ -13,7 +15,7 @@ img {
     width: 100%;
 }
 
-.textBlock {
+#Ptrip .textBlock {
     display: inline-block;
     margin-right: auto;
     margin-left: auto;
@@ -32,7 +34,7 @@ img {
     margin-top: 0;
 }
 
-.paragraph {
+#Ptrip .paragraph {
     clear: both;
     display: inline-block;
     padding-top: 2em;
@@ -48,25 +50,25 @@ img {
     border: 1vw solid #ffaa2d;
 }
 
-    .paragraph h2 {
+    #Ptrip .paragraph h2 {
         font-size: 2em;
         margin-bottom: 0.5em;
     }
 
-    .paragraph h3 {
+    #Ptrip .paragraph h3 {
         font-size: 1.5em;
         margin-top: 0.4em;
         margin-bottom: 0.3em;
     }
 
-    .paragraph p {
+    #Ptrip .paragraph p {
         font-size: 1em;
         margin-bottom: 0.5em;
         margin-left: auto;
         margin-right: auto;
     }
 
-    .paragraph img {
+    #Ptrip .paragraph img {
         max-width: 500px;
         width: 50%;
         float: right;
@@ -76,7 +78,7 @@ img {
         margin-right: 25%;
     }
 
-.imageWrapper:hover {
+#Ptrip .imageWrapper:hover {
     opacity: 0.4;
     filter: alpha(opacity= 0.40);
     zoom: 1;
