@@ -22,26 +22,6 @@ html, *{
     color:orangered;
 }
 
-.container{
-    width:90%;
-    margin-left:5%;
-    position:relative;
-}
-
-.container img{
-    width:100%;
-    height:auto;
-    display:block;
-    margin-top:3%;
-    border-radius:20px;
-    border:4px solid #ff9900;
-}
-
-#topcenter h2{
-    margin-left:45%;
-    font-size: 50px;
-}
-
 button {
     background-color:#ffec64;
     border-radius:6px;
@@ -62,7 +42,13 @@ button:active {
     position:relative;
 }
 
-.overlay {
+#homeTopcenter h2{
+    margin-left:45%;
+    font-size: 250%;
+}
+
+
+.homeOverlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -75,9 +61,10 @@ button:active {
     background-color: #ff9b17;
     border-radius:20px;
     border:4px solid #ff9900;
+    text-align: center;
 }
 
-.caption{
+.homeCaption{
     display:none;
     margin:25% auto;
     font-weight: bold;
@@ -85,11 +72,32 @@ button:active {
     background-color: #ff9b17;
 }
 
-.container:hover .caption{
-    display: table;
+.homeContainer{
+    width:90%;
+    margin-left:5%;
+    position:relative;
 }
 
-.container:hover .overlay {
+.homeContainer img{
+    width:100%;
+    height:auto;
+    display:block;
+    margin-top:3%;
+    border-radius:20px;
+    border:4px solid #ff9900;
+}
+
+.homeContent img{
+    width:100%;
+    height:auto;
+    display:block;
+}
+
+.homeContainer:hover .homeCaption{
+    display:inline-block;
+}
+
+.homeContainer:hover .homeOverlay {
     opacity: 0.9;
 }
 
@@ -102,12 +110,12 @@ button:active {
     /*HEADER*/
 
     #logo{
-        margin-top:5em;
+        margin-top:23%;
         margin-right:auto;
         margin-left:auto;
-        margin-bottom:auto;
-        height:9em;
-        width:12em;
+        margin-bottom:1%;
+        height:auto;
+        width:30%;
         display:block;
     }
 
@@ -152,11 +160,11 @@ button:active {
         background-color: #ffb612;
         width: 45%;
         height: auto;
-        margin-left:15%;
-        margin-top:5%;
-        margin-bottom:1%;
-        padding-left:15%;
-        padding-right:15%;
+        margin-left:20%;
+        margin-top:8%;
+        margin-bottom:15%;
+        padding-left:5%;
+        padding-right:5%;
 
     }
 
@@ -186,26 +194,32 @@ button:active {
         padding-bottom:0.7em;
         border-style: solid;
         border-width: 0.063em;
+        background-color: #ffbd0f;
+    }
+
+    #breadcrumb span{
+        background-color: #ffbd0f;
     }
 
     #breadcrumb p{
         text-align:center;
         font-weight:bold;
+        background-color: #ffbd0f;
     }
 
     /*TOPCENTER*/
 
-    #topcenter{
+    #homeTopcenter{
         padding-top:3%;
         margin-bottom:10%;
     }
 
-    #topcenter h2{
+    #homeTopcenter h2{
         margin-left:42%;
         font-size: 200%;
     }
 
-    .container{
+    .homeContainer{
         width:90%;
         margin-left:5%;
         position:relative;
@@ -221,42 +235,69 @@ button:active {
     /*LOWCENTER*/
 
 
-    #rectangle1{
-        width: 70%;
-        height: 31em;
-        display:block;
-        margin-left:15%;
+    /*LOWCENTER*/
+
+
+    .homeNewsContainer{
+        width: 75%;
         border-style: solid;
-        border-width: 0.06em;
-    }
-    #rect2{
-        width: 70%;
-        height:31em;
-        display:block;
-        margin-top:4em;
-        margin-bottom:4em;
-        margin-left:15%;
-        border-style: solid;
-        border-width:0.06em;
+        border-width: 1px;
+        border-radius: 3px;
+        background-color: #ffbd0f;
+        margin-left:12%;
+        margin-bottom:25%;
+        padding-bottom:10%;
+
     }
 
-    .content h3{
-        text-align: center;
-        font-size:1.2em;
-        margin: 0.75em;
+    .homeContent{
+        background-color: #ffbd0f;
     }
 
-    .content p{
+    .homeContent h3{
+        font-family: 'IntroRustG-Base';
+        color: #ff6f00;
+        font-size: 150%;
+        font-weight: bold;
+        margin-top:5%;
+        text-align:center;
+        background-color: #ffbd0f;
+    }
+
+    .homeContent p{
         text-align: center;
-        margin:1.25em;
-        margin-top: 35%;
-        font-size:1.15em;
+        font-size:20px;
+        margin: 5% 5%;
+        background-color: #ffbd0f;
+    }
+
+    .homeMore{
+        margin-top:15%;
+        margin-left:25%;
+        background-color: #ffbd0f;
+
+    }
+
+    .homeMore a{
+        padding: 3% 6% 3% 6%;
+        background-color: #ff9b17;
+        color: #fff;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 15px;
+        letter-spacing: 2px;
+        border: 3px solid #ff8713;
+    }
+
+    .homeMore a:hover{
+        background-color: #ff5b19;
     }
 
 
     /*FOOTER*/
 
     #footer{
+        margin-top:10%;
         text-align:center;
         margin-bottom:15%;
 
@@ -353,7 +394,7 @@ button:active {
 }
 
 @media screen and (min-width:320px) and (max-width: 586px){
-    .container{
+    .homeContainer{
         width:90%;
         margin-left:5%;
         position:relative;
@@ -405,21 +446,27 @@ button:active {
         padding:0.7em 0.9em 0.7em 0.9em;
         border-style: solid;
         border-width: 0.063em;
+        background-color: #ffbd0f;
+    }
+
+    #breadcrumb span{
+        background-color: #ffbd0f;
     }
 
     #breadcrumb p{
         text-align:left;
         font-weight:bold;
+        background-color: #ffbd0f;
     }
 
     /*TOPCENTER*/
 
-    #topcenter{
+    #homeTopcenter{
         padding-top:3%;
         margin-bottom:10%;
     }
 
-    .container{
+    .homeContainer{
         width: 75%;
         margin-left:16%;
         position:relative;
@@ -431,53 +478,81 @@ button:active {
     }
 
     /*CENTER*/
-    #center{
+    #homeCenter{
         margin-bottom:60%;
 
     }
 
 
     /*LOWCENTER*/
-    #rectangle1{
-        margin-left:15%;
-        margin-right:2%;
-        width: 22em;
-        height: 31em;
+
+    .homeNewsContainer{
+        width: 35%;
+        height: 42em;
         border-style: solid;
-        border-width: 0.06em;
+        border-width: 1px;
+        border-radius: 3px;
         float:left;
-
+        background-color: #ffbd0f;
     }
 
-    #rect2{
-        margin-top:3%;
-        margin-left:2%;
-        margin-right:4%;
-        margin-bottom:1%;
-        width: 22em;
-        height:31em;
-        border-style: solid;
-        border-width:0.06em;
-        float:left;
+    .homeContent{
+        background-color: #ffbd0f;
     }
 
-    .content h3{
+    #HC1{
+        margin-left:12%;
+        margin-right:10%;
+    }
+
+    #HC2{
+        margin-top:3.750em;
+    }
+
+    .homeContent h3{
+        font-family: 'IntroRustG-Base';
+        color: #ff6f00;
+        font-size: 38px;
+        font-weight: bold;
+        margin-top:10%;
+        text-align:center;
+        background-color: #ffbd0f;
+    }
+
+    .homeContent p{
         text-align: center;
-        font-size:1.2em;
-        margin: 0.75em;
+        font-size:20px;
+        margin: 5% 5%;
+        background-color: #ffbd0f;
     }
 
-    .content p{
-        text-align: center;
-        margin:1.25em;
-        margin-top: 35%;
-        font-size:1.15em;
+    .homeMore{
+        margin-top:8%;
+        margin-left:23%;
+        background-color: #ffbd0f;
+
     }
+
+    .homeMore a{
+        padding: 15px 25px 15px 25px;
+        background-color: #ff9b17;
+        color: #fff;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 15px;
+        letter-spacing: 2px;
+        border: 3px solid #ff8713;
+    }
+
+    .homeMore a:hover{
+        background-color: #ff5b19;
+    }
+
 
     /*FOOTER*/
 
     #footer{
-        margin-top:65%;
+        margin-top:85%;
         text-align:center;
     }
 
@@ -583,7 +658,7 @@ button:active {
         height: 9em;
         width: 12.5em;
         padding-top: 1%;
-        padding-right:5%;
+        padding-right:2%;
         padding-left:1%;
 
     }
@@ -601,7 +676,7 @@ button:active {
     #header li{
         display: block;
         float: left;
-        padding:1% 4% 1% 5%;
+        padding:1% 3% 1% 4%;
         margin-top:2em;
     }
 
@@ -615,22 +690,28 @@ button:active {
         padding:0.7em 0.9em 0.7em 0.9em;
         border-style: solid;
         border-width: 0.063em;
+        background-color: #ffbd0f;
+    }
+
+    #breadcrumb span{
+        background-color: #ffbd0f;
     }
 
     #breadcrumb p{
         text-align:left;
         font-weight:bold;
+        background-color: #ffbd0f;
     }
 
     /*TOPCENTER*/
 
-    #topcenter{
+    #homeTopcenter{
         padding-top:3%;
         margin-bottom:10%;
     }
 
 
-    .container{
+    .homeContainer{
         width: 55%;
         margin-left:24%;
         margin-right:5%;
@@ -646,52 +727,76 @@ button:active {
     }
 
 
-    /*CENTER*/
-
 
     /*LOWCENTER*/
-    #rectangle1{
-        margin-left:25%;
-        margin-right:5%;
-        width: 22em;
-        height: 31em;
+
+    .homeNewsContainer{
+        width: 35%;
+        height: 42em;
         border-style: solid;
-        border-width: 0.06em;
+        border-width: 1px;
+        border-radius: 3px;
         float:left;
-
+        background-color: #ffbd0f;
     }
 
-    #rect2{
-        margin-top:4em;
-        margin-left: 2%;
-        margin-right:4%;
-        margin-bottom:10%;
-        width: 22em;
-        height:31em;
-        overflow: hidden;
-        border-style: solid;
-        border-width:0.06em;
-        float:left;
+    .homeContent{
+        background-color: #ffbd0f;
     }
 
-    .content h3{
+    #HC1{
+        margin-left:12%;
+        margin-right:10%;
+    }
+
+    #HC2{
+        margin-top:3.750em;
+    }
+
+    .homeContent h3{
+        font-family: 'IntroRustG-Base';
+        color: #ff6f00;
+        font-size: 38px;
+        font-weight: bold;
+        margin-top:10%;
+        text-align:center;
+        background-color: #ffbd0f;
+    }
+
+    .homeContent p{
         text-align: center;
-        font-size:1.2em;
-        margin: 0.75em;
+        font-size:20px;
+        margin: 3% 5%;
+        background-color: #ffbd0f;
     }
 
-    .content p{
-        text-align: center;
-        margin:1.25em;
-        margin-top: 35%;
-        font-size:1.15em;
+    .homeMore{
+        margin-top:8%;
+        margin-left:30%;
+        background-color: #ffbd0f;
+
     }
 
+    .homeMore a{
+        padding: 15px 25px 15px 25px;
+        background-color: #ff9b17;
+        color: #fff;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 15px;
+        letter-spacing: 2px;
+        border: 3px solid #ff8713;
+    }
+
+    .homeMore a:hover{
+        background-color: #ff5b19;
+    }
 
     /*FOOTER*/
 
     #footer{
-        margin-bottom:28%;
+        margin-top:75%;
+        margin-bottom:35%;
         padding: 1em 3em 3em 3em;
     }
 
@@ -733,9 +838,10 @@ button:active {
     }
 
     #Fcenter{
-        margin-bottom:9em;
-        margin-left:16%;
+        margin-bottom:10%;
+        margin-left:20%;
         margin-right:10%;
+        padding-bottom: 5%;
         width: 12em;
         height: 6em;
         border-style: none;
@@ -862,7 +968,7 @@ button:active {
     #header li{
         display: block;
         float: left;
-        padding: 0% 5% 0% 5%;
+        padding: 0% 5% 0% 4%;
         margin-top:4%;
     }
 
@@ -874,16 +980,22 @@ button:active {
         padding:0.7em 0.9em 0.7em 0.9em;
         border-style: solid;
         border-width: 0.063em;
+        background-color: #ffbd0f;
+    }
+
+    #breadcrumb span{
+        background-color: #ffbd0f;
     }
 
     #breadcrumb p{
         text-align:left;
         font-weight:bold;
+        background-color: #ffbd0f;
     }
 
     /*TOPCENTER*/
 
-    #topcenter{
+    #homeTopcenter{
         padding-top:3%;
         margin-bottom:10%;
     }
@@ -897,62 +1009,88 @@ button:active {
     }
 
 
-    .container{
+    .homeContainer{
         width: 45%;
         margin-left:28%;
         margin-right:35%;
         position:relative;
     }
 
-
     /*CENTER*/
-    #center{
+    #homeCenter{
         margin-bottom:35%;
+        background-color: #ff9b17;
     }
 
     /*LOWCENTER*/
 
-    #rectangle1{
-        margin-left:26%;
+    .homeNewsContainer{
+        width: 35em;
+        height: 48em;
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 3px;
+        float:left;
+        background-color: #ffbd0f;
+    }
+
+    .homeContent{
+        background-color: #ffbd0f;
+    }
+
+    #HC1{
+        margin-left:12%;
         margin-right:10%;
-        width: 25em;
-        height: 38em;
-        border-style: solid;
-        border-width: 0.063em;
-        float:left;
-
     }
 
-    #rect2{
+    #HC2{
         margin-top:3.750em;
-        width: 25em;
-        height:38em;
-        overflow: hidden;
-        border-style: solid;
-        border-width:0.063em;
-        float:left;
     }
 
-    .content h3{
+    .homeContent h3{
+        font-family: 'IntroRustG-Base';
+        color: #ff6f00;
+        font-size: 38px;
+        font-weight: bold;
+        margin-top:10%;
+        text-align:center;
+        background-color: #ffbd0f;
+    }
+
+    .homeContent p{
         text-align: center;
-        font-size:1.563em;
-        margin: 0.750em;
+        font-size:20px;
+        margin: 5% 5%;
+        background-color: #ffbd0f;
     }
 
-    .content p{
-        text-align: center;
-        margin:1.250em;
-        margin-top: 35%;
-        font-size:1.125em;
+    .homeMore{
+        margin-top:10%;
+        margin-left:30%;
+        background-color: #ffbd0f;
+
     }
 
+    .homeMore a{
+        padding: 15px 25px 15px 25px;
+        background-color: #ff9b17;
+        color: #fff;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 15px;
+        letter-spacing: 2px;
+        border: 3px solid #ff8713;
+    }
 
+    .homeMore a:hover{
+        background-color: #ff5b19;
+    }
 
     /*FOOTER*/
 
 
     #footer{
-        margin-top: 50%;
+        margin-top: 60%;
         margin-bottom:25%;
         padding: 3.125em 3.125em 3.125em 3.125em;
     }
