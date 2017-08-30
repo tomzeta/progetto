@@ -6,6 +6,7 @@
         <meta name="title" content="As Soon As Possible-Festival" />
         <meta name="description" content="Sito festival musicale" />
         <meta name="keywords" content="asap, festival, biglietti, lineup, info"/>
+        <meta name=viewport content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="info.css" />
         <link rel="shortcut icon" href="asapdef.png"/>
     </head>
@@ -16,56 +17,69 @@
 
         <div id="header">
             <img src="asapdef.png" id="logo" alt="ASAP festival logo"/>
-            <div class="dropdown">
-                <button id="menubutton">
+            <div class="click">
+                <button class="button" id="menubutton" onclick="showmenu()">
                     <span class="bar"></span>
                     <span class="bar"></span>
                     <span class="bar"></span>
                 </button>
-                <div class="dropdown-content">
+
+                <div id="click-content">
                     <ul>
-                        <li><a href="#lineup">LINE-UP</a></li>
+                        <li><a href="/homepage/homepage.html">HOMEPAGE</a></li>
+                        <li><a href="/line-up/line-up.html">LINE-UP</a></li>
                         <li><a href="#tickets">TICKETS</a></li>
                         <li><a href="#news">NEWS</a></li>
-                        <li><a href="#Viaggi">TRIP</a></li>
-                        <li><a href="#info">INFO</a></li>
+                        <li><a href="#Trip">TRIP</a></li>
+                        <li><a href="/info/info.html">INFO</a></li>
                     </ul>
                 </div>
             </div>
         </div>
 
-        <div id="breadcrumb">
-            <span>Ti trovi in: <span xml:lang="eng">Homepage</span></span>
-        </div>
+        <script type="text/javascript">
+            function showmenu() {
+                var div = document.getElementById('click-content');
+                if (div.style.display !== 'none') {
+                    div.style.display = 'none';
+                }
+                else {
+                    div.style.display = 'block';
+                }
+            }
+        </script>
 
+        <div id="breadcrumb">
+            <p>Ti trovi in: <span xml:lang="eng">Line-up</span></p>
+        </div>
 
     <!--CENTER-->
 
-        <div class="center">
+        <div class="infoCenter">
 
-            <div id="contatti">
+            <div id="infoContatti">
                 <div class="column" id="col1">
-                    <h2>Contatti Email:</h2>
+                    <h1>Contatti Email:</h1>
 
-                    <h3>PRODUZIONE</h3>
+                    <h2>PRODUZIONE</h2>
 
-                    <span class="mail">produzione@asapmusicfestival.com</span>
+                    <span class="mail">produzione@asapmusicfest.com</span>
 
-                    <h3>STAMPA</h3>
+                    <h2>STAMPA</h2>
 
-                    <span class="mail">stampa@asapmusicfestival.com</span>
+                    <span class="mail">stampa@asapmusicfest.com</span>
 
-                    <h3>TURISMO</h3>
+                    <h2>TURISMO</h2>
 
-                    <span class="mail">turismo@asapmusicfestival.com</span>
+                    <span class="mail">turismo@asapmusicfest.com</span>
 
-                    <h3>INFORMAZIONI</h3>
+                    <h2>INFORMAZIONI</h2>
 
-                    <span class="mail">info@amamusicfestival.com</span>
+                    <span class="mail">info@asapmusicfest.com</span>
                 </div>
 
                 <div class="column" id="col2">
-                    <h2>Conosci la citta':</h2>
+                    <h1>Conosci la citta':</h1>
 
                     <span class="tile">Regione:</span> <p>Veneto</p>
 
@@ -85,7 +99,7 @@
                 </div>
 
                 <div class="column" id="col3">
-                    <h2>Numeri Utili:</h2>
+                    <h1>Numeri Utili:</h1>
 
                     <span class="tile">Centro Informazioni:</span> <p>0424543678</p>
 
@@ -99,26 +113,26 @@
 
             </div>
 
-            <div id="border">
-                <div id="Cright">
+            <div id="infoBorder">
+                <div id="infoCright">
                     <h2>SU DI NOI:</h2>
-                        <div id="content">
-                            <div class="article">
+                        <div id="infoContent">
+                            <div class="infoArticle">
                                 <h3> Come siamo nati: </h3>
                                 <p>
                                     Il caratteristico Ponte degli Alpini, Iacopo da Ponte e la fine produzione ceramica sono i simboli che le attribuiscono notorietà internazionale. Il Ponte in legno, opera di Andrea Palladio, il Castello degli Ezzelini, il Museo Civico e numerosi palazzi affrescati impreziosiscono il centro storico. Le testimonianze medioevali si mescolano con l’architettura veneziana all’interno delle tre cinte murarie, che segnano lo sviluppo urbano della città di origini romane. La vita culturale è ricca di eventi, spettacoli e grandi mostre.Il percorso pedonale lungo le mura offre una splendida vista sul territorio pedemontano e sull’intera città. Dall’interno della cortina muraria si raggiunge il Castello degli Ezzelini, in posizione rialzata rispetto al borgo, lungo un ripido percorso che attraversa il quartiere delle antiche botteghe. Le tre cinte murarie, l’ultima elevata nel 1370, segnano lo sviluppo urbano della città millenaria.
                                 </p>
                             </div>
-                            <div class="article">
+                            <div class="infoArticle">
                                 <h3> Chi siamo: </h3>
 
                                 <p>
-                                    Wehrmacht (/ˈveːɐ̯ˌmaxt/; dal tedesco: Forza di Difesa) è il nome assunto dalle forze armate tedesche con la riforma del 1935 e per tutta la durata della seconda guerra mondiale, fino all'agosto 1946, quando fu formalmente sciolta dopo la resa incondizionata della Germania del 7 maggio 1945.
+                                    Wehrmacht è il nome assunto dalle forze armate tedesche con la riforma del 1935 e per tutta la durata della seconda guerra mondiale, fino all'agosto 1946, quando fu formalmente sciolta dopo la resa incondizionata della Germania del 7 maggio 1945.
 
                                     Dalle ceneri delle forze armate dell'Impero tedesco, a partire dal 1919 si erano costituite quelle della Repubblica di Weimar, che nel 1921 avevano preso il nome di Reichswehr, mantenuto fino al 1935. In seguito alla sconfitta della Germania nel secondo conflitto mondiale, le due repubbliche nate nel 1949 si sarebbero dotate ciascuna di un proprio strumento di difesa: il Bundeswehr (1955) nella Repubblica Federale di Germania, e la Nationale Volksarmee (1956) nella Repubblica Democratica Tedesca.
                                 </p>
                             </div>
-                            <div class="article">
+                            <div class="infoArticle">
                                 <h3> Cosa facciamo: </h3>
                                 <p>
                                     Il Lardo di Colonnata IGP è un prodotto di salumeria dalla forma solitamente rettangolare, con uno spessore di almeno tre centimetri, ottenuto dai tagli di carne suina corrispondenti allo strato adiposo che ricopre il dorso della regione occipitale fino alle natiche e che lateralmente arriva fino alla pancetta. La parte inferiore conserva la cotenna, mentre quella superiore è ricoperta dal sale per la conservazione, dalle erbe aromatiche e dalle spezie. Può essere presente una striscia di magro. Ha una consistenza omogenea e morbida, è di colore bianco, leggermente rosata o vagamente brunito. Il profumo è fragrante e ricco di aromi, il sapore delicato e fresco, quasi dolce, arricchito dalle erbe aromatiche e dalle spezie.
@@ -129,29 +143,31 @@
                 </div>
 
 
-                <div id="compile">
-                    <div id="fill">
+                <div id="infoCompile">
+                    <div id="infoFill">
                         <h3>Richiedi Informazioni:</h3>
                         <span>Per informazioni potete contattarci compilando il form sottostante:</span>
 
                         <form action="" method="get"> <!--DA FINIRE CON PHP-->
-                            Nome: <input class="insert" type="text" name="firstname"/>
-                            Cognome: <input class="insert" type="text" name="lastname"/>
-                            Email: <input class="insert" type="text" name="email">
+                            Nome: <input class="infoInsert" type="text" name="firstname"/>
+                            Cognome: <input class="infoInsert" type="text" name="lastname"/>
+                            Email: <input class="infoInsert" type="text" name="email">
                             Richiedi:
-                            <select name="motivazione" id="motivaz" >
+                            <select name="motivazione" id="infoMotivaz" >
                                 <option value="Turismo" >Turismo  </option>
                                 <option value="Informazioni"selected="selected">Informazioni</option>
                                 <option value="Produzione">Produzione  </option>
                                 <option value="Stampa">Stampa  </option>
                             </select>
                             Messaggio:
-                            <input id="messaggio" type="text" name="message">
+                            <input id="infoMessaggio" type="text" name="message">
                         </form>
                     </div>
                 </div>
             </div>
         </div>
+
+    <!--FOOTER-->
 
         <div id="footer">
             <div id="Fleft">
