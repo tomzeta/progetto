@@ -707,7 +707,7 @@ html, *{
 
 
     #border {
-        margin-top:5%;
+        margin-top:1%;
         border-bottom: 1px solid black;
     }
 
@@ -716,7 +716,7 @@ html, *{
     }
 
     #Cright h2 {
-        font-size: 35px;
+        font-size: 40px;
         font-weight: bold;
         text-align: center;
         padding-top: 1em;
@@ -743,7 +743,7 @@ html, *{
 
     #contatti {
         float: left;
-        margin-left:2%;
+        margin-left:3%;
         margin-right:4%;
 
     }
@@ -756,7 +756,7 @@ html, *{
 
     #contatti h2{
         font-size: 20px;
-        margin-top:5%;
+        margin-top:7%;
         margin-bottom:2%;
     }
 
