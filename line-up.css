@@ -55,22 +55,22 @@ button:active {
 
 
 
-@media screen and (min-width:320px) and (max-width:919px){
+@media screen and (min-width:320px) and (max-width:768px){
     /*HEADER*/
 
     #logo{
-        margin-top:23%;
+        margin-top:19%;
         margin-right:auto;
         margin-left:auto;
         margin-bottom:1%;
-        height:9em;
-        width:12em;
+        height:auto;
+        width:40%;
         display:block;
     }
 
     #header{
-        padding-bottom:2em;
-        margin-bottom: 3em;
+        padding-bottom:1%;
+        margin-bottom: 1%;
     }
 
     #menubutton {
@@ -97,8 +97,8 @@ button:active {
         top:0;
         position:fixed;
         background-color: #ffaa2d;
-        z-index: 100;
         width: 100%;
+        z-index:100;
         height: 4em;
     }
 
@@ -109,11 +109,11 @@ button:active {
         background-color: #ffb612;
         width: 45%;
         height: auto;
-        margin-left:20%;
-        margin-top:8%;
+        margin-left:23%;
+        margin-top:4%;
         margin-bottom:15%;
-        padding-left:5%;
-        padding-right:5%;
+        padding-left:3%;
+        padding-right:3%;
 
     }
 
@@ -143,24 +143,33 @@ button:active {
         padding-bottom:0.7em;
         border-style: solid;
         border-width: 0.063em;
+        background-color: #ffbd0f;
+    }
+
+    #breadcrumb span{
+        background-color: #ffbd0f;
     }
 
     #breadcrumb p{
         text-align:center;
         font-weight:bold;
+        background-color: #ffbd0f;
     }
 
+    /*HEADER*/
 
     /*FOOTER*/
 
     #footer{
+        margin-top:5%;
         text-align:center;
-        margin-bottom:15%;
-
     }
 
+    #Fleft h3{
+        padding-top:5%;
+    }
     #Fleft ul{
-        margin-top:0.6em;
+        margin-top:2%;
         margin-bottom:1.5em;
     }
 
@@ -185,46 +194,43 @@ button:active {
     }
 
     #Fcenter{
-        margin-bottom:7em;
         margin-left:auto;
         margin-right:auto;
         width: 12em;
-        height: 6em;
-        border-style: none;
+        height: auto;
     }
 
     #Fcenter img{
-        height: 6.5em;
-        width: 8.5em;
-        margin-bottom: 1em;
+        height: auto;
+        width:100%;
+    }
 
+    .FimageContainer{
+        margin-left:23%;
+        width: 54%;
     }
 
     #Fcenter h3{
         font-size:1.3em;
     }
 
-    #content{
-        margin-bottom:0.5em;
+    .footerContent{
+        margin-top:1%;
+        width:100%;
     }
 
-    #zero{
-        padding-left:0.2em;
-        margin-bottom:0.3em;
-        font-weight:bolder;
-        display:block;
+    .footerContent p{
+        padding-top:1%;
+        font-size:120%;
+        text-align:center;
     }
 
-    #four{
-        padding-left:0.2em;
-        margin-top:0.3em;
-        margin-bottom:0.3em;
-        font-weight:bolder;
-        display:block;
+    .footerContent .infoBox{
+        font-weight: bold;
     }
 
     #Fright h3{
-        padding-top:1.5em;
+        padding-top:2%;
     }
 
     #fblogo{
@@ -232,8 +238,7 @@ button:active {
         margin: auto;
         height: 4em;
         width: 4.5em;
-        padding-top:2em;
-        padding-left:0.3em;
+        padding-top:2%;
         padding-right:0.5em;
     }
 
@@ -243,12 +248,11 @@ button:active {
         height: 4.3em;
         width: 4.3em;
         padding-top:1em;
-        padding-left:0.3em;
         padding-right:0.5em;
 
     }
 
-
+    /*FOOTER*/
 
     /*CENTER*/
 
@@ -305,10 +309,10 @@ button:active {
 
     .lineupDescription{
         width:100%;
-        height:auto;
-        top:35%;
+        height:inherit;
+        top:40%;
         left:50%;
-        font-size: 100%;
+        font-size: 80%;
         display:block;
         text-align:center;
         font-weight: bold;
@@ -317,7 +321,6 @@ button:active {
         transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
     }
-
 
     .lineupContainer span{
         display:block;
@@ -330,153 +333,117 @@ button:active {
     }
 }
 
-@media screen and (min-width: 320px) and (max-width:572px){
-    .lineupDescription{
-        font-size:70%;
-    }
-}
-
-@media screen and (min-width:920px) and (max-width:1199px){
+@media screen and (min-width:769px) and (max-width:1024px){
     /*HEADER*/
-
     #logo{
-        float:left;
-        height: 9em;
-        width: 12.5em;
-        padding-top: 1%;
-        padding-right:5%;
-        padding-left:1%;
-
+        margin-top:15%;
+        margin-right:auto;
+        margin-left:auto;
+        margin-bottom:1%;
+        height:auto;
+        width:40%;
+        display:block;
     }
+
     #header{
-        padding-bottom: 5em;
-        margin-bottom: 6em; /*era 6em, solo per lavorare 12em*/
+        padding-bottom:1%;
+        margin-bottom: 1%;
     }
 
-    #header ul{
-        list-style-type: none;
-        font-size: 1.2em;
+    #menubutton {
+        display: block;
+        background-color: #ff8b03;
+        padding: 0.2em;
+        cursor: pointer;
+        margin-top: 0.8em;
+        margin-right: 1em;
+        margin-left: 1em;
+        border:2px solid;
+        border-radius: 0.3em;
+        width: 3.5em;
     }
 
-
-    #header li{
-        float: left;
-        padding:1% 2% 1% 5%;
-        margin-top:2em;
+    .bar{
+        height:0.3em;
+        background-color:#333;
+        margin:0.24em;
+        display:block;
     }
 
-    #menubutton{
+    .click{
+        top:0;
+        position:fixed;
+        background-color: #ffaa2d;
+        z-index:100;
+        width: 100%;
+        height: 4em;
+    }
+
+    #click-content{
         display: none;
+        border:1px solid #ff9b17;
+        border-radius:10px;
+        background-color: #ffb612;
+        width: 45%;
+        height: auto;
+        margin-left:23%;
+        margin-top:4%;
+        margin-bottom:15%;
+        padding-left:3%;
+        padding-right:3%;
+
     }
 
+    #click-content ul{
+        background-color: #ffb612;
+        margin:auto;
+        padding: 0.5em 0;
+    }
+
+    #click-content li{
+        background-color: #ffb612;
+        width: 100%;
+        font-size: 1.3em;
+        display: block;
+        text-align: center;
+        padding: 0.3em;
+    }
+
+    #click-content a{
+        background-color: #ffb612;
+    }
 
     #breadcrumb{
-        margin-top:1em;
-        padding:0.7em 0.9em 0.7em 0.9em;
+        width:100%;
+        margin-top:5%;
+        padding-top:0.7em;
+        padding-bottom:0.7em;
         border-style: solid;
         border-width: 0.063em;
+        background-color: #ffbd0f;
+    }
+
+    #breadcrumb span{
+        background-color: #ffbd0f;
     }
 
     #breadcrumb p{
-        text-align:left;
-        font-weight:bold;
-    }
-
-    /*CENTER*/
-
-    #lineupTitolo h1{
-        margin-top:5%;
-        margin-bottom:1%;
-        margin-left:2%;
-        margin-right:20%;
-    }
-
-    #lineupCenter{
-        width:100%;
-        margin-top:3%;
-        margin-bottom:70%;
-    }
-
-    #lineupCenter h2{
-        margin-top:5%;
-        margin-bottom:1%;
-        margin-left:2%;
-        margin-right:20%;
-    }
-
-    #lineupCenter #day2{
-        margin-top:95%;
-    }
-
-    #lineupCenter #day3{
-        margin: 100% 30% 2% 1.5%;
-    }
-
-
-    .lineupContainer{
-        width: 40%;
-        margin-left:5%;
-        margin-right:5%;
-        float:left;
-        display: block;
-        position:relative;
-    }
-
-    .lineupContainer span{
-        display:block;
-        margin-left:5%;
-        margin-right:5%;
-        margin-bottom:5%;
-        font-size:1.3em;
-        font-weight: bold;
-    }
-
-    .lineupOverlay {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        height: auto;
-        width: 100%;
-        opacity: 0;
-        transition: .5s ease-in;
-        background-color: #ff9b17;
-        border:1px solid #ff9b17;
-        border-radius: 3px;
-    }
-
-    .lineupContainer:hover .lineupOverlay {
-        opacity: 0.9;
-    }
-
-    .lineupDescription{
-        width:100%;
-        height:auto;
-        top:35%;
-        left:50%;
-        font-size: 100%;
-        display:block;
         text-align:center;
-        font-weight: bold;
-        background-color: #ff9b17;
-        position: absolute;
-        transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
+        font-weight:bold;
+        background-color: #ffbd0f;
     }
 
-
-
+    /*HEADER*/
 
     /*FOOTER*/
 
     #footer{
-        margin-bottom:10%;
-        padding-top:20%;
+        margin-top:95%;
         text-align:center;
     }
 
     #Fleft h3{
+        text-align:center;
         padding-top:5%;
     }
     #Fleft ul{
@@ -505,47 +472,43 @@ button:active {
     }
 
     #Fcenter{
-        margin-bottom:7em;
         margin-left:auto;
         margin-right:auto;
         width: 12em;
-        height: 6em;
-        border-style: none;
+        height: auto;
     }
 
     #Fcenter img{
-        height: 6.5em;
-        width: 8.5em;
-        margin-bottom: 1em;
+        height: auto;
+        width:100%;
+    }
 
+    .FimageContainer{
+        margin-left:23%;
+        width: 54%;
     }
 
     #Fcenter h3{
         font-size:1.3em;
     }
 
-    #content{
-        margin-bottom:0.5em;
+    .footerContent{
+        margin-top:1%;
+        width:100%;
     }
 
-    #zero{
-        padding-left:0.2em;
-        margin-bottom:0.3em;
-        font-weight:bolder;
-        display:block;
+    .footerContent p{
+        padding-top:1%;
+        font-size:120%;
+        text-align:center;
     }
 
-    #four{
-        padding-left:0.2em;
-        margin-top:0.3em;
-        margin-bottom:0.3em;
-        font-weight:bolder;
-        display:block;
+    .footerContent .infoBox{
+        font-weight: bold;
     }
-
 
     #Fright h3{
-        padding-top:1.5em;
+        padding-top:2%;
     }
 
     #fblogo{
@@ -553,7 +516,7 @@ button:active {
         margin: auto;
         height: 4em;
         width: 4.5em;
-        padding-top:2em;
+        padding-top:2%;
         padding-right:0.5em;
     }
 
@@ -567,24 +530,111 @@ button:active {
 
     }
 
+    /*FOOTER*/
+
+    /*CENTER*/
+
+        #lineupTitolo h1{
+            margin-top:5%;
+            margin-bottom:1%;
+            margin-left:2%;
+            margin-right:20%;
+        }
+
+        #lineupCenter{
+            width:100%;
+            margin-top:3%;
+            margin-bottom:70%;
+        }
+
+        #lineupCenter h2{
+            margin-top:5%;
+            margin-bottom:1%;
+            margin-left:2%;
+            margin-right:20%;
+        }
+
+        #lineupCenter #day2{
+            margin-top:95%;
+        }
+
+        #lineupCenter #day3{
+            margin: 100% 30% 2% 1.5%;
+        }
+
+
+        .lineupContainer{
+            width: 40%;
+            margin-left:5%;
+            margin-right:5%;
+            float:left;
+            display: block;
+            position:relative;
+        }
+
+        .lineupContainer span{
+            display:block;
+            margin-left:5%;
+            margin-right:5%;
+            margin-bottom:5%;
+            font-size:1.3em;
+            font-weight: bold;
+        }
+
+        .lineupOverlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: auto;
+            width: 100%;
+            opacity: 0;
+            transition: .5s ease-in;
+            background-color: #ff9b17;
+            border:1px solid #ff9b17;
+            border-radius: 3px;
+        }
+
+        .lineupContainer:hover .lineupOverlay {
+            opacity: 0.9;
+        }
+
+        .lineupDescription{
+            width:100%;
+            height:auto;
+            top:45%;
+            left:50%;
+            font-size: 90%;
+            display:block;
+            text-align:center;
+            font-weight: bold;
+            background-color: #ff9b17;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+        }
+
+    /*CENTER*/
+
 }
 
-@media screen and (min-width:1200px) and (max-width: 1700px) {
+@media screen and (min-width:1025px){
 
     /*HEADER*/
 
-    #logo{
-        float:left;
-        height: 9em;
-        width: 12.5em;
-        padding-top: 1%;
-        padding-right:5%;
-        padding-left:1%;
 
-    }
     #header{
         padding-bottom: 5em;
         margin-bottom: 6em; /*era 6em, solo per lavorare 12em*/
+    }
+
+    #logo{
+        float:left;
+        height: auto;
+        width:18%;
+        padding-top:1%;
+        margin-right:6%;
     }
 
     #header ul{
@@ -592,133 +642,53 @@ button:active {
         font-size: 1.2em;
     }
 
-
     #header li{
-        float: left;
-        padding:1% 4% 1% 5%;
-        margin-top:2em;
+        display:inline-block;
+        text-align: center;
+        margin-top:8%;
+        margin-right:1%;
+        width:10%;
+
     }
 
     #menubutton{
         display: none;
     }
 
-
     #breadcrumb{
         margin-top:1em;
         padding:0.7em 0.9em 0.7em 0.9em;
         border-style: solid;
         border-width: 0.063em;
+        background-color: #ffbd0f;
+    }
+
+    #breadcrumb span{
+        background-color: #ffbd0f;
     }
 
     #breadcrumb p{
         text-align:left;
         font-weight:bold;
+        background-color: #ffbd0f;
     }
 
-    /*CENTER*/
-
-    #lineupTitolo h1{
-        margin-top:5%;
-        margin-bottom:1%;
-        margin-left:2%;
-        margin-right:20%;
-    }
-
-    #lineupCenter{
-        width:100%;
-        margin-top:3%;
-        margin-bottom:70%;
-    }
-
-    #lineupCenter h2{
-        margin-top:5%;
-        margin-bottom:1%;
-        margin-left:2%;
-        margin-right:20%;
-    }
-
-    #lineupCenter #day2{
-        margin-top:90%;
-    }
-
-    #lineupCenter #day3{
-        margin: 97% 20% 2% 1.5%;
-    }
-
-
-    .lineupContainer{
-        width: 40%;
-        margin-left:5%;
-        margin-right:5%;
-        float:left;
-        position:relative;
-    }
-
-    .wrapper{
-        position:relative;
-    }
-
-
-    .lineupContainer span{
-        display:block;
-        margin-top:1%;
-        margin-left:5%;
-        margin-right:5%;
-        margin-bottom:5%;
-        font-size:1.3em;
-        font-weight: bold;
-    }
-
-
-    .lineupOverlay {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        height: auto;
-        width: 100%;
-        opacity: 0;
-        transition: .5s ease-in;
-        background-color: #ff9b17;
-        border:1px solid #ff9b17;
-        border-radius: 3px;
-    }
-
-    .lineupContainer:hover .lineupOverlay {
-        opacity: 0.9;
-    }
-
-    .lineupDescription{
-        width:100%;
-        font-size: 100%;
-        height:auto;
-        display:block;
-        top:30%;
-        left:50%;
-        text-align:center;
-        font-weight: bold;
-        background-color: #ff9b17;
-        position: absolute;
-        transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-    }
-
+    /*HEADER*/
 
     /*FOOTER*/
 
     #footer{
-        margin-bottom:28%;
-        padding: 30em 3em 3em 3em;
+        margin-top:77%;
+        margin-bottom:15%;
+        padding: 1em 3em 3em 3em;
     }
 
     #Fleft{
-        margin-right: 8%;
-        margin-bottom: 9em;
-        border-style: none;
+        width: 27%;
+        height: 6.25em;
         float:left;
     }
+
     #Fleft h3{
         font-size:1.3em;
     }
@@ -728,6 +698,7 @@ button:active {
         margin-top:0.6em;
         margin-bottom: 3em;
     }
+
     #Fleft li{
         margin-top:0.625em;
         padding-bottom:0.3em;
@@ -749,10 +720,9 @@ button:active {
     }
 
     #Fcenter{
-        margin-bottom:9em;
-        margin-left:17%;
+        margin-left:15%;
         margin-right:10%;
-        border-style: none;
+        width: 23%;
         float:left;
     }
 
@@ -761,79 +731,43 @@ button:active {
     }
 
     #Fcenter img{
-        height: 6.5em;
-        width: 8.5em;
+        height: auto;
+        width:100%;
     }
 
-    .content{
-        margin-top:2em;
+    .FimageContainer{
+        margin-left:23%;
+        width: 54%;
     }
 
-    .content span{
+    .footerContent{
+        margin-top:1%;
+        width:100%;
+    }
+
+    .footerContent p{
         padding-top:0.2em;
         font-size:1.3em;
+        text-align:center;
     }
 
-    #zero{
-        padding-left:0.8em;
-        font-weight:bolder;
-        display:block;
+    .footerContent .infoBox{
+        font-weight: bold;
     }
-
-
-    #one{
-        margin-right:1em;
-        display:block;
-    }
-    #two{
-        padding-left:2.1em;
-        display:block;
-    }
-    #three{
-        padding-left:2em;
-        display:block;
-    }
-
-    #four{
-        margin-top:0.4em;
-        padding-left:1.7em;
-        font-weight: bolder;
-        display:block;
-    }
-
-    #five{
-        padding-left:1.2em;
-    }
-
-    #six{
-        display:block;
-        padding-left:1.25em;
-    }
-
-    #seven{
-        display:block;
-        padding-left:2.5em;
-    }
-
 
     #Fright{
-        margin-bottom:9em;
-        margin-right:2em;
-        border-style: none;
         float:right;
-    }
-
-    #Fright h3{
+        margin-right:8%;
+        width: 2%;
+        height: 6.25em;
         font-size:1.3em;
-        padding-left: 1.3em;
     }
-
 
     #fblogo{
         height: 4em;
         width: 4.5em;
         padding-top:1em;
-        padding-left:2em;
+        padding-left:0.3em;
         padding-right:0.5em;
     }
 
@@ -841,11 +775,101 @@ button:active {
         height: 4.3em;
         width: 4.3em;
         padding-top:1em;
-        padding-left:2em;
+        padding-left:0.3em;
         padding-right:0.5em;
         display:block;
     }
 
+    /*FOOTER*/
+
+    /*CENTER*/
+
+        #lineupTitolo h1{
+            margin-top:5%;
+            margin-bottom:1%;
+            margin-left:2%;
+            margin-right:20%;
+        }
+
+        #lineupCenter{
+            width:100%;
+            margin-top:3%;
+            margin-bottom:70%;
+        }
+
+        #lineupCenter h2{
+            margin-top:5%;
+            margin-bottom:1%;
+            margin-left:2%;
+            margin-right:20%;
+        }
+
+        #lineupCenter #day2{
+            margin-top:90%;
+        }
+
+        #lineupCenter #day3{
+            margin: 97% 20% 2% 1.5%;
+        }
+
+
+        .lineupContainer{
+            width: 40%;
+            margin-left:5%;
+            margin-right:5%;
+            float:left;
+            position:relative;
+        }
+
+        .wrapper{
+            position:relative;
+        }
+
+
+        .lineupContainer span{
+            display:block;
+            margin-top:1%;
+            margin-left:5%;
+            margin-right:5%;
+            margin-bottom:5%;
+            font-size:1.3em;
+            font-weight: bold;
+        }
+
+
+        .lineupOverlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: auto;
+            width: 100%;
+            opacity: 0;
+            transition: .5s ease-in;
+            background-color: #ff9b17;
+            border:1px solid #ff9b17;
+            border-radius: 3px;
+        }
+
+        .lineupContainer:hover .lineupOverlay {
+            opacity: 0.9;
+        }
+
+        .lineupDescription{
+            width:100%;
+            font-size: 100%;
+            height:auto;
+            display:block;
+            top:30%;
+            left:50%;
+            text-align:center;
+            font-weight: bold;
+            background-color: #ff9b17;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+        }
 }
 
 
