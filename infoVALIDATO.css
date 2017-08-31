@@ -425,7 +425,7 @@ html, *{
     #border {
         display: block;
         width:100%;
-        border-bottom: 1px solid black;
+        border-bottom: 4px solid #ffaa2d;
     }
 
 
@@ -456,7 +456,7 @@ html, *{
 
     .article p {
         padding:1% 1% 1% 1%;
-        border: 1px solid black ;
+        border: 4px solid #ffaa2d;
     }
 
     #contatti {
@@ -525,7 +525,7 @@ html, *{
         padding-top:1%;
         padding-bottom:1%;
         padding-left:10%;
-        border:1px solid black;
+        border: 4px solid #ffaa2d;
     }
 
     #fill p {
