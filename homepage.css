@@ -101,11 +101,19 @@ button:active {
     opacity: 0.9;
 }
 
+#homeButtonContainer .prev{
+    margin-right:20%;
+}
 
+#homeTitleBox h1{
+    font-size:250%
+}
 
+.homeMore a{
+    margin-left:25%;
+}
 
-
-@media screen and (min-width:320px) and (max-width:919px){
+@media screen and (min-width:320px) and (max-width:768px){
 
     /*HEADER*/
 
@@ -115,7 +123,7 @@ button:active {
         margin-left:auto;
         margin-bottom:1%;
         height:auto;
-        width:30%;
+        width:40%;
         display:block;
     }
 
@@ -148,7 +156,6 @@ button:active {
         top:0;
         position:fixed;
         background-color: #ffaa2d;
-        z-index: 100;
         width: 100%;
         height: 4em;
     }
@@ -160,11 +167,11 @@ button:active {
         background-color: #ffb612;
         width: 45%;
         height: auto;
-        margin-left:20%;
-        margin-top:8%;
+        margin-left:23%;
+        margin-top:4%;
         margin-bottom:15%;
-        padding-left:5%;
-        padding-right:5%;
+        padding-left:3%;
+        padding-right:3%;
 
     }
 
@@ -214,9 +221,10 @@ button:active {
         margin-bottom:10%;
     }
 
-    #homeTopcenter h2{
-        margin-left:42%;
-        font-size: 200%;
+    #homeTitleBox{
+        width:50%;
+        text-align:center;
+        margin-left:23%;
     }
 
     .homeContainer{
@@ -225,9 +233,10 @@ button:active {
         position:relative;
     }
 
-    .prev{
-        margin-left:26%;
-        margin-right:20%;
+    #homeButtonContainer{
+        width:80%;
+        margin-left:10%;
+        text-align: center;
     }
 
 
@@ -245,7 +254,7 @@ button:active {
         border-radius: 3px;
         background-color: #ffbd0f;
         margin-left:12%;
-        margin-bottom:25%;
+        margin-bottom:10%;
         padding-bottom:10%;
 
     }
@@ -254,7 +263,7 @@ button:active {
         background-color: #ffbd0f;
     }
 
-    .homeContent h3{
+    .homeContent h2{
         font-family: 'IntroRustG-Base';
         color: #ff6f00;
         font-size: 150%;
@@ -272,10 +281,10 @@ button:active {
     }
 
     .homeMore{
-        margin-top:15%;
-        margin-left:25%;
+        text-align: center;
+        margin-top:10%;
+        width:75%;
         background-color: #ffbd0f;
-
     }
 
     .homeMore a{
@@ -393,11 +402,8 @@ button:active {
     }
 }
 
-@media screen and (min-width:320px) and (max-width: 586px){
 
-}
-
-@media screen and (min-width:920px) and (max-width:1199px){
+@media screen and (min-width:769px) and (max-width:1024px){
     /*HEADER*/
 
     #logo{
@@ -640,7 +646,7 @@ button:active {
 
 }
 
-@media screen and (min-width:1200px) and (max-width: 1700px) {
+@media screen and (min-width:1024px) {
 
     /*HEADER*/
 
