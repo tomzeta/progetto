@@ -1,8 +1,8 @@
 <?php
 $servername = "localhost";
 $dbUser = "root";
-$dbPassword = "mangrovia";
-$targetdb = "tecweb";
+$dbPassword = " ";
+$targetdb = "asap festival";
 
 //creazione connessione
 $conn = new mysqli($servername, $dbUser, $dbPassword);

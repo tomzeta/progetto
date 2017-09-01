@@ -6,7 +6,7 @@
         header("Location: welcome.php");
         exit;
     }
-    include_once "dBconnect.php";
+    include_once "db.php";
     
     //funzione per formattare l'input
     function test_input($data) {
