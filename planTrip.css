@@ -1,12 +1,13 @@
 ﻿/* TRIP CSS*/
 
 /*Comune a due pagine*/
-img {
+    img {
     max-width: 500px;
 }
 
 /*Comune a due pagine*/
-.mainBody {
+
+    .mainBody {
     margin-top: 0;
     margin-bottom: 2em;
     padding: 0;
@@ -15,14 +16,14 @@ img {
     width: 100%;
 }
 
-#Ptrip .textBlock {
+    #Ptrip .textBlock {
     display: inline-block;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 2em;
 }
 
-#topTitle h1 {
+    #topTitle h1 {
     font-size: 4em;
     padding: 0;
     width: 100%;
@@ -32,9 +33,11 @@ img {
     margin-bottom: 1em;
     text-align: center;
     margin-top: 0;
+    text-transform: uppercase;
+    letter-spacing: 3px;
 }
 
-#Ptrip .paragraph {
+    #Ptrip .paragraph {
     clear: both;
     display: inline-block;
     padding-top: 2em;
@@ -47,49 +50,119 @@ img {
     text-align: center;
     margin-top: 1em;
     margin-bottom: 1em;
-    border: 1vw solid #ffaa2d;
+    border: 2px solid #ffaa2d;
+    border-radius: 4px;
 }
 
     #Ptrip .paragraph h2 {
         font-size: 2em;
         margin-bottom: 0.5em;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        text-align: center;
     }
 
     #Ptrip .paragraph h3 {
         font-size: 1.5em;
-        margin-top: 0.4em;
-        margin-bottom: 0.3em;
+        margin-top: 1.5em;
+        margin-bottom: 1.2em;
+        text-transform: uppercase;
+        letter-spacing: 1px;
     }
 
     #Ptrip .paragraph p {
-        font-size: 1em;
-        margin-bottom: 0.5em;
-        margin-left: auto;
-        margin-right: auto;
+        font-size: 1.2em;
+        color: black;
+        text-align:center;
+        letter-spacing: 1px;
+    }
+
+    #Ptrip .paragraph a{
+        font-size: 24px;
+        color: black;
+    }
+
+    #Ptrip #helpDesk{
+        font-style: italic;
+    }
+
+    #Ptrip .paragraph h4{
+        font-size: 1.5em;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        text-align: center;
+        margin-bottom: 2%;
+    }
+
+    #Ptrip .paragraph h5{
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-top:3%;
+    margin-bottom: 1%;
+}
+
+    #Ptrip #voyageList li{
+        margin-top:0.3em;
+        margin-left:3%;
+        text-align: left;
+        list-style:square;
+        font-size:1.2em;
+
     }
 
     #Ptrip .paragraph img {
+        width:98%;
+        height:auto;
+        margin-top:3%;
         max-width: 500px;
-        width: 50%;
-        float: right;
         display: inline-block;
-        border: 1vw solid #ffaa2d;
-        margin-left: 25%;
-        margin-right: 25%;
+        border: 2px solid #ffaa2d;
+        border-radius:4px ;
+        -moz-transition: all 0.3s;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
     }
 
-#Ptrip .imageWrapper:hover {
-    opacity: 0.4;
-    filter: alpha(opacity= 0.40);
-    zoom: 1;
+    #Ptrip .overlay{
+        height: auto;
+        width: 100%;
+    }
+
+    #Ptrip .overlay:hover img {
+        transform:scale(1.1);
+        -moz-transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+    }
+
+    .mainBody h1 {
+        text-align: center;
+        margin: auto;
 }
 
-.mainBody h1 {
-    text-align: center;
-    margin: auto;
+    #Ptrip #fbgroup{
+        height:auto;
+        margin-top:2%;
+        width:15%;
+        min-width:100px;
+        border:none;
+    }
+
+    #Ptrip #infoBox a{
+        padding: 15px 25px 15px 25px;
+        background-color: #ff9b17;
+        color: #fff;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 1.2em;
+        letter-spacing: 2px;
+        border: 3px solid #ff8713;
+    }
+
+    #Ptrip #infoBox a:hover{
+    background-color: #ff5b19;
 }
-
-
 
 /*END trip css*/
 
@@ -97,13 +170,13 @@ img {
 
 
 /*Tickets CSS*/
-#lineUpBody {
+    #lineUpBody {
     display: inline-block;
     width: 100%;
     margin-bottom: 3em;
 }
 
-.lineUpSumUp {
+    .lineUpSumUp {
     float: left;
     text-align: center;
     width: 27%;
@@ -118,7 +191,7 @@ img {
 
     }
 
-.purButton {
+    .purButton {
     margin-bottom: 2em;
     margin-top: 2em;
     font-size: 1em;
@@ -128,52 +201,54 @@ img {
     border: 0px solid;
 }
 
-    
-
-.artists {
+    .artists {
     font-weight: bold;
     font-size: 1.5em;
 }
 
+    #Prezzi {
 
-#Prezzi {
-    
-    margin-left: 5%;
-    margin-right: 10%;
-    margin-top: 3em;
-    margin-bottom: 2em;
-    padding: 0;
-}
+        margin-left: 5%;
+        margin-right: 10%;
+        margin-top: 3em;
+        margin-bottom: 2em;
+        padding: 0;
+    }
 
     #Prezzi h2 {
-        font-size: 3em;
-        margin-bottom: 1em;
-    }
-.purTicket {
-    font-size: 2em;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    width: 100%;
-    overflow: hidden;
-    display: inline-block;
-}
-    .purTicket input {
-        margin: 0;
-        float: right;
-    }
-.ticketDay {
-    display: inline-block;
-    width: 50%;
-    }
-.ticketPrice {
-   display: inline-block;
-   margin: 0;
-   width: 30%;
-}
+            font-size: 3em;
+            margin-bottom: 1em;
+        }
 
-.strongText {
-    font-weight: bold;
-}
+    .purTicket {
+        font-size: 2em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        width: 100%;
+        overflow: hidden;
+        display: inline-block;
+    }
+
+    .purTicket input {
+            margin: 0;
+            float: right;
+        }
+
+    .ticketDay {
+        display: inline-block;
+        width: 50%;
+        }
+
+    .ticketPrice {
+       display: inline-block;
+       margin: 0;
+       width: 30%;
+    }
+
+    .strongText {
+        font-weight: bold;
+    }
+
 /*TABLET layout*/
 @media screen and (min-width:768px) and (max-width:1024px) {
     
@@ -210,6 +285,13 @@ img {
         width: 100%;
         margin-bottom: 0.5em;
     }
+
+    #footerTrip{
+        margin-top:5%;
+        text-align:center;
+    }
+
+
 }
 
 /*PHONE layout*/
@@ -221,23 +303,19 @@ img {
     }
 
 
-    .paragraph img {
-        max-width: 300px;
-        display: inline-block;
-        width: 50%;
-        margin-left: auto;
-        margin-right: 25%;
-    }
 
     .paragraph {
         margin-left: 0;
         margin-right: 0;
         padding-left: 10%;
         padding-right: 10%;
-        border-left: 0px solid;
-        border-right: 0px solid;
         width: 80%;
-        border-width: 0.2vw;
+        border-width: 1px;
+    }
+
+    #footerTrip{
+        margin-top:5%;
+        text-align:center;
     }
 
     /*TICKETS*/
@@ -284,6 +362,7 @@ img {
         margin-bottom: 0.5em;
     }
 }
+
 
 
 /*END tickets CSS*/

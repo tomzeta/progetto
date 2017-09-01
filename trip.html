@@ -1,33 +1,49 @@
-﻿﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
 <head>
     <meta charset="utf-8" />
     <title id="title">ASAP-FESTIVAL</title>
     <meta name="title" content="As Soon As Possible-Festival" />
     <meta name="description" content="Sito festival musicale" />
+    <meta name="keywords" content="asap, festival, biglietti, lineup, info"/>
+    <meta name=viewport content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="homepage.css" />
     <link rel="stylesheet" type="text/css" href="planTrip.css" />
 </head>
 <body id="Ptrip">
     <div id="header">
-        <img src="images/asapdef.png" id="logo" alt="ASAP festival logo" />
-        <div class="dropdown">
-            <button id="menubutton">
+        <img src="images/asapdef.png" id="logo" alt="ASAP festival logo"/>
+        <div class="click">
+            <button class="button" id="menubutton" onclick="showmenu()">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
             </button>
-            <div class="dropdown-content">
+            <div id="click-content">
                 <ul>
-                    <li><a href="homepage.html">HOME</a></li>
-                    <li><a href="#lineup">LINE-UP</a></li>
+                    <li><a href="homepage.html">HOMEPAGE</a></li>
+                    <li><a href="line-up.html">LINE-UP</a></li>
                     <li><a href="tickets.html">TICKETS</a></li>
-                    <li><a href="#news">NEWS</a></li>
-                    <li><a href="#info">INFO</a></li>
+                    <li><a href="news.html">NEWS</a></li>
+                    <li><a href="trip.html">TRIP</a></li>
+                    <li><a href="info.html">INFO</a></li>
                 </ul>
             </div>
         </div>
     </div>
+
+    <script type="text/javascript">
+        function showmenu() {
+            var div = document.getElementById('click-content');
+            if (div.style.display !== 'none') {
+                div.style.display = 'none';
+            }
+            else {
+                div.style.display = 'block';
+            }
+        }
+    </script>
+
     <div id="breadcrumb">
         <p>Ti trovi in: <span xml:lang="eng">Trip planning</span></p>
     </div>
@@ -38,26 +54,74 @@
         <div class="paragraph">
             <div class="textBlock">
                 <h2>Indirizzo</h2>
-                <p>Via dei Sassi 128 - Napoli (Italia)</p>
+                <p>Viale Nereo Rocco, 60, 35136 Padova PD</p>
             </div>
             <div class="imageWrapper">
-                <img src="images/mapPlaceholder.png" alt="Mappa indirizzo" />
+                <div class="overlay">
+                    <img src="images/map.png" alt="mappa evento"/>
+                </div>
+
             </div>
         </div>
+
+
 
         <div class="paragraph">
             <div class="textBlock">
                 <h2>Come Arrivare...</h2>
 
-                <h3>...in Auto</h3>
-                <p>Prendi l'auto, l'accendi e guidi fino a qua</p>
+                <p>
+                    I viaggi organizzati per l'edizione 2017 di ASAP Music Festival -
+                    *cittàdadecidere* sono in vendita! Iscriviti alla nostra Newsletter
+                    e seguici su</p> <a hrerf="#fb">Facebook</a>
+                <p>
+                    per rimanere aggiornato.
+                    Seguici anche su Telegram per aggiornamenti veloci!
+                </p>
 
-                <h3>...con i mezzi pubblici</h3>
-                <p>C'è la possibilità di arrivare attraverso un bus navetta che parte ogni ora dalla stazione di Napoli</p>
+                <h3>VIAGGI ORGANIZZATI IN PULLMAN 2017</h3>
 
-                <h3>Parcheggio</h3>
-                <p>Il parcheggio si trova a pochi metri dall'entrata. Ricordiamo che sarà necessario il pagamento di 10€</p>
+                <p>La Dongiovanni Viaggi Sas organizza viaggi per eventi dal 2004.
+                    Il viaggio in bus è il modo più comodo, ecologico ed economico per raggiungere ASAP.
+                    Tutti i nostri bus sono dotati di area condizionata, e sono accompagnati da un responsabile di viaggio.
+                    Sono previste partenze da molte cittá italiane.
+                </p>
+
+                <h3>Helpdesk viaggi:</h3>
+                <p id="helpDesk"> viaggi@asapfestival.it / +39.345 4626273 - da lunedì a venerdì, 10:30 - 13:30</p>
+
             </div>
+        </div>
+        <div class="paragraph">
+            <div class="textBlock">
+                <h4>viaggiando con noi:</h4>
+                <ul id="voyageList">
+                    <li>arriverai direttamente sul posto, all'interno di ASAP Festival - *città* </li>
+                    <li>potrai portarti una valigia,  più la tenda e più uno zainetto/borsa a mano senza costi ulteriori</li>
+                    <li>ti diveterai già durante il viaggio: il festival iniza nel pullman!</li>
+                    <li>Attenzione, per l'edizione 2017 il viaggio è programmato per arrivare il giorno prima dell'inizio del festival (accesso 14 luglio) </li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="paragraph">
+            <div class="textBlock">
+                <h4>viaggiando in macchina</h4>
+                <p>
+                    Padova dista solo 245 km da Milano e 488 km da Roma ed entrambe le città sono collegate a Padova da autostrade.
+                    Percorrendo A4 da Milano ed E35 da Roma si raggiunge l'Area del festival, situata presso lo stadio Euganeo, rispettivamente
+                    in 3 e 5 ore, toccando nel tragitto molte città secondarie, se hai posti liberi in macchina condividili per un viaggio più ecologico ed economico!
+                    Puoi cercare o offrire passaggio sul nostro gruppo Facebook dedicato.
+                </p>
+
+                <h5>consulta il gruppo!</h5>
+
+            </div>
+
+            <a href="#facebook">
+                <img id="fbgroup" src="images/fblogo.png" alt="Facebook logo"/>
+            </a>
+
         </div>
         <div class="paragraph">
             <div class="textBlock">
@@ -66,9 +130,19 @@
                 <p>Per ulteriori informazioni chiama il +39 046 754 333. Oppure scrivi a contatti@bnbbruno.it</p>
             </div>
             <div class="imageWrapper">
-                <img src="images/bedandbreakfast.jpg" alt="Foto appartamento Bruno" />
+                <div class="overlay">
+                    <img src="images/bedandbreakfast.jpg" alt="Foto appartamento Bruno" />
+                </div>
             </div>
-            
+        </div>
+        <div class="paragraph">
+            <div class="textBlock">
+                <h2>Qualche dubbio?</h2>
+                <h3>contattaci!</h3>
+                <div id="infoBox">
+                    <a href="info.html">INFO</a>
+                </div>
+            </div>
         </div>
 
     </div>
@@ -85,28 +159,33 @@
             </ul>
         </div>
         <div id="Fcenter">
-            <a href="homepage.html">
-                <img src="images/asapdef.png" alt="ASAP festival logo" />
-            </a>
-            <div id="content">
-                <span id="zero">QUANDO</span>
-                <span id="one">DAL 15 AL 18</span>
-                <span id="two">LUG</span>
-                <span id="three">2017</span>
-                <span id="four">DOVE</span>
-                <span id="five">POMPEI</span>
-                <span id="six">NAPOLI</span>
-                <span id="seven">IT</span>
+
+            <div class="FimageContainer">
+                <a href="homepage.html">
+                    <img src="images/asapdef.png" alt="ASAP festival logo"/>
+                </a>
+            </div>
+
+            <div class="footerContent">
+                <p class="infoBox">QUANDO</p>
+                <p>DAL 15 AL 18</p>
+                <p>LUGLIO</p>
+                <p>2017</p>
+                <p class="infoBox">DOVE</p>
+                <p>POMPEI</p>
+                <p>NAPOLI</p>
+                <p>IT</p>
             </div>
         </div>
         <div id="Fright">
             <h3>SOCIAL</h3>
             <a href="#facebook">
-                <img id="fblogo" src="images/fblogo.png" alt="Facebook logo" />
+                <img id="fblogo" src="images/fblogo.png" alt="Facebook logo"/>
             </a>
             <a href="#instagram">
-                <img id="instalogo" src="images/instalogo.png" alt="Instagram logo" />
+                <img id="instalogo" src="images/instalogo.png" alt="Instagram logo"/>
             </a>
+
         </div>
     </div>
 </body>
