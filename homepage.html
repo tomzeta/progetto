@@ -19,11 +19,11 @@
         <div id="header">
                 <img src="images/asapdef.png" id="logo" alt="ASAP festival logo"/>
                 <div class="click">
-                    <button class="button" id="menubutton" onclick="showmenu()">
+                    <div class="button" id="menubutton" onclick="showmenu()">
                         <span class="bar"></span>
                         <span class="bar"></span>
                         <span class="bar"></span>
-                    </button>
+                    </div>
                     <div id="click-content">
                         <ul>
                             <li><a href="homepage.html">HOMEPAGE</a></li>
@@ -174,8 +174,8 @@
             </div>
 
             <div id="homeButtonContainer">
-                <button class="prev" onclick="plusDivs(-1)">previous</button>
-                <button class="next" onclick="plusDivs(+1)">next</button>
+                <input type="button" class="sliderButton" id="prev" onclick="plusDivs(-1)" value="previous">
+                <input type="button" class="sliderButton" id="next" onclick="plusDivs(+1)" value="next">
             </div>
 
 
