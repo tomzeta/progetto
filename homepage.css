@@ -91,6 +91,7 @@
         width:100%;
         height:auto;
         display:block;
+        overflow:hidden;
     }
 
     .homeContainer:hover .homeCaption{
@@ -112,6 +113,7 @@
     .homeMore a{
         margin-left:25%;
     }
+
 
 /*COMMON*/
 
