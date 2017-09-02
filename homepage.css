@@ -22,7 +22,7 @@
         color:orangered;
     }
 
-    .sliderButton input {
+    #homeButtonContainer input {
         background-color:#ffec64;
         border-radius:6px;
         border:1px solid #ff9900;
@@ -35,10 +35,10 @@
         padding:6px 24px;
     }
 
-    .sliderButton input:hover {
+    #homeButtonContainer input:hover {
         background-color:#ff9b17;
     }
-    .sliderButton input:active {
+    #homeButtonContainer input:active {
         position:relative;
     }
 
