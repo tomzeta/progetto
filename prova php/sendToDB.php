@@ -2,8 +2,24 @@
     require 'dBconnect.php';
     $conn = Connect();
 
+    function formatta_stringa($stringa) {
+        //sostituisco i caratteri speciali in entità html
+        $stringa = htmlentities($stringa);
+        $stringa = str_replace("'","&apos;", $stringa);
+        //permetto l'utilizzo dei tag
+        // <strong>
+        $stringa = str_replace("&lt;strong&gt;","<strong>", $stringa);
+        $stringa = str_replace("&lt;/strong&gt;","</strong>", $stringa);
+        // e <em>
+        $stringa = str_replace("&lt;em&gt;","<em>", $stringa);
+        $stringa = str_replace("&lt;/em&gt;","</em>", $stringa);
+        return $stringa;
+    }
+
     $titolo = $_POST['title'];
     $testo = $_POST['testo'];
+    $autore;
+    $data;
 
     $query = "INSERT into News(titolo, testo) VALUES('" . $titolo . "','" . $testo . "')";
     $success = $conn->query($query);
