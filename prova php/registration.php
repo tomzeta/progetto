@@ -52,14 +52,14 @@ if (empty($username)) {
     $result = $conn->query($query);
     $count = mysqli_num_rows($result);
     if ($count != 0) {
-        $error = true;
-        $emailErr = "Nome utente già in uso";
+        $errore = true;
+        $usernameErr = "Nome utente già in uso";
     }
 }
 
 //gestione errori per campo $email
 if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-    $error = true;
+    $errore = true;
     $emailErr = "Inserire un indirizzo email valido";
 } else {
     //controlla se email esiste o no
@@ -67,17 +67,17 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
     $result = $conn->query($query);
     $count = mysqli_num_rows($result);
     if ($count != 0) {
-        $error = true;
+        $errore = true;
         $emailErr = "Indirizzo email già in uso";
     }
 }
 
 //gestione errori per campo $password
 if (empty($password)) {
-    $error = true;
+    $errore = true;
     $passwordErr = "Inserire una password";
 } else if (strlen($password) < 6) {
-    $error = true;
+    $errore = true;
     $passwordErr = "Inserire una password di almeno 6 caratteri";
 }
 
