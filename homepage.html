@@ -6,7 +6,8 @@
         <meta name="title" content="As Soon As Possible-Festival" />
         <meta name="description" content="Sito festival musicale" />
         <meta name="keywords" content="asap, festival, biglietti, lineup, info"/>
-        <meta name=viewport content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta http-equiv="Content-Script-Type" content="text/javascript"/>
         <link rel="stylesheet" type="text/css" href="homepage.css" />
         <link rel="shortcut icon" href="images/asapdef.png"/>
     </head>
@@ -14,15 +15,16 @@
     <body>
 
     <!--HEADER-->
+    <script src="menu_button.js" type="text/javascript"></script>
 
         <div id="header">
                 <img src="images/asapdef.png" id="logo" alt="ASAP festival logo"/>
                 <div class="click">
-                    <button class="button" id="menubutton" onclick="showmenu()">
+                    <div class="button" id="menubutton" onclick="showmenu()">
                         <span class="bar"></span>
                         <span class="bar"></span>
                         <span class="bar"></span>
-                    </button>
+                    </div>
                     <div id="click-content">
                         <ul>
                             <li><a href="homepage.html">HOMEPAGE</a></li>
@@ -36,17 +38,7 @@
                 </div>
         </div>
 
-        <script type="text/javascript">
-        function showmenu() {
-            var div = document.getElementById('click-content');
-            if (div.style.display !== 'none') {
-                div.style.display = 'none';
-            }
-            else {
-                div.style.display = 'block';
-            }
-        }
-        </script>
+
 
         <div id="breadcrumb">
             <p>Ti trovi in: <span xml:lang="eng">Homepage</span></p>
@@ -63,109 +55,109 @@
             <div class="slideshow">
 
                 <div class="homeContainer">
-                    <img class="lineupimg" id="first" src="images/liam.png"/>
+                    <img class="lineupimg" id="first" src="images/liam.png" alt="Foto di Liam gallagher"/>
                     <div class="homeOverlay">
                         <span class="homeCaption">LIAM GALLAGHER</span>
                     </div>
                 </div>
                 <div class="homeContainer">
-                    <img class="lineupimg" src="images/jovanotti.png"/>
+                    <img class="lineupimg" src="images/jovanotti.png" alt="Foto di Jovanotti"/>
                     <div class="homeOverlay">
                         <span class="homeCaption">JOVANOTTI</span>
                     </div>
                 </div>
                 <div class="homeContainer">
-                    <img class="lineupimg" src="images/adele.png"/>
+                    <img class="lineupimg" src="images/adele.png" alt="Foto di Adele"/>
                     <div class="homeOverlay">
                         <span class="homeCaption">ADELE</span>
                     </div>
                 </div>
                 <div class="homeContainer">
-                    <img class="lineupimg" src="images/tyler.png"/>
+                    <img class="lineupimg" src="images/tyler.png" alt="Foto di Tyler The Creator"/>
                     <div class="homeOverlay">
                         <span class="homeCaption">TYLER THE CREATOR</span>
                     </div>
                 </div>
                 <div class="homeContainer">
-                    <img class="lineupimg" src="images/boniver.png"/>
+                    <img class="lineupimg" src="images/boniver.png" alt="Foto di Bon Iver"/>
                     <div class="homeOverlay">
                         <span class="homeCaption">BON IVER</span>
                     </div>
                 </div>
                 <div class="homeContainer">
-                    <img class="lineupimg" src="images/steveaoki.png"/>
+                    <img class="lineupimg" src="images/steveaoki.png" alt="Foto di Steve Aoki"/>
                     <div class="homeOverlay">
                         <span class="homeCaption">STEVE AOKI</span>
                     </div>
                 </div>
                 <div class="homeContainer">
-                    <img class="lineupimg" src="images/marrague.png"/>
+                    <img class="lineupimg" src="images/marrague.png" alt="Foto di Marracash e Gue Pequeno"/>
                     <div class="homeOverlay">
                         <span class="homeCaption">MARRACASH E GUE' PEQUENO</span>
                     </div>
                 </div>
                 <div class="homeContainer">
-                    <img class="lineupimg" src="images/demarco.png"/>
+                    <img class="lineupimg" src="images/demarco.png" alt="Foto di Mac deMarco"/>
                     <div class="homeOverlay">
                         <span class="homeCaption">MAC DEMARCO</span>
                     </div>
                 </div>
                 <div class="homeContainer">
-                    <img class="lineupimg" src="images/lamar.png"/>
+                    <img class="lineupimg" src="images/lamar.png" alt="Foto di Kendrick Lamar"/>
                     <div class="homeOverlay">
                         <span class="homeCaption">KENDRICK LAMAR</span>
                     </div>
                 </div>
                 <div class="homeContainer">
-                    <img class="lineupimg" src="images/elio.png"/>
+                    <img class="lineupimg" src="images/elio.png" alt="Foto di Elio e le Storie Tese"/>
                     <div class="homeOverlay">
                         <span class="homeCaption">ELIO E LE STORIE TESE</span>
                     </div>
                 </div>
                 <div class="homeContainer">
-                    <img class="lineupimg" src="images/rihanna.png"/>
+                    <img class="lineupimg" src="images/rihanna.png" alt="Foto di Rihanna"/>
                     <div class="homeOverlay">
                         <span class="homeCaption">RIHANNA</span>
                     </div>
                 </div>
                 <div class="homeContainer">
-                    <img class="lineupimg" src="images/redhot.png"/>
+                    <img class="lineupimg" src="images/redhot.png" alt="Foto di Red Hot Chili Peppers"/>
                     <div class="homeOverlay">
                         <span class="homeCaption">RED HOT CHILI PEPPERS</span>
                     </div>
                 </div>
                 <div class="homeContainer">
-                    <img class="lineupimg" src="images/battiato.png"/>
+                    <img class="lineupimg" src="images/battiato.png" alt="Foto di Franco Battiato"/>
                     <div class="homeOverlay">
                         <span class="homeCaption">FRANCO BATTIATO</span>
                     </div>
                 </div>
                 <div class="homeContainer">
-                    <img class="lineupimg" src="images/legend.png"/>
+                    <img class="lineupimg" src="images/legend.png" alt="Foto di John Legend"/>
                     <div class="homeOverlay">
                         <span class="homeCaption">JOHN LEGEND</span>
                     </div>
                 </div>
                 <div class="homeContainer">
-                    <img class="lineupimg" src="images/budspencer.png"/>
+                    <img class="lineupimg" src="images/budspencer.png" alt="Foto di Bud Spencer Blues Explosion"/>
                     <div class="homeOverlay">
                         <span class="homeCaption">BUD SPENCER BLUES EXPLOSION</span>
                     </div>
                 </div>
                 <div class="homeContainer">
-                    <img class="lineupimg" src="images/garrix.png"/>
+                    <img class="lineupimg" src="images/garrix.png" alt="Foto di Martin Garrix"/>
                     <div class="homeOverlay">
                         <span class="homeCaption">MARTIN GARRIX</span>
                     </div>
                 </div>
                 <div class="homeContainer">
-                    <img class="lineupimg" src="images/stones.png"/>
+                    <img class="lineupimg" src="images/stones.png" alt="Foto di Rolling Stones"/>
                     <div class="homeOverlay">
                         <span class="homeCaption">ROLLING STONES</span>
                     </div>
                 </div>
                 <div class="homeContainer">
-                    <img class="lineupimg" src="images/stromae.png"/>
+                    <img class="lineupimg" src="images/stromae.png" alt="Foto di Stromae"/>
                     <div class="homeOverlay">
                         <span class="homeCaption">STROMAE</span>
                     </div>
@@ -173,38 +165,16 @@
             </div>
 
             <div id="homeButtonContainer">
-                <button class="prev" onclick="plusDivs(-1)">previous</button>
-                <button class="next" onclick="plusDivs(+1)">next</button>
+                <input type="button" id="prev" onclick="plusDivs(-1)" value="previous"/>
+                <input type="button"  id="next" onclick="plusDivs(+1)" value="next"/>
             </div>
 
-
-            <script type="text/javascript">
-                var slideIndex = 1;
-                showDivs(slideIndex);
-
-                function plusDivs(n) {
-                    showDivs(slideIndex += n);
-                }
-
-                function showDivs(n) {
-                    var i;
-                    var x = document.getElementsByClassName("lineupimg");
-                    if (n > x.length) {slideIndex = 1}
-                    if (n < 1) {slideIndex = x.length}
-                    for (i = 0; i < x.length; i++) {
-                        x[i].style.display = "none";
-                    }
-                    x[slideIndex-1].style.display = "block";
-                }
-            </script>
-
-        
         </div>
         
         <div id="homeCenter">
             <div class="homeNewsContainer" id="HC1">
                 <div class="homeContent">
-                    <img class="centerImg" src="images/water.png" alt="immagine news">
+                    <img class="centerImg" src="images/water.png" alt="immagine news"/>
                     <h2>
                         PIU' ACQUA PER TUTTI!
                     </h2>
@@ -221,7 +191,7 @@
             </div>
             <div class="homeNewsContainer" id="HC2">
                 <div class="homeContent">
-                    <img class="centerImg" src="images/willwoosh.png" alt="immagine news">
+                    <img class="centerImg" src="images/willwoosh.png" alt="immagine news"/>
                     <h2>
                         GUGLIELMO SCILLA SI UNISCE AL TEAM
                     </h2>
@@ -233,7 +203,7 @@
                 </div>
 
                 <div class="homeMore">
-                    <a href="#news">APPROFONDISCI</a>
+                    <a href="news.html">APPROFONDISCI</a>
                 </div>
 
             </div>
@@ -284,8 +254,12 @@
 
             </div>
         </div>
-        
+
+    <script src="slider.js" type="text/javascript"></script>
+
     </body>
+
+
 
 </html>
 

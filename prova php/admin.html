@@ -7,9 +7,9 @@
     <body>
         <form name="news_publish" method="post" action="sendToDB.php">
             <h2>Pubblica news</h2>
-            <label>Titolo: </label> <input type="text" name="title" />
-            <label>Testo: </label> <input type="textArea" name="testo" />
-            <button type="submit" name="postNews"> Pubblica News </button>
+            <label>Titolo: </label> <input type="text" name="title" required/>
+            <label>Testo: </label> <input type="text" name="testo" required/>
+            <input type="submit" name="postNews" value="Invia" />
         </form>
     </body>
 </html>

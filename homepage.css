@@ -22,7 +22,7 @@
         color:orangered;
     }
 
-    button {
+    #homeButtonContainer input {
         background-color:#ffec64;
         border-radius:6px;
         border:1px solid #ff9900;
@@ -35,10 +35,10 @@
         padding:6px 24px;
     }
 
-    button:hover {
+    #homeButtonContainer input:hover {
         background-color:#ff9b17;
     }
-    button:active {
+    #homeButtonContainer input:active {
         position:relative;
     }
 
@@ -91,6 +91,7 @@
         width:100%;
         height:auto;
         display:block;
+        overflow:hidden;
     }
 
     .homeContainer:hover .homeCaption{
@@ -101,7 +102,7 @@
         opacity: 0.9;
     }
 
-    #homeButtonContainer .prev{
+    #homeButtonContainer #prev{
         margin-right:20%;
     }
 
@@ -112,6 +113,7 @@
     .homeMore a{
         margin-left:25%;
     }
+
 
 /*COMMON*/
 
@@ -511,7 +513,7 @@
     /*FOOTER*/
 
         #footer{
-            margin-top:95%;
+            margin-top:7%;
             text-align:center;
         }
 
@@ -633,6 +635,10 @@
     /*TOPCENTER*/
 
     /*LOWCENTER*/
+
+        #homeCenter{
+            margin-bottom:95%;
+        }
 
         .homeNewsContainer{
             width: 43%;
@@ -760,7 +766,7 @@
     /*FOOTER*/
 
         #footer{
-            margin-top:77%;
+            margin-top:7%;
             margin-bottom:15%;
             padding: 1em 3em 3em 3em;
         }
@@ -890,7 +896,7 @@
             text-align: center;
         }
 
-        .prev{
+        #prev{
             margin-left:10%;
         }
 
@@ -898,6 +904,10 @@
 
 
     /*LOWCENTER*/
+
+        #homeCenter{
+            margin-bottom:80%;
+        }
 
         .homeNewsContainer{
             width: 35%;

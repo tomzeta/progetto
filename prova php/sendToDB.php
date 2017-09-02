@@ -1,25 +1,33 @@
 ﻿<?php 
-    include_once "dbConnect.php";
-    
-    function test_input($data) {
-        $data = trim($data);
-        $data = stripslashes($data);
-        $data = htmlspecialchars($data);
-        return $data;
+    require 'dBconnect.php';
+    $conn = Connect();
+
+    function formatta_stringa($stringa) {
+        //sostituisco i caratteri speciali in entità html
+        $stringa = htmlentities($stringa);
+        $stringa = str_replace("'","&apos;", $stringa);
+        //permetto l'utilizzo dei tag
+        // <strong>
+        $stringa = str_replace("&lt;strong&gt;","<strong>", $stringa);
+        $stringa = str_replace("&lt;/strong&gt;","</strong>", $stringa);
+        // e <em>
+        $stringa = str_replace("&lt;em&gt;","<em>", $stringa);
+        $stringa = str_replace("&lt;/em&gt;","</em>", $stringa);
+        return $stringa;
     }
-    
-    if(isset($_POST["postNews"])) {
-        $titolo = $_POST["title"];
-        $testo = $_POST["testo"];
-        
-        $query = "INSERT INTO News(id, titolo, testo) VALUES (,'$titolo','$testo')";
-        $result = $conn->query($query);
-        if($result) echo "Hai pubblicato con successo";
-        
+
+    $titolo = $_POST['title'];
+    $testo = $_POST['testo'];
+    $autore;
+    $data;
+
+    $query = "INSERT into News(titolo, testo) VALUES('" . $titolo . "','" . $testo . "')";
+    $success = $conn->query($query);
+    if(!$success){
+        die("Non si possono inserire i dati: ".$conn->error);
     }
-    
-    echo "</br>";
-    echo $titolo;
-    echo $testo;
-    
+
+    echo "Grazie per aver inserito i dati";
+
+    $conn->close();
 ?>
