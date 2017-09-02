@@ -23,97 +23,18 @@ html, *{
 
 
 @media screen and (min-width: 320px) and (max-width:768px){
-    /*HEADER*/
-    #logo{
-        margin-top:5em;
-        margin-right:auto;
-        margin-left:auto;
-        margin-bottom:auto;
-        height:9em;
-        width:12em;
-        display:block;
-    }
-
-    #header{
-        padding-bottom:2em;
-        margin-bottom: 3em;
-    }
-
-    #menubutton {
-        display: block;
-        background-color: #ff8b03;
-        padding: 0.2em;
-        cursor: pointer;
-        margin-top: 0.8em;
-        margin-right: 1em;
-        margin-left: 1em;
-        border:none;
-        border-radius: 0.3em;
-        width: 3.5em;
-    }
-
-    .bar{
-        height:0.3em;
-        background-color:#333;
-        margin:0.3em;
-        display:block;
-    }
-
-    .dropdown{
-        top:0;
-        position:fixed;
-        background-color: #ffaa2d;
-        z-index: 100;
-        width: 100%;
-        height: 4em;
-    }
-
-    .dropdown-content{
-        display: none;
-    }
-
-    .dropdown:hover .dropdown-content{  /*temporaneo, voglio farlo cliccando sul bottone*/
-        display: block;
-    }
-
-    .dropdown-content ul{
-        margin:auto;
-        padding: 0.5em 0;
-        line-height: 1.5;
-        float: none;
-    }
-
-    .dropdown-content li{
-        width: 100%;
-        font-size: 1.3em;
-        display: block;
-        text-align: center;
-        padding: 0.3em;
-    }
-
-    #breadcrumb{
-        padding:0.7em 0.9em 0.7em 0.9em;
-        border-style: solid;
-        border-width: 0.063em;
-    }
-
-    #breadcrumb p{
-        text-align:center;
-        font-weight:bold;
-    }
-
 
     /*BODY*/
 
     #border {
         display: block;
         width:100%;
-        border-bottom: 4px solid #ffaa2d;
+        border-bottom:3px solid #ffaa2d;
     }
 
 
     #Cright h2 {
-        font-size: 35px;
+        font-size: 2.5em;
         font-weight: bold;
         text-align: center;
         padding-top: 5%;
@@ -129,7 +50,7 @@ html, *{
 
     #content h3 {
         text-align: center;
-        font-size:25px;
+        font-size:1.5em;
         margin-left: 3%;
         margin-top: 1%;
         margin-bottom:1%;
@@ -143,7 +64,8 @@ html, *{
 
     .article p {
         padding:3% 3% 3% 3%;
-        border: 4px solid #ffaa2d;
+        border: 2px solid #ffaa2d;
+        border-radius:3px;
     }
 
     #contatti {
@@ -156,14 +78,7 @@ html, *{
         margin-top: 1em;
         margin-left:10%;
         margin-bottom:5%;
-        font-size:25px;
-    }
-
-    #contatti h3{
-        margin-top:2%;
-        margin-bottom:2%;
-        margin-left:5%;
-        font-size:18px;
+        font-size:1.5em;
     }
 
     #contatti .mail{
@@ -191,10 +106,10 @@ html, *{
         margin-top:10%;
         margin-left:12%;
         margin-right:12%;
-        margin-bottom:1%;
         padding-bottom:5%;
         margin-bottom:2%;
-        border: 4px solid #ffaa2d;
+        border: 2px solid #ffaa2d;
+        border-radius:3px;
         width: 60%;
     }
 
@@ -230,7 +145,8 @@ html, *{
         padding-top:1%;
         padding-bottom:1%;
         padding-left:10%;
-        border: 4px solid #ffaa2d;
+        border: 2px solid #ffaa2d;
+        border-radius:3px;
     }
 
     #fill p {
@@ -268,204 +184,22 @@ html, *{
         padding-bottom:7em;
     }
 
-
-    /*FOOTER*/
-
-    #footer{
-        text-align:center;
-        margin-top: 5%;
-        margin-bottom:10%;
-
-    }
-
-    #Fleft ul{
-        margin-top:0.6em;
-        margin-bottom:1.5em;
-    }
-
-    #Fleft li{
-        margin-top:0.625em;
-        padding-bottom:0.3em;
-        list-style-type: none;
-        font-size: 1.15em;
-    }
-
-    #Fleft a:link{
-        text-decoration:none;
-        color: black;
-    }
-
-    #Fleft a:visited{
-        color:lightslategray;
-    }
-
-    #Fleft a:hover{
-        color:orangered;
-    }
-
-    #Fcenter{
-        margin-bottom:7em;
-        margin-left:auto;
-        margin-right:auto;
-        width: 12em;
-        height: 6em;
-        border-style: none;
-    }
-
-    #Fcenter img{
-        height: 6.5em;
-        width: 8.5em;
-        margin-bottom: 1em;
-
-    }
-
-    #Fcenter h3{
-        font-size:1.3em;
-    }
-
-    #content{
-        margin-bottom:0.5em;
-    }
-
-    #zero{
-        padding-left:0.2em;
-        margin-bottom:0.3em;
-        font-weight:bolder;
-        display:block;
-    }
-
-    #four{
-        padding-left:0.2em;
-        margin-top:0.3em;
-        margin-bottom:0.3em;
-        font-weight:bolder;
-        display:block;
-    }
-
-    #Fright h3{
-        padding-top:1.5em;
-    }
-
-    #fblogo{
-        display: block;
-        margin: auto;
-        height: 4em;
-        width: 4.5em;
-        padding-top:2em;
-        padding-left:0.3em;
-        padding-right:0.5em;
-    }
-
-    #instalogo{
-        display:block;
-        margin:auto;
-        height: 4.3em;
-        width: 4.3em;
-        padding-top:1em;
-        padding-left:0.3em;
-        padding-right:0.5em;
-
-    }
-
 }
 
 
 @media screen and (min-width:769px) and (max-width:1024px){
-    /*HEADER*/
-    #logo{
-        margin-top:5em;
-        margin-right:auto;
-        margin-left:auto;
-        margin-bottom:auto;
-        height:9em;
-        width:12em;
-        display:block;
-    }
-
-    #header{
-        padding-bottom:2em;
-        margin-bottom: 3em;
-    }
-
-    #menubutton {
-        display: block;
-        background-color: #ff8b03;
-        padding: 0.2em;
-        cursor: pointer;
-        margin-top: 0.8em;
-        margin-right: 1em;
-        margin-left: 1em;
-        border:none;
-        border-radius: 0.3em;
-        width: 3.5em;
-    }
-
-    .bar{
-        height:0.3em;
-        background-color:#333;
-        margin:0.3em;
-        display:block;
-    }
-
-    .dropdown{
-        top:0;
-        position:fixed;
-        background-color: #ffaa2d;
-        z-index: 100;
-        width: 100%;
-        height: 4em;
-    }
-
-    .dropdown-content{
-        display: none;
-    }
-
-    .dropdown:hover .dropdown-content{  /*temporaneo, voglio farlo cliccando sul bottone*/
-        display: block;
-    }
-
-    .dropdown-content ul{
-        margin:auto;
-        padding: 0.5em 0;
-        line-height: 1.5;
-        float: none;
-    }
-
-    .dropdown-content li{
-        width: 100%;
-        font-size: 1.3em;
-        display: block;
-        text-align: center;
-        padding: 0.3em;
-    }
-
-    #breadcrumb{
-        padding:0.7em 0.9em 0.7em 0.9em;
-        border-style: solid;
-        border-width: 0.063em;
-    }
-
-    #breadcrumb p{
-        text-align:center;
-        font-weight:bold;
-    }
-
 
     /*BODY*/
 
     #border {
-        width: 100%;
         display: block;
-        border-bottom: 6px solid#ffaa2d;
         width:100%;
-        border-bottom: 4px solid #ffaa2d;
+        border-bottom:3px solid #ffaa2d;
     }
 
 
-
-
     #Cright h2 {
-        font-size: 35px;
+        font-size: 2.5em;
         font-weight: bold;
         text-align: center;
         padding-top: 25em;
@@ -479,7 +213,7 @@ html, *{
 
     #content h3 {
         text-align: center;
-        font-size:25px;
+        font-size:1.5em;
         margin-left: 3%;
         margin-top: 1%;
         margin-bottom:1%;
@@ -491,24 +225,29 @@ html, *{
     }
 
     .article p {
-        padding:4% 4% 4% 4%;
         padding:1% 1% 1% 1%;
-        border: 4px solid #ffaa2d;
+        border: 2px solid #ffaa2d;
+        border-radius:3px;
     }
 
     #contatti {
         margin-bottom:10%;
         width:100%;
         height:auto;
+    }
 
-
+    #contatti h1{
+        margin-top: 5%;
+        margin-left:5%;
+        margin-bottom:5%;
+        font-size:30px;
     }
 
     #contatti h2 {
         margin-top: 1em;
-        margin-left: 5%;
+        margin-left:5%;
         margin-bottom:5%;
-        font-size:25px;
+        font-size:1.5em;
     }
 
     #contatti h3{
@@ -522,7 +261,7 @@ html, *{
         margin-left:10%;
         padding-right:2%;
         margin-bottom:4%;
-        font-style:italic;
+        font-style:italic;;
     }
 
     #contatti .tile{
@@ -539,14 +278,14 @@ html, *{
     }
 
     #contatti .column{
-        padding-right:14%;
+        padding-right:15%;
         margin-left:2%;
         margin-right:2%;
-        margin-bottom:3%;
-        border: 4px solid #ffaa2d;
+        margin-bottom:2%;
+        border: 2px solid #ffaa2d;
+        border-radius:3px;
         width: 30%;
-        float: left;
-        padding-bottom: 2%;
+        float:left;
     }
 
     #contatti .tile{
@@ -566,7 +305,7 @@ html, *{
 
 
     #compile {
-        margin-left: 7%;
+        margin-left: 2%;
         padding-left: 15%;
         padding-bottom: 5%;
         padding-top:5%;
@@ -579,9 +318,8 @@ html, *{
         padding-top:1%;
         padding-bottom:1%;
         padding-left:10%;
-        padding-right: 10%;
-        border:6px solid #ffaa2d;
-        border: 4px solid #ffaa2d;
+        border: 2px solid #ffaa2d;
+        border-radius:3px;
     }
 
     #fill p {
@@ -608,7 +346,7 @@ html, *{
     .insert {
         display:block;
         background-color: white;
-        margin-right:15em;
+        margin-right:14em;
         width: 25em;
         margin-bottom: 0.5em;
 
@@ -618,155 +356,14 @@ html, *{
         display:block;
         background-color:white;
         width:25em;
-
+        padding-right:14%;
         padding-bottom:7em;
-    }
-
-
-    /*FOOTER*/
-
-    #footer{
-        text-align:center;
-        margin-top: 5%;
-        margin-bottom:10%;
-
-    }
-
-    #Fleft ul{
-        margin-top:0.6em;
-        margin-bottom:1.5em;
-    }
-
-    #Fleft li{
-        margin-top:0.625em;
-        padding-bottom:0.3em;
-        list-style-type: none;
-        font-size: 1.15em;
-    }
-
-    #Fleft a:link{
-        text-decoration:none;
-        color: black;
-    }
-
-    #Fleft a:visited{
-        color:lightslategray;
-    }
-
-    #Fleft a:hover{
-        color:orangered;
-    }
-
-    #Fcenter{
-        margin-bottom:7em;
-        margin-left:auto;
-        margin-right:auto;
-        width: 12em;
-        height: 6em;
-        border-style: none;
-    }
-
-    #Fcenter img{
-        height: 6.5em;
-        width: 8.5em;
-        margin-bottom: 1em;
-
-    }
-
-    #Fcenter h3{
-        font-size:1.3em;
-    }
-
-    #content{
-        margin-bottom:0.5em;
-    }
-
-    #zero{
-        padding-left:0.2em;
-        margin-bottom:0.3em;
-        font-weight:bolder;
-        display:block;
-    }
-
-    #four{
-        padding-left:0.2em;
-        margin-top:0.3em;
-        margin-bottom:0.3em;
-        font-weight:bolder;
-        display:block;
-    }
-
-    #Fright h3{
-        padding-top:1.5em;
-    }
-
-    #fblogo{
-        display: block;
-        margin: auto;
-        height: 4em;
-        width: 4.5em;
-        padding-top:2em;
-        padding-left:0.3em;
-        padding-right:0.5em;
-    }
-
-    #instalogo{
-        display:block;
-        margin:auto;
-        height: 4.3em;
-        width: 4.3em;
-        padding-top:1em;
-        padding-left:0.3em;
-        padding-right:0.5em;
-
     }
 
 }
 
 @media screen and (min-width:1025px){
 
-    /*HEADER*/
-    #logo {
-        float: left;
-        height: 9em;
-        width: 12.5em;
-        padding-top: 1%;
-        padding-right: 5%;
-        padding-left: 1%;
-
-    }
-
-    #header {
-        padding-bottom: 5em;
-        margin-bottom: 6em; /*era 6em, solo per lavorare 12em*/
-    }
-
-    #header ul {
-        list-style-type: none;
-        font-size: 1.2em;
-    }
-
-    #header li {
-        float: left;
-        padding: 1% 3% 1% 5%;
-        margin-top: 2em;
-    }
-
-    #menubutton {
-        display: none;
-    }
-
-    #breadcrumb {
-        margin-top: 1em;
-        padding: 0.7em 0.9em 0.7em 0.9em;
-        border-style: solid;
-        border-width: 0.063em;
-    }
-
-    #breadcrumb p {
-        text-align: left;
-        font-weight: bold;
-    }
 
     /*BODY*/
 
@@ -774,8 +371,9 @@ html, *{
 
     #border {
         margin-top:1%;
-        border-bottom: 6px solid#ffaa2d;
+        border-radius:3px;
         width: 100%;
+        border-bottom:3px solid #ffaa2d;
     }
 
     #Cright{
@@ -783,7 +381,7 @@ html, *{
     }
 
     #Cright h2 {
-        font-size: 40px;
+        font-size: 3em;
         font-weight: bold;
         text-align: center;
         padding-top: 1em;
@@ -792,7 +390,7 @@ html, *{
 
     #content h3 {
         text-align: center;
-        font-size:25px;
+        font-size:1.5em;
         margin-left: 5%;
         margin-top: 1%;
         margin-bottom:1%;
@@ -804,7 +402,8 @@ html, *{
 
     .article p {
         padding:1% 1% 1% 1%;
-        border: 5px solid #ffaa2d;
+        border: 3px solid #ffaa2d;
+        border-radius:4px;
     }
 
 
@@ -822,7 +421,7 @@ html, *{
     }
 
     #contatti h2{
-        font-size: 20px;
+        font-size:1.5em;
         margin-top:7%;
         margin-bottom:2%;
     }
@@ -853,7 +452,8 @@ html, *{
         padding-top:1em;
         padding-bottom:0.5em;
         padding-left:12%;
-        border:6px solid #ffaa2d;
+        border: 3px solid #ffaa2d;
+        border-radius:4px;
 
     }
 
@@ -894,152 +494,4 @@ html, *{
         padding-right:14%;
         padding-bottom:7em;
     }
-
-    /*FOOTER*/
-    #footer {
-        margin-top:10%;
-        margin-bottom: 28%;
-        padding: 1em 3em 3em 3em;
-    }
-
-    #Fleft {
-        margin-right: 3%;
-        margin-bottom: 9em;
-        width: 15em;
-        height: 6.25em;
-        border-style: none;
-        float: left;
-    }
-
-    #Fleft h3 {
-        font-size: 1.3em;
-    }
-
-    #Fleft ul {
-        margin-left: 1.8em;
-        margin-top: 0.6em;
-        margin-bottom: 3em;
-    }
-
-    #Fleft li {
-        margin-top: 0.625em;
-        padding-bottom: 0.3em;
-        list-style-type: none;
-        font-size: 1.15em;
-    }
-
-    #Fleft a:link {
-        text-decoration: none;
-        color: black;
-    }
-
-    #Fleft a:visited {
-        color: lightslategray;
-    }
-
-    #Fleft a:hover {
-        color: orangered;
-    }
-
-    #Fcenter {
-        margin-bottom: 9em;
-        margin-left: 25%;
-        margin-right:2%;
-        width: 12em;
-        height: 6em;
-        border-style: none;
-        float: left;
-    }
-
-    #Fcenter h3 {
-        font-size: 1.3em;
-    }
-
-    #Fcenter img {
-        height: 6.5em;
-        width: 8.5em;
-    }
-
-    .contenuto {
-        margin-top: 2em;
-    }
-
-    .contenuto span {
-        padding-top: 0.2em;
-        font-size: 1.3em;
-    }
-
-    #zero {
-        padding-left: 1.8em;
-        font-weight: bolder;
-        display: block;
-    }
-
-    #one {
-        padding-left:1em;
-        margin-right: 1em;
-        display: block;
-    }
-
-    #two {
-        padding-left: 3em;
-        display: block;
-    }
-
-    #three {
-        padding-left: 2.9em;
-        display: block;
-    }
-
-    #four {
-        margin-top: 0.4em;
-        padding-left: 2.6em;
-        font-weight: bolder;
-        display: block;
-    }
-
-    #five {
-        padding-left: 2.2em;
-    }
-
-    #six {
-        display: block;
-        padding-left: 2.3em;
-    }
-
-    #seven {
-        display: block;
-        padding-left: 3.5em;
-    }
-
-    #Fright {
-        margin-bottom: 9em;
-        margin-right: 5em;
-        width: 2em;
-        height: 6.25em;
-        border-style: none;
-        float: right;
-    }
-
-    #Fright {
-        font-size: 1.3em;
-    }
-
-    #fblogo {
-        height: 4em;
-        width: 4.5em;
-        padding-top: 1em;
-        padding-left: 0.3em;
-        padding-right: 0.5em;
-    }
-
-    #instalogo {
-        height: 4.3em;
-        width: 4.3em;
-        padding-top: 1em;
-        padding-left: 0.3em;
-        padding-right: 0.5em;
-        display: block;
-    }
-
 }

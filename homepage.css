@@ -511,7 +511,7 @@
     /*FOOTER*/
 
         #footer{
-            margin-top:95%;
+            margin-top:7%;
             text-align:center;
         }
 
@@ -633,6 +633,10 @@
     /*TOPCENTER*/
 
     /*LOWCENTER*/
+
+        #homeCenter{
+            margin-bottom:95%;
+        }
 
         .homeNewsContainer{
             width: 43%;
@@ -760,7 +764,7 @@
     /*FOOTER*/
 
         #footer{
-            margin-top:77%;
+            margin-top:7%;
             margin-bottom:15%;
             padding: 1em 3em 3em 3em;
         }
@@ -898,6 +902,10 @@
 
 
     /*LOWCENTER*/
+
+        #homeCenter{
+            margin-bottom:80%;
+        }
 
         .homeNewsContainer{
             width: 35%;

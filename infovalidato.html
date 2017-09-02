@@ -6,7 +6,10 @@
         <meta name="title" content="As Soon As Possible-Festival" />
         <meta name="description" content="Sito festival musicale" />
         <meta name="keywords" content="asap, festival, biglietti, lineup, info"/>
-        <link rel="stylesheet" type="text/css" href="infoVALIDATO.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta http-equiv="Content-Script-Type" content="text/javascript"/>
+        <link rel="stylesheet" type="text/css" href="homepage.css" />
+        <link rel="stylesheet" type="text/css" href="infovalidato.css" />
         <link rel="shortcut icon" href="asapdef.png"/>
     </head>
 
@@ -14,26 +17,38 @@
 
     <!--HEADER-->
 
-        <div id="header">
-            <img src="asapdef.png" id="logo" alt="ASAP festival logo"/>
-            <div class="dropdown">
-                <button id="menubutton">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </button>
-                <div class="dropdown-content">
-                    <ul>
-                        <li><a href="#lineup" tabindex="1">LINE-UP</a></li>
-                        <li><a href="#tickets" tabindex="2">TICKETS</a></li>
-                        <li><a href="#news" tabindex="3">NEWS</a></li>
-                        <li><a href="#Viaggi" tabindex="4">TRIP</a></li>
-                        <li><a href="#info" tabindex="5">INFO</a></li>
-                    </ul>
-                </div>
+    <div id="header">
+        <img src="images/asapdef.png" id="logo" alt="ASAP festival logo"/>
+        <div class="click">
+            <button class="button" id="menubutton" onclick="showmenu()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <div id="click-content">
+                <ul>
+                    <li><a href="homepage.html">HOMEPAGE</a></li>
+                    <li><a href="line-up.html">LINE-UP</a></li>
+                    <li><a href="tickets.html">TICKETS</a></li>
+                    <li><a href="news.html">NEWS</a></li>
+                    <li><a href="trip.html">TRIP</a></li>
+                    <li><a href="info.html">INFO</a></li>
+                </ul>
             </div>
         </div>
+    </div>
 
+    <script type="text/javascript">
+        function showmenu() {
+            var div = document.getElementById('click-content');
+            if (div.style.display !== 'none') {
+                div.style.display = 'none';
+            }
+            else {
+                div.style.display = 'block';
+            }
+        }
+    </script>
         <div id="breadcrumb">
             <span>Ti trovi in: <span xml:lang="eng">Homepage</span></span>
         </div>
@@ -50,19 +65,19 @@
 
                     <h2>PRODUZIONE</h2>
 
-                    <span class="mail">produzione@asapmusicfestival.com</span>
+                    <span class="mail">produzione@asapfestival.com</span>
 
                     <h2>STAMPA</h2>
 
-                    <span class="mail">stampa@asapmusicfestival.com</span>
+                    <span class="mail">stampa@asapfestival.com</span>
 
                     <h2>TURISMO</h2>
 
-                    <span class="mail">turismo@asapmusicfestival.com</span>
+                    <span class="mail">turismo@asapfestival.com</span>
 
                     <h2>INFORMAZIONI</h2>
 
-                    <span class="mail">info@amamusicfestival.com</span>
+                    <span class="mail">info@asapfestival.com</span>
                 </div>
 
                 <div class="column" id="col2">
@@ -70,7 +85,7 @@
 
                     <span class="tile">Regione:</span> <p>Veneto</p>
 
-                    <span class="tile">Provincia:</span> <p>Vicenza</p>
+                    <span class="tile">Provincia:</span> <p>Padova</p>
 
                     <span class="tile">Sindaco:</span> <p>Riccardo Poletto </p>
 
@@ -137,7 +152,7 @@
 
                         <form action="" method="get"> <!--DA FINIRE CON PHP-->
                             Nome: <input class="insert" type="text" name="firstname"/>
-                            Cognome: <input class="insert" type="text" name="lastname"/>
+                            Cognome: <input  class="insert" type="text" name="lastname"/>
                             Email: <input class="insert" type="text" name="email">
                             Richiedi:
                             <select name="motivazione" id="motivaz" >
@@ -148,7 +163,7 @@
                             </select>
                             Messaggio:
                             <input id="messaggio" type="text" name="message">
-                            <button type=”submit” id="bottone" value=”INVIA”>
+                            <button type=”submit” id="bottone" value=”INVIA”/>
                         </form>
 
                     </div>
@@ -169,28 +184,31 @@
                 </ul>
             </div>
             <div id="Fcenter">
-                <a href="homepage.html">
-                    <img src="asapdef.png" alt="ASAP festival logo"/>
-                </a>
 
-                <div id="contenuto">
-                    <span id="zero">QUANDO</span>
-                    <span id="one">DAL 15 AL 18</span>
-                    <span id="two">LUG</span>
-                    <span id="three">2017</span>
-                    <span id="four">DOVE</span>
-                    <span id="five">POMPEI</span>
-                    <span id="six">NAPOLI</span>
-                    <span id="seven">IT</span>
+                <div class="FimageContainer">
+                    <a href="homepage.html">
+                        <img src="images/asapdef.png" alt="ASAP festival logo"/>
+                    </a>
+                </div>
+
+                <div class="footerContent">
+                    <p class="infoBox">QUANDO</p>
+                    <p>DAL 15 AL 18</p>
+                    <p>LUGLIO</p>
+                    <p>2017</p>
+                    <p class="infoBox">DOVE</p>
+                    <p>POMPEI</p>
+                    <p>NAPOLI</p>
+                    <p>IT</p>
                 </div>
             </div>
             <div id="Fright">
                 <h3>SOCIAL</h3>
                 <a href="#facebook">
-                    <img id="fblogo" src="fblogo.png" alt="Facebook logo"/>
+                    <img id="fblogo" src="images/fblogo.png" alt="Facebook logo"/>
                 </a>
                 <a href="#instagram">
-                    <img id="instalogo" src="instalogo.png" alt="Instagram logo"/>
+                    <img id="instalogo" src="images/instalogo.png" alt="Instagram logo"/>
                 </a>
 
             </div>
