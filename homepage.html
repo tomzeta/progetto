@@ -8,253 +8,259 @@
         <meta name="keywords" content="asap, festival, biglietti, lineup, info"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <meta http-equiv="Content-Script-Type" content="text/javascript"/>
-        <link rel="stylesheet" type="text/css" href="homepage.css" />
+        <link rel="stylesheet" type="text/css" href="style-m.css" />
+        <link rel="stylesheet" type="text/css" href="style-d.css"/>
         <link rel="shortcut icon" href="images/asapdef.png"/>
     </head>
     
-    <body>
+    <body id="Phome">
 
-    <!--HEADER-->
-    <script src="menu_button.js" type="text/javascript"></script>
+        <!--HEADER-->
+            <script src="menu_button.js" type="text/javascript"></script>
 
-        <div id="header">
-                <img src="images/asapdef.png" id="logo" alt="ASAP festival logo"/>
-                <div class="click">
-                    <div class="button" id="menubutton" onclick="showmenu()">
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                        <span class="bar"></span>
+            <div id="header">
+                    <img src="images/asapdef.png" id="logo" alt="ASAP festival logo"/>
+                    <div class="click">
+                        <div class="button" id="menubutton" onclick="showmenu()">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </div>
+                        <div id="click-content">
+                            <ul>
+                                <li><a href="homepage.html">HOMEPAGE</a></li>
+                                <li><a href="line-up.html">LINE-UP</a></li>
+                                <li><a href="tickets.html">TICKETS</a></li>
+                                <li><a href="news.html">NEWS</a></li>
+                                <li><a href="trip.html">TRIP</a></li>
+                                <li><a href="info.html">INFO</a></li>
+                            </ul>
+                        </div>
                     </div>
-                    <div id="click-content">
+            </div>
+
+            <div id="breadcrumb">
+                <p>Ti trovi in: <span xml:lang="eng">Homepage</span></p>
+            </div>
+
+        <!--HEADER-->
+
+        <!--BODY-->
+
+            <div id="homeTopcenter">
+
+                <div id="homeTitleBox">
+                    <h1>ARTISTI</h1>
+                </div>
+
+                <div class="slideshow">
+
+                    <div class="homeContainer">
+                        <img class="lineupimg" id="first" src="images/liam.png" alt="Foto di Liam gallagher"/>
+                        <div class="homeOverlay">
+                            <span class="homeCaption">LIAM GALLAGHER</span>
+                        </div>
+                    </div>
+                    <div class="homeContainer">
+                        <img class="lineupimg" src="images/jovanotti.png" alt="Foto di Jovanotti"/>
+                        <div class="homeOverlay">
+                            <span class="homeCaption">JOVANOTTI</span>
+                        </div>
+                    </div>
+                    <div class="homeContainer">
+                        <img class="lineupimg" src="images/adele.png" alt="Foto di Adele"/>
+                        <div class="homeOverlay">
+                            <span class="homeCaption">ADELE</span>
+                        </div>
+                    </div>
+                    <div class="homeContainer">
+                        <img class="lineupimg" src="images/tyler.png" alt="Foto di Tyler The Creator"/>
+                        <div class="homeOverlay">
+                            <span class="homeCaption">TYLER THE CREATOR</span>
+                        </div>
+                    </div>
+                    <div class="homeContainer">
+                        <img class="lineupimg" src="images/boniver.png" alt="Foto di Bon Iver"/>
+                        <div class="homeOverlay">
+                            <span class="homeCaption">BON IVER</span>
+                        </div>
+                    </div>
+                    <div class="homeContainer">
+                        <img class="lineupimg" src="images/steveaoki.png" alt="Foto di Steve Aoki"/>
+                        <div class="homeOverlay">
+                            <span class="homeCaption">STEVE AOKI</span>
+                        </div>
+                    </div>
+                    <div class="homeContainer">
+                        <img class="lineupimg" src="images/marrague.png" alt="Foto di Marracash e Gue Pequeno"/>
+                        <div class="homeOverlay">
+                            <span class="homeCaption">MARRACASH E GUE' PEQUENO</span>
+                        </div>
+                    </div>
+                    <div class="homeContainer">
+                        <img class="lineupimg" src="images/demarco.png" alt="Foto di Mac deMarco"/>
+                        <div class="homeOverlay">
+                            <span class="homeCaption">MAC DEMARCO</span>
+                        </div>
+                    </div>
+                    <div class="homeContainer">
+                        <img class="lineupimg" src="images/lamar.png" alt="Foto di Kendrick Lamar"/>
+                        <div class="homeOverlay">
+                            <span class="homeCaption">KENDRICK LAMAR</span>
+                        </div>
+                    </div>
+                    <div class="homeContainer">
+                        <img class="lineupimg" src="images/elio.png" alt="Foto di Elio e le Storie Tese"/>
+                        <div class="homeOverlay">
+                            <span class="homeCaption">ELIO E LE STORIE TESE</span>
+                        </div>
+                    </div>
+                    <div class="homeContainer">
+                        <img class="lineupimg" src="images/rihanna.png" alt="Foto di Rihanna"/>
+                        <div class="homeOverlay">
+                            <span class="homeCaption">RIHANNA</span>
+                        </div>
+                    </div>
+                    <div class="homeContainer">
+                        <img class="lineupimg" src="images/redhot.png" alt="Foto di Red Hot Chili Peppers"/>
+                        <div class="homeOverlay">
+                            <span class="homeCaption">RED HOT CHILI PEPPERS</span>
+                        </div>
+                    </div>
+                    <div class="homeContainer">
+                        <img class="lineupimg" src="images/battiato.png" alt="Foto di Franco Battiato"/>
+                        <div class="homeOverlay">
+                            <span class="homeCaption">FRANCO BATTIATO</span>
+                        </div>
+                    </div>
+                    <div class="homeContainer">
+                        <img class="lineupimg" src="images/legend.png" alt="Foto di John Legend"/>
+                        <div class="homeOverlay">
+                            <span class="homeCaption">JOHN LEGEND</span>
+                        </div>
+                    </div>
+                    <div class="homeContainer">
+                        <img class="lineupimg" src="images/budspencer.png" alt="Foto di Bud Spencer Blues Explosion"/>
+                        <div class="homeOverlay">
+                            <span class="homeCaption">BUD SPENCER BLUES EXPLOSION</span>
+                        </div>
+                    </div>
+                    <div class="homeContainer">
+                        <img class="lineupimg" src="images/garrix.png" alt="Foto di Martin Garrix"/>
+                        <div class="homeOverlay">
+                            <span class="homeCaption">MARTIN GARRIX</span>
+                        </div>
+                    </div>
+                    <div class="homeContainer">
+                        <img class="lineupimg" src="images/stones.png" alt="Foto di Rolling Stones"/>
+                        <div class="homeOverlay">
+                            <span class="homeCaption">ROLLING STONES</span>
+                        </div>
+                    </div>
+                    <div class="homeContainer">
+                        <img class="lineupimg" src="images/stromae.png" alt="Foto di Stromae"/>
+                        <div class="homeOverlay">
+                            <span class="homeCaption">STROMAE</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="homeButtonContainer">
+                    <input type="button" id="prev" onclick="plusDivs(-1)" value="previous"/>
+                    <input type="button"  id="next" onclick="plusDivs(+1)" value="next"/>
+                </div>
+
+            </div>
+
+            <div id="homeCenter">
+                <div class="homeNewsContainer" id="HC1">
+                    <div class="homeContent">
+                        <img class="centerImg" src="images/water.png" alt="immagine news"/>
+                        <h2>
+                            PIU' ACQUA PER TUTTI!
+                        </h2>
+                        <p>
+                            Acqua di tutti i gusti! Letteralmente! Ecco cosa proporra' uno dei tanti chioschi presenti
+                            ad ASAP! Le varie tipologie di acqua...
+                        </p>
+                    </div>
+
+                    <div class="homeMore">
+                        <a href="news.html">APPROFONDISCI</a>
+                    </div>
+
+                </div>
+                <div class="homeNewsContainer" id="HC2">
+                    <div class="homeContent">
+                        <img class="centerImg" src="images/willwoosh.png" alt="immagine news"/>
+                        <h2>
+                            GUGLIELMO SCILLA SI UNISCE AL TEAM
+                        </h2>
+                        <p>
+                            Il celebre Guglielmo scilla in arte Willwoosh diventa uno dei principali live reporter
+                            di ASAP, infatti...
+                        </p>
+
+                    </div>
+
+                    <div class="homeMore">
+                        <a href="news.html">APPROFONDISCI</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        <!--BODY-->
+
+        <!--FOOTER-->
+
+            <div id="footer">
+                <div id="Fleft">
+                    <h3>PER I PROFESSIONISTI</h3>
                         <ul>
-                            <li><a href="homepage.html">HOMEPAGE</a></li>
-                            <li><a href="line-up.html">LINE-UP</a></li>
-                            <li><a href="tickets.html">TICKETS</a></li>
-                            <li><a href="news.html">NEWS</a></li>
-                            <li><a href="trip.html">TRIP</a></li>
-                            <li><a href="info.html">INFO</a></li>
+                            <li>
+                                <a href="#Contatt">Contatti</a>
+                            </li>
+                            <li>
+                                <a href="#Partner">Partner</a>
+                            </li>
                         </ul>
-                    </div>
                 </div>
-        </div>
+                <div id="Fcenter">
 
-        <div id="breadcrumb">
-            <p>Ti trovi in: <span xml:lang="eng">Homepage</span></p>
-        </div>
+                    <div class="FimageContainer">
+                        <a href="homepage.html">
+                            <img src="images/asapdef.png" alt="ASAP festival logo"/>
+                        </a>
+                    </div>
 
-    <!--CENTER-->
-
-        <div id="homeTopcenter">
-
-            <div id="homeTitleBox">
-                <h1>ARTISTI</h1>
-            </div>
-
-            <div class="slideshow">
-
-                <div class="homeContainer">
-                    <img class="lineupimg" id="first" src="images/liam.png" alt="Foto di Liam gallagher"/>
-                    <div class="homeOverlay">
-                        <span class="homeCaption">LIAM GALLAGHER</span>
+                    <div class="footerContent">
+                        <p class="infoBox">QUANDO</p>
+                        <p>DAL 15 AL 18</p>
+                        <p>LUGLIO</p>
+                        <p>2017</p>
+                        <p class="infoBox">DOVE</p>
+                        <p>POMPEI</p>
+                        <p>NAPOLI</p>
+                        <p>IT</p>
                     </div>
                 </div>
-                <div class="homeContainer">
-                    <img class="lineupimg" src="images/jovanotti.png" alt="Foto di Jovanotti"/>
-                    <div class="homeOverlay">
-                        <span class="homeCaption">JOVANOTTI</span>
-                    </div>
-                </div>
-                <div class="homeContainer">
-                    <img class="lineupimg" src="images/adele.png" alt="Foto di Adele"/>
-                    <div class="homeOverlay">
-                        <span class="homeCaption">ADELE</span>
-                    </div>
-                </div>
-                <div class="homeContainer">
-                    <img class="lineupimg" src="images/tyler.png" alt="Foto di Tyler The Creator"/>
-                    <div class="homeOverlay">
-                        <span class="homeCaption">TYLER THE CREATOR</span>
-                    </div>
-                </div>
-                <div class="homeContainer">
-                    <img class="lineupimg" src="images/boniver.png" alt="Foto di Bon Iver"/>
-                    <div class="homeOverlay">
-                        <span class="homeCaption">BON IVER</span>
-                    </div>
-                </div>
-                <div class="homeContainer">
-                    <img class="lineupimg" src="images/steveaoki.png" alt="Foto di Steve Aoki"/>
-                    <div class="homeOverlay">
-                        <span class="homeCaption">STEVE AOKI</span>
-                    </div>
-                </div>
-                <div class="homeContainer">
-                    <img class="lineupimg" src="images/marrague.png" alt="Foto di Marracash e Gue Pequeno"/>
-                    <div class="homeOverlay">
-                        <span class="homeCaption">MARRACASH E GUE' PEQUENO</span>
-                    </div>
-                </div>
-                <div class="homeContainer">
-                    <img class="lineupimg" src="images/demarco.png" alt="Foto di Mac deMarco"/>
-                    <div class="homeOverlay">
-                        <span class="homeCaption">MAC DEMARCO</span>
-                    </div>
-                </div>
-                <div class="homeContainer">
-                    <img class="lineupimg" src="images/lamar.png" alt="Foto di Kendrick Lamar"/>
-                    <div class="homeOverlay">
-                        <span class="homeCaption">KENDRICK LAMAR</span>
-                    </div>
-                </div>
-                <div class="homeContainer">
-                    <img class="lineupimg" src="images/elio.png" alt="Foto di Elio e le Storie Tese"/>
-                    <div class="homeOverlay">
-                        <span class="homeCaption">ELIO E LE STORIE TESE</span>
-                    </div>
-                </div>
-                <div class="homeContainer">
-                    <img class="lineupimg" src="images/rihanna.png" alt="Foto di Rihanna"/>
-                    <div class="homeOverlay">
-                        <span class="homeCaption">RIHANNA</span>
-                    </div>
-                </div>
-                <div class="homeContainer">
-                    <img class="lineupimg" src="images/redhot.png" alt="Foto di Red Hot Chili Peppers"/>
-                    <div class="homeOverlay">
-                        <span class="homeCaption">RED HOT CHILI PEPPERS</span>
-                    </div>
-                </div>
-                <div class="homeContainer">
-                    <img class="lineupimg" src="images/battiato.png" alt="Foto di Franco Battiato"/>
-                    <div class="homeOverlay">
-                        <span class="homeCaption">FRANCO BATTIATO</span>
-                    </div>
-                </div>
-                <div class="homeContainer">
-                    <img class="lineupimg" src="images/legend.png" alt="Foto di John Legend"/>
-                    <div class="homeOverlay">
-                        <span class="homeCaption">JOHN LEGEND</span>
-                    </div>
-                </div>
-                <div class="homeContainer">
-                    <img class="lineupimg" src="images/budspencer.png" alt="Foto di Bud Spencer Blues Explosion"/>
-                    <div class="homeOverlay">
-                        <span class="homeCaption">BUD SPENCER BLUES EXPLOSION</span>
-                    </div>
-                </div>
-                <div class="homeContainer">
-                    <img class="lineupimg" src="images/garrix.png" alt="Foto di Martin Garrix"/>
-                    <div class="homeOverlay">
-                        <span class="homeCaption">MARTIN GARRIX</span>
-                    </div>
-                </div>
-                <div class="homeContainer">
-                    <img class="lineupimg" src="images/stones.png" alt="Foto di Rolling Stones"/>
-                    <div class="homeOverlay">
-                        <span class="homeCaption">ROLLING STONES</span>
-                    </div>
-                </div>
-                <div class="homeContainer">
-                    <img class="lineupimg" src="images/stromae.png" alt="Foto di Stromae"/>
-                    <div class="homeOverlay">
-                        <span class="homeCaption">STROMAE</span>
-                    </div>
-                </div>
-            </div>
-
-            <div id="homeButtonContainer">
-                <input type="button" id="prev" onclick="plusDivs(-1)" value="previous"/>
-                <input type="button"  id="next" onclick="plusDivs(+1)" value="next"/>
-            </div>
-
-        </div>
-        
-        <div id="homeCenter">
-            <div class="homeNewsContainer" id="HC1">
-                <div class="homeContent">
-                    <img class="centerImg" src="images/water.png" alt="immagine news"/>
-                    <h2>
-                        PIU' ACQUA PER TUTTI!
-                    </h2>
-                    <p>
-                        Acqua di tutti i gusti! Letteralmente! Ecco cosa proporra' uno dei tanti chioschi presenti
-                        ad ASAP! Le varie tipologie di acqua...
-                    </p>
-                </div>
-
-                <div class="homeMore">
-                    <a href="news.html">APPROFONDISCI</a>
-                </div>
-
-            </div>
-            <div class="homeNewsContainer" id="HC2">
-                <div class="homeContent">
-                    <img class="centerImg" src="images/willwoosh.png" alt="immagine news"/>
-                    <h2>
-                        GUGLIELMO SCILLA SI UNISCE AL TEAM
-                    </h2>
-                    <p>
-                        Il celebre Guglielmo scilla in arte Willwoosh diventa uno dei principali live reporter
-                        di ASAP, infatti...
-                    </p>
-
-                </div>
-
-                <div class="homeMore">
-                    <a href="news.html">APPROFONDISCI</a>
-                </div>
-
-            </div>
-
-        </div>
-
-    <!--FOOTER-->
-
-        <div id="footer">
-            <div id="Fleft">
-                <h3>PER I PROFESSIONISTI</h3>
-                    <ul>
-                        <li>
-                            <a href="#Contatt">Contatti</a>
-                        </li>
-                        <li>
-                            <a href="#Partner">Partner</a>
-                        </li>
-                    </ul>
-            </div>
-            <div id="Fcenter">
-
-                <div class="FimageContainer">
-                    <a href="homepage.html">
-                        <img src="images/asapdef.png" alt="ASAP festival logo"/>
+                <div id="Fright">
+                    <h3>SOCIAL</h3>
+                    <a href="#facebook">
+                        <img id="fblogo" src="images/fblogo.png" alt="Facebook logo"/>
                     </a>
-                </div>
+                    <a href="#instagram">
+                        <img id="instalogo" src="images/instalogo.png" alt="Instagram logo"/>
+                    </a>
 
-                <div class="footerContent">
-                    <p class="infoBox">QUANDO</p>
-                    <p>DAL 15 AL 18</p>
-                    <p>LUGLIO</p>
-                    <p>2017</p>
-                    <p class="infoBox">DOVE</p>
-                    <p>POMPEI</p>
-                    <p>NAPOLI</p>
-                    <p>IT</p>
                 </div>
             </div>
-            <div id="Fright">
-                <h3>SOCIAL</h3>
-                <a href="#facebook">
-                    <img id="fblogo" src="images/fblogo.png" alt="Facebook logo"/>
-                </a>
-                <a href="#instagram">
-                    <img id="instalogo" src="images/instalogo.png" alt="Instagram logo"/>
-                </a>
 
-            </div>
-        </div>
+        <!--FOOTER-->
 
-
-        <script src="slider.js" type="text/javascript"></script>
+            <script src="slider.js" type="text/javascript"></script>
 
     </body>
 

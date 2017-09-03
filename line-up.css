@@ -49,7 +49,7 @@ button:active {
     border-radius: 3px;
 }
 
-.wrapper{
+.lineupWrapper{
     position:relative;
 }
 
@@ -274,11 +274,9 @@ button:active {
             text-align:center;
         }
 
-
         #lineupCenter #day3{
             margin: 10% 20% 2% 1.5%;
         }
-
 
         .lineupContainer{
             width: 80%;
@@ -813,7 +811,6 @@ button:active {
             margin: 97% 20% 2% 1.5%;
         }
 
-
         .lineupContainer{
             width: 40%;
             margin-left:5%;
@@ -826,7 +823,6 @@ button:active {
             position:relative;
         }
 
-
         .lineupContainer span{
             display:block;
             margin-top:1%;
@@ -836,7 +832,6 @@ button:active {
             font-size:1.3em;
             font-weight: bold;
         }
-
 
         .lineupOverlay {
             position: absolute;

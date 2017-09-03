@@ -302,6 +302,8 @@ html, *{
         margin-left: 10%;
     }
 
+    /*BODY*/
+
     /*BORDER*/
 
 
@@ -329,12 +331,19 @@ html, *{
 
 
     #bottone{
-        margin-top: 1.5em;
-        padding-right: 10em;
-        padding-bottom: 3em;
-        margin-bottom: 1em;
-        background-color:#ffaa2d;
-        color: white;
+        background-color:#ffec64;
+        border-radius:6px;
+        border:1px solid #ff9900;
+        cursor:pointer;
+        color:#333333;
+        font-size:100%;
+        font-weight:bold;
+        margin-top:4%;
+        padding:6px 24px;
+    }
+
+    #bottone:hover{
+        background-color:#ff9b17;
     }
 
 
@@ -360,6 +369,8 @@ html, *{
         padding-right:14%;
         padding-bottom:7em;
     }
+
+    /*BORDER*/
 
 }
 

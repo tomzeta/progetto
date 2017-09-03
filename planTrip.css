@@ -1,11 +1,4 @@
-﻿/* TRIP CSS*/
-
-/*Comune a due pagine*/
-    img {
-    max-width: 500px;
-}
-
-/*Comune a due pagine*/
+﻿/* VIAGGI CSS*/
 
     .mainBody {
     margin-top: 0;
@@ -164,7 +157,7 @@
     background-color: #ff5b19;
 }
 
-/*END trip css*/
+/*FINE PARTE COMUNE VIAGGI CSS*/
 
 
 
@@ -255,6 +248,7 @@
     .paragraph {
         border-width: 0.5vw;
     }
+
     #Prezzi {
         width: 90%;
         margin-left: 5%;
@@ -263,24 +257,29 @@
         padding: 0;
         text-align: center;
     }
-        #Prezzi h2 {
+
+    #Prezzi h2 {
             
         }
+
     .purTicket {
         text-align: center;
         padding-bottom: 1em;
     }
-        .purTicket input {
+
+    .purTicket input {
             position:center;
             width: 28%;
 
             margin-left: 36%;
             margin-right: 36%;
         }
+
     .ticketDay {
         width: 100%;
         margin-bottom: 1em;
     }
+
     .ticketPrice {
         width: 100%;
         margin-bottom: 0.5em;
@@ -301,8 +300,6 @@
     #topTitle h1 {
         font-size: 2em;
     }
-
-
 
     .paragraph {
         margin-left: 0;
@@ -331,19 +328,21 @@
         margin-left: 0;
         margin-right: 0;
     }
-        #Prezzi h2 {
+
+    #Prezzi h2 {
             font-size: 3em;
             margin-bottom: 0.5em;
             background-color: #ffaa2d;
             padding-bottom: 5px;
             padding-top: 5px;
         }
+
     .purTicket {
         
         padding-bottom: 1em;
     }
 
-        .purTicket input {
+    .purTicket input {
             position: center;
             width: 50%;
             margin-left: 25%;
