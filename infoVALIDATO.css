@@ -379,131 +379,131 @@ html, *{
 
     /*BODY*/
 
+        #border {
+            margin-top:1%;
+            border-radius:3px;
+            width: 100%;
+            border-bottom:3px solid #ffaa2d;
+        }
+
+        #Cright{
+            margin-right:2%;
+        }
+
+        #Cright h2 {
+            font-size: 3em;
+            font-weight: bold;
+            text-align: center;
+            padding-top: 1em;
+            margin-left: 33%;
+        }
+
+        #content h3 {
+            text-align: center;
+            font-size:1.5em;
+            margin-left: 5%;
+            margin-top: 1%;
+            margin-bottom:1%;
+        }
+
+        .article{
+            padding-left:30%;
+        }
+
+        .article p {
+            padding:1% 1% 1% 1%;
+            border: 3px solid #ffaa2d;
+            border-radius:4px;
+        }
 
 
-    #border {
-        margin-top:1%;
-        border-radius:3px;
-        width: 100%;
-        border-bottom:3px solid #ffaa2d;
-    }
+        #contatti {
+            float: left;
+            margin-left:3%;
+            margin-right:4%;
 
-    #Cright{
-        margin-right:2%;
-    }
+        }
 
-    #Cright h2 {
-        font-size: 3em;
-        font-weight: bold;
-        text-align: center;
-        padding-top: 1em;
-        margin-left: 33%;
-    }
+        #contatti h1 {
+            margin-top: 1em;
+            margin-bottom:5%;
+            font-size:28px;
+        }
 
-    #content h3 {
-        text-align: center;
-        font-size:1.5em;
-        margin-left: 5%;
-        margin-top: 1%;
-        margin-bottom:1%;
-    }
+        #contatti h2{
+            font-size:1.5em;
+            margin-top:7%;
+            margin-bottom:2%;
+        }
 
-    .article{
-        padding-left:30%;
-    }
+        #contatti .mail{
+            font-style:italic;
+        }
 
-    .article p {
-        padding:1% 1% 1% 1%;
-        border: 3px solid #ffaa2d;
-        border-radius:4px;
-    }
+        #contatti .tile{
+            font-weight: bold;
+        }
 
+        #contatti p{
+            margin-top:1%;
+            margin-bottom:2%;
+        }
 
-    #contatti {
-        float: left;
-        margin-left:3%;
-        margin-right:4%;
+        #compile {
+            margin-left: 2%;
+            padding-left: 1.5em;
+            padding-bottom: 3em;
+            padding-top: 3em;
+        }
 
-    }
+        #fill {
+            margin-left: 25%;
+            margin-right:12em;
+            padding-top:1em;
+            padding-bottom:0.5em;
+            padding-left:12%;
+            border: 3px solid #ffaa2d;
+            border-radius:4px;
 
-    #contatti h1 {
-        margin-top: 1em;
-        margin-bottom:5%;
-        font-size:28px;
-    }
+        }
 
-    #contatti h2{
-        font-size:1.5em;
-        margin-top:7%;
-        margin-bottom:2%;
-    }
+        #fill p {
+            margin-bottom: 1.5em;
+        }
 
-    #contatti .mail{
-        font-style:italic;
-    }
+        #bottone{
+            margin-top: 1.5em;
+            padding-right: 10em;
+            padding-bottom: 3em;
+            margin-bottom: 1em;
+            background-color:#ffaa2d;
+            color: white;
+        }
 
-    #contatti .tile{
-        font-weight: bold;
-    }
+        #motivaz{
+            display: block;
+            background-color: white;
+            margin-bottom: 0.8em;
+            padding-right: 18.2em;
+            padding-bottom: 0.3em;
+            margin-top: 0.2em;
+        }
 
-    #contatti p{
-        margin-top:1%;
-        margin-bottom:2%;
-    }
+        .insert {
+            display:block;
+            background-color: white;
+            margin-right:14em;
+            width: 25em;
+            margin-bottom: 0.5em;
+        }
 
-    #compile {
-        margin-left: 2%;
-        padding-left: 1.5em;
-        padding-bottom: 3em;
-        padding-top: 3em;
-    }
+        #messaggio {
+            display:block;
+            background-color:white;
+            width:25em;
+            padding-right:14%;
+            padding-bottom:7em;
+        }
 
-    #fill {
-        margin-left: 25%;
-        margin-right:12em;
-        padding-top:1em;
-        padding-bottom:0.5em;
-        padding-left:12%;
-        border: 3px solid #ffaa2d;
-        border-radius:4px;
-
-    }
-
-    #fill p {
-        margin-bottom: 1.5em;
-    }
-
-    #bottone{
-        margin-top: 1.5em;
-        padding-right: 10em;
-        padding-bottom: 3em;
-        margin-bottom: 1em;
-        background-color:#ffaa2d;
-        color: white;
-    }
-
-    #motivaz{
-        display: block;
-        background-color: white;
-        margin-bottom: 0.8em;
-        padding-right: 18.2em;
-        padding-bottom: 0.3em;
-        margin-top: 0.2em;
-    }
-
-    .insert {
-        display:block;
-        background-color: white;
-        margin-right:14em;
-        width: 25em;
-        margin-bottom: 0.5em;
-    }
-
-    #messaggio {
-        display:block;
-        background-color:white;
-        width:25em;
-        padding-right:14%;
-        padding-bottom:7em;
-    }
+    /*BODY*/
 }
