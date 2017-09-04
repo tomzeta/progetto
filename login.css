@@ -1,0 +1,115 @@
+/*LOGIN CSS*/
+.mainBody {
+    margin-top: 0;
+    margin-bottom: 2em;
+    padding: 0;
+    clear: both;
+    display: inline-block;
+    width: 100%;
+}
+
+#Plogin .textBlock {
+    display: inline-block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 2em;
+}
+
+#Plogin #topTitle h1 {
+    font-size: 2em;
+    padding: 0;
+    width: 100%;
+    background-color: #ffaa2d;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    margin-bottom: 0.5em;
+    text-align: center;
+    margin-top: 0;
+}
+
+#Plogin #topTitle h2 {
+	font-size: 1.5em;
+	padding: 0;
+	text-align: center;
+}
+
+#Plogin .paragraph {
+    clear: both;
+    display: inline-block;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 78%;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border: 8px solid #ffaa2d;
+	border-radius: 20px;
+}
+
+#Plogin .paragraph p {
+	font-size: 1.5em;
+    margin-bottom: .3em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#Plogin input{
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid #ffaa2d;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#Plogin input[type=submit] {
+    width: 30%;
+    background-color: #ffaa2d;
+	font-size: 1.5em;
+    color: black;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#Plogin input[type=submit]:hover {
+    background-color: #ffaa6a;
+}
+
+@media screen and (min-width:320px) and (max-width:768px){
+	
+	#Plogin input[type=submit] {
+    width: 100%;
+    background-color: #ffaa2d;
+	font-size: 1.5em;
+    color: black;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+	}
+}
+
+@media screen and (min-width:769px) and (max-width:1024px){
+	
+	#Plogin input[type=submit] {
+    width: 75%;
+    background-color: #ffaa2d;
+	font-size: 1.5em;
+    color: black;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+	}
+}
+/*END LOGIN CSS*/
