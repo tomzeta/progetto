@@ -49,6 +49,7 @@
     }
 
     #homeTopcenter h2{
+        text-align: center;
         font-size: 250%;
     }
 
@@ -109,6 +110,7 @@
     #homeButtonContainer #prev{
         margin-right:20%;
     }
+
 
     .homeMore a{
         margin-left:25%;
@@ -326,7 +328,8 @@
         border: 0px solid;
     }
 
-    .artists {
+    .artists{
+        list-style: none;
         font-weight: bold;
         font-size: 1.5em;
     }
@@ -614,6 +617,12 @@
                 margin-left:23%;
             }
 
+            .homeContainer{
+                width:90%;
+                margin-left:5%;
+                position:relative;
+            }
+
             #homeButtonContainer{
                 width:80%;
                 margin-left:10%;
@@ -812,10 +821,6 @@
                 margin-bottom: 1.5em;
             }
 
-            #fill span{
-                display:block;
-            }
-
             #motivaz{
                 display: block;
                 background-color: white;
@@ -937,6 +942,10 @@
             border-width: 1px;
         }
 
+        #footerTrip{
+            margin-top:5%;
+            text-align:center;
+        }
 
     /*FINE VIAGGI CSS*/
 
