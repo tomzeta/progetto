@@ -8,9 +8,9 @@
         <meta name="keywords" content="asap, festival, biglietti, lineup, info"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <meta http-equiv="Content-Script-Type" content="text/javascript"/>
-        <link rel="stylesheet" type="text/css" href="style-m.css" />
-        <link rel="stylesheet" type="text/css" href="style-d.css"/>
-		<link rel="stylesheet" type="text/css" href="login.css" />
+        <link rel="stylesheet" type="text/css" href="style-m.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="style-d.css" media="screen"/>
+		<link rel="stylesheet" type="text/css" href="style-s.css" media="print" />
         <link rel="shortcut icon" href="images/asapdef.png"/>
     </head>
     
@@ -48,10 +48,11 @@
 
         <!--BODY-->
 
-		<div class="mainBody">
+		<div class="mainBody3">
 			<div id="topTitle">
 				<h1>Accedi al tuo profilo</h1>
 				<h2>Non sei ancora un utente? <a href="registrazione.html">Registrati</a> subito!</h2>
+                <p class="ops">osp! sembra tu abbia un foglio di carta tra le mani! collegati al sito per accedere!</p>
 			</div>
 			<div class="paragraph">
 				<form name="form_login" method="post" action="loginavvenuto.php">
