@@ -18,10 +18,10 @@
 
     $titolo = $_POST['title'];
     $testo = $_POST['testo'];
-    $autore;
-    $data;
+    $autore = $_SESSION['nome_completo'];
+    $data = date('l jS \of F Y h:i:s A');
 
-    $query = "INSERT into News(titolo, testo) VALUES('" . $titolo . "','" . $testo . "')";
+    $query = "INSERT into News(titolo, testo, autore, data) VALUES('" . $titolo . "','" . $testo . "','" . $autore . "','" . $data . "')";
     $success = $conn->query($query);
     if(!$success){
         die("Non si possono inserire i dati: ".$conn->error);
