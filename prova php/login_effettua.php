@@ -35,7 +35,7 @@ if(empty($password)) {
 
 //se non ci sono errori tenta il login
 if(!$error){
-    $query = "SELECT id, username, user_type FROM Utenti WHERE username = '$username' AND password = '$password'";
+    $query = "SELECT id, username, nome, cognome, user_type FROM Utenti WHERE username = '$username' AND password = '$password'";
     $result = $conn->query($query);
     if($result) {
         $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
@@ -45,6 +45,7 @@ if(!$error){
         $_SESSION['user'] = $row['id'];
         $_SESSION['username'] = $row['username'];
         $_SESSION['user_type'] = $row['user_type'];
+        $_SESSION['nome_completo'] = $row['nome'] . " " . $row['cognome'];
         $_SESSION['login_error'] = "";
 
     } else {

@@ -1,5 +1,12 @@
 <?php
 session_start();
-    $paginaRisultati = file_get_contents('ordini.txt');
+if(isset($_SESSION['user'])== ""){
+    header("Location: p_login.php");
+} else {
+    echo file_get_contents('header.html');
+
+    $paginaRisultati = file_get_contents('ordini.html');
     echo str_replace("[NOMEUTENTE]", $_SESSION['username'], $paginaRisultati);
+    echo file_get_contents('footer.html');
+}
 ?>

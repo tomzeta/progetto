@@ -10,7 +10,10 @@ if(isset($_SESSION['user'])!="" ) {
         header("Location: p_ordini.php");
     }
 } else {
+    echo file_get_contents('header.html');
+
     $page = file_get_contents("h_login.html");
     echo str_replace('[ERRORE]',$_SESSION['login_error'], $page);
+    echo file_get_contents('footer.html');
 }
 ?>
