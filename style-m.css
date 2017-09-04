@@ -118,6 +118,54 @@
 
 /*FINE PARTE COMUNE A TUTTI I BREAKPOINT DI HOMEPAGE*/
 
+/*PARTE COMUNE A TUTTI I BREAKPOINT DI NEWS*/
+
+    .newsContent img{
+        width:100%;
+        height:auto;
+        display:block;
+        overflow:hidden;
+        border-radius: 2px;
+    }
+
+    /*LOWCENTER*/
+
+    .NewsContainer{
+        width: 55%;
+        border:1px solid black;
+        border-radius: 5px;
+        background-color: #ffbd0f;
+        margin-left:22%;
+        margin-bottom:10%;
+        padding-bottom:10%;
+
+    }
+
+    .newsContent{
+        background-color: #ffbd0f;
+    }
+
+    .newsContent h2{
+        font-family: "IntroRustG-Base";
+        color: #ff6f00;
+        font-size: 220%;
+        font-weight: bold;
+        margin-top:5%;
+        text-align:center;
+        background-color: #ffbd0f;
+    }
+
+    .newsContent p{
+        text-align: center;
+        font-size:20px;
+        margin: 5% 5%;
+        background-color: #ffbd0f;
+    }
+
+    /*LOWCENTER*/
+
+/*FINE PARTE COMUNE A TUTTI I BREAKPOINT DI NEWS*/
+
 /*PARTE COMUNE A TUTTI I BREAKPOINT DI LINE-UP*/
     .lineupContainer img{
         width:100%;
@@ -871,6 +919,13 @@
 
     /*FINE HOMEPAGE*/
 
+    /*NEWS*/
+        .NewsContainer{
+            width: 75%;
+            margin-left:12%;
+        }
+    /*FINE NEWS*/
+
     /*INFO*/
 
         /*BODY*/
@@ -1512,6 +1567,13 @@
         /*LOWCENTER*/
 
     /*FINE HOMEPAGE*/
+
+    /*NEWS*/
+        .NewsContainer{
+            width: 65%;
+            margin-left:12%;
+        }
+    /*FINE NEWS*/
 
     /*INFO*/
         /*BODY*/
