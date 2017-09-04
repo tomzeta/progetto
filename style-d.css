@@ -356,6 +356,10 @@
 
             }
 
+            #fill span{
+                display:block;
+            }
+
             #fill p {
                 margin-bottom: 1.5em;
             }
