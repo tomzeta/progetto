@@ -1,7 +1,7 @@
 <?php
-require 'dBconnect.php';
+session_start();
+include_once 'dBconnect.php';
 $conn = Connect();
-
 
 function test_input($data)
 {
@@ -15,6 +15,8 @@ function test_input($data)
 
 //variabile di controllo errore
 $error = false;
+
+//prendo variabili in input e le formatto
 $username = test_input($_POST['username_login']);
 $password = test_input($_POST['password_login']);
 
@@ -33,20 +35,24 @@ if(empty($password)) {
 
 //se non ci sono errori tenta il login
 if(!$error){
-    $query = "SELECT nome FROM Utenti WHERE username = '$username' AND password = '$password'";
+    $query = "SELECT id, username, user_type FROM Utenti WHERE username = '$username' AND password = '$password'";
     $result = $conn->query($query);
     if($result) {
         $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
         $count = mysqli_num_rows($result);
     }
-    if($count == 1) {
-        //$_SESSION['user'] = $row['userID'];
-        header("Location: admin.html");
+    if ($count == 1) {
+        $_SESSION['user'] = $row['id'];
+        $_SESSION['username'] = $row['username'];
+        $_SESSION['user_type'] = $row['user_type'];
+        $_SESSION['login_error'] = "";
+
+    } else {
+        $_SESSION['login_error'] = "Credenziali errate, riprova...";
+
     }
-    else {
-        $errMSG = "Credenziali errate, riprova...";
-        header("Location: login.html");
-    }
+    header("Location: p_login.php");
 }
+
 ?>
 
