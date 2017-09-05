@@ -24,6 +24,23 @@
     }
 
 
+    #error1{
+        margin-top:45%;
+    }
+
+    .errore404{
+        font-weight: bold;
+        font-size:2em;
+        text-align: center;
+    }
+
+    #smileError{
+        font-weight: bold;
+        font-size:4em;
+        text-align: center;
+    }
+
+
 /*FINE PARTE COMUNE A TUTTE LE PAGINE*/
 
 
@@ -710,6 +727,11 @@
 
         }
 
+        #nojava{
+            display:block;
+        }
+
+
         #click-content ul{
             background-color: #ffb612;
             margin:auto;
@@ -720,9 +742,7 @@
             display:none;
         }
 
-
-
-    #click-content li{
+        #click-content li{
             background-color: #ffb612;
             width: 100%;
             font-size: 1.3em;
@@ -734,9 +754,11 @@
         #click-content a{
             background-color: #ffb612;
         }
+
         .list {
             background-color: #ffb612;
         }
+
 
         #logBox{
             width:20%;
