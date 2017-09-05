@@ -1,263 +1,141 @@
-html, *{
-    padding: 0;
-    margin: 0;
-    font-family:'helveticaneue';
-    background-color:#ffcc66;
+
+
+
+#OrdineTopcenter h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-top:5%;
+    margin-bottom:1%;
 }
+
+#OrdineTopcenter h3 {
+    font-size: 1.5em;
+    padding-bottom: 1%;
+    text-align: center;
+}
+
+#OrdineTopcenter span {
+    color: black;
+    margin-top: 5%;
+    text-align: center;
+}
+
+.orderBold{
+    font-weight:bold;
+}
+
+.order {
+    margin-left: 2%;
+}
+
+.order p {
+    padding-bottom: 1.5%;
+    text-align: center;
+}
+
+#OrdineMidcenter h2 {
+    padding: 3px;
+    display: block;
+    text-align: center;
+    margin-top: 2%;
+}
+
+#OrdineMidcenter p {
+    font-size: 1.5em;
+}
+
+#OrdineMidcenter .orderError {
+    margin-top:5%;
+    margin-bottom:5%;
+    text-align:center;
+}
+
+.choice p {
+    margin-bottom: 0.5em;
+}
+
+.insert {
+    font-size: 2em;
+}
+
+#OrdineMidcenter .choice{
+    width: 200px;
+    margin: 0 auto;
+}
+
+.OrdineWrap{
+    width:80%;
+    margin-left:10%;
+    margin-bottom:10%;
+    text-align: center;
+}
+
+#button{
+    background-color:#ffec64;
+    border-radius:6px;
+    border:1px solid #ff9900;
+    display:inline-block;
+    cursor:pointer;
+    color:#333333;
+    font-size:100%;
+    font-weight:bold;
+    margin-top:2%;
+    padding:6px 12px;
+}
+
+#button:hover {
+    background-color: #ff9b17;
+}
+
+
 
 @media screen and (min-width:320px) and (max-width:768px) {
-    #title {
-        text-align: center;
-        margin-top: 3%;
-    }
-
-    #topcenter h2 {
-        font-size: 2em;
-        margin-left: 30%;
-        margin-bottom: 1%;
-    }
-
-    #carrello span {
-        margin-top: 2%;
-    }
-
-    #topcenter h3 {
-        font-size: 1.5em;
-        padding-bottom: 1%;
-    }
-
-    #topcenter span {
-        color: black;
-        border: 3px solid #ff9600;
-        border-radius: 4px;
-        padding: 3px;
-    }
 
     .order {
-
-        margin-left: 2%;
-
-    }
-
-    .order p {
-        padding-bottom: 1.5%;
-    }
-
-    #midcenter h2 {
-        margin-left: 20%;
-        margin-right: 20%;
-        padding: 3px;
-        margin-bottom: 16px;
-        border-radius: 4px;
-        border: 3px solid #ff9600;
-    }
-
-    #midcenter p {
-        font-size: 1.5em;
-    }
-
-    .choice {
-        margin-left: 28%;
-        margin-bottom: 3px;
-        padding-bottom: 2em;
-        display: block;
-    }
-
-    .choice p {
-        margin-bottom: 0.5em;
-    }
-
-    .insert {
-        font-size: 6em;
-    }
-
-    .button{
-        margin-left: 30%;
-        color: black;
-        padding: 10px;
-        font-size: 1em;
-        border-radius: 4px;
-        background-color: #ff9900;
-        margin-bottom: 5%;
-
+        width:95%;
     }
 }
 
-@media screen and (min-width:769px) and (max-width:1024px){
-    #title {
+@media screen and (min-width:768px) and (max-width:1024px){
+
+    #OrdineMidcenter .orderError {
+        margin-bottom:5%;
+    }
+
+    #OrdineMidcenter .orderError p{
         text-align: center;
-        margin-top: 3%;
-    }
-
-    #topcenter h2 {
-        width:30%;
-        margin-left: 30%;
-        font-size: 2em;
-        margin-bottom: 1%;
-    }
-
-    #carrello span {
-        margin-top: 2%;
-        margin-left: 25%;
-    }
-
-
-
-    #topcenter h3 {
-        font-size: 1.5em;
-        padding-bottom: 1%;
-        text-align: center;
-
-
-    }
-
-    #topcenter span {
-        color: black;
-        border: 3px solid #ff9600;
-        border-radius: 4px;
-        padding: 3px;
-        display: block;
-        margin-top: 10px;
-        text-align: center;
-    }
-
-    .order {
-
-        margin-left: 2%;
-
-    }
-
-    .order p {
-        padding-bottom: 1.5%;
-        text-align: center;
-    }
-
-    #midcenter h2 {
-
-        padding: 3px;
-        margin-bottom: 16px;
-        border-radius: 4px;
-        border: 3px solid #ff9600;
-        display: block;
-        text-align: center;
-        margin-top: 2%;
-        margin-left: 30%;
-        margin-right: 28%;
-    }
-
-    #midcenter p {
-        font-size: 1.5em;
-    }
-
-    .choice {
-        margin-left: 40%;
-        margin-bottom: 3px;
-        padding-bottom: 2em;
-
-    }
-
-    .choice p {
-        margin-bottom: 0.5em;
-
-
-    }
-
-    .insert {
-        font-size: 6em;
-    }
-
-    .button{
-        margin-left: 40%;
-        color: black;
-        padding: 10px;
-        font-size: 0.8em;
-        border-radius: 4px;
-        background-color: #ff9900;
-        margin-bottom: 5%;
-
     }
 }
+
 
 @media screen and (min-width:1025px) {
 
-    #title {
+    #OrdineTopcenter h2 {
         text-align: center;
-        margin-top: 3%;
-    }
-
-    #topcenter h2 {
         font-size: 2em;
-        margin-left: 42%;
-        margin-right: 42%;
-        margin-bottom: 1%;
-    }
-
-    #carrello span {
-        margin-top: 2%;
 
     }
 
-
-    #topcenter h3 {
+    #OrdineTopcenter h3 {
         font-size: 1.5em;
-        padding-bottom: 1%;
         text-align: center;
     }
 
-    #topcenter span {
-        color: black;
-        border: 3px solid #ff9600;
-        border-radius: 4px;
-        padding: 3px;
+    #OrdineTopcenter p{
+        font-size:1.3em;
     }
 
-    .order {
-
-        margin-left: 2%;
-
-    }
-
-    .order p {
-        padding-bottom: 1.5%;
-        text-align: center;
-    }
-
-    #midcenter h2 {
-        margin-left: 41%;
-        margin-right: 41%;
-        padding: 3px;
-        margin-bottom: 16px;
-        border-radius: 4px;
-        border: 3px solid #ff9600;
-    }
-
-    #midcenter p {
+    #OrdineMidcenter h2{
         font-size: 1.5em;
     }
 
     .choice {
-        margin-left: 43%;
-        margin-bottom: 3px;
-        padding-bottom: 2em;
-        display: block;
+        font-size:1em;
     }
 
-    .choice p {
-        margin-bottom: 0.5em;
-    }
-
-    .insert {
-        font-size: 6em;
-    }
-
-    .button{
-        margin-left: 43%;
-        color: black;
-        padding: 10px;
-        font-size: 0.8em;
-        border-radius: 4px;
-        background-color: #ff9900;
-
+    #button{
+        font-size:150%;
     }
 
 }
+

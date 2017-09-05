@@ -572,7 +572,7 @@
 
 /*FINE PARTE COMUNE A TUTTI I BREAKPOINT DI REGISTRAZIONE*/
 
-/*PARTE COMUNE A TUTTI I BREAKPOINT DI REGISTRAZIONE*/
+/*PARTE COMUNE A TUTTI I BREAKPOINT DI LOGIN*/
     .mainBody3 {
         margin-top: 0;
         margin-bottom: 2em;
@@ -661,6 +661,97 @@
         background-color: #ffaa6a;
     }
 /*FINE PARTE COMUNE A TUTTI I BREAKPOINT DI LOGIN*/
+
+
+/*PARTE COMUNE A TUTTI I BREAKPOINT DI ORDINI*/
+
+#OrdineTopcenter h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-top:5%;
+    margin-bottom:1%;
+}
+
+#OrdineTopcenter h3 {
+    font-size: 1.5em;
+    padding-bottom: 1%;
+    text-align: center;
+}
+
+#OrdineTopcenter span {
+    color: black;
+    margin-top: 5%;
+    text-align: center;
+}
+
+.orderBold{
+    font-weight:bold;
+}
+
+.order {
+    margin-left: 2%;
+}
+
+.order p {
+    padding-bottom: 1.5%;
+    text-align: center;
+}
+
+#OrdineMidcenter h2 {
+    padding: 3px;
+    display: block;
+    text-align: center;
+    margin-top: 2%;
+}
+
+#OrdineMidcenter p {
+    font-size: 1.5em;
+}
+
+#OrdineMidcenter .orderError {
+    margin-top:5%;
+    margin-bottom:5%;
+    text-align:center;
+}
+
+.choice p {
+    margin-bottom: 0.5em;
+}
+
+.insert {
+    font-size: 2em;
+}
+
+#OrdineMidcenter .choice{
+    width: 200px;
+    margin: 0 auto;
+}
+
+.OrdineWrap{
+    width:80%;
+    margin-left:10%;
+    margin-bottom:10%;
+    text-align: center;
+}
+
+#OrderButton{
+    background-color:#ffec64;
+    border-radius:6px;
+    border:1px solid #ff9900;
+    display:inline-block;
+    cursor:pointer;
+    color:#333333;
+    font-size:100%;
+    font-weight:bold;
+    margin-top:2%;
+    padding:6px 12px;
+}
+
+#OrderButton:hover {
+    background-color: #ff9b17;
+}
+
+/*FINE PARTE COMUNE A TUTTI I BREAKPOINT DI REGISTRAZIONE*/
 
 /*MOBILE CSS PER TUTTE LE PAGINE */
 
@@ -1334,6 +1425,14 @@
             cursor: pointer;
         }
     /*LOGIN CSS*/
+
+    /*ORDINE CSS*/
+
+    .order {
+        width:95%;
+    }
+
+    /*ORDINE CSS*/
 
 }
 
@@ -2013,6 +2112,20 @@
             cursor: pointer;
         }
     /*FINE LOGIN CSS*/
+
+    /*ORDINE CSS*/
+
+    #OrdineMidcenter .orderError {
+        margin-bottom:5%;
+    }
+
+    #OrdineMidcenter .orderError p{
+        text-align: center;
+    }
+
+    /*ORDINE CSS*/
+
+
 
 }
 
