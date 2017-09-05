@@ -44,8 +44,8 @@ if(!$error){
     if ($count == 1) {
         $_SESSION['user'] = $row['id'];
         $_SESSION['username'] = $row['username'];
-        $_SESSION['user_type'] = $row['user_type'];
         $_SESSION['nome_completo'] = $row['nome'] . " " . $row['cognome'];
+        $_SESSION['user_type'] = $row['user_type'];
         $_SESSION['login_error'] = "";
 
     } else {
