@@ -1,4 +1,4 @@
-﻿<?php 
+﻿<?php session_start();
     require 'dBconnect.php';
     $conn = Connect();
 
@@ -19,7 +19,7 @@
     $titolo = $_POST['title'];
     $testo = $_POST['testo'];
     $autore = $_SESSION['nome_completo'];
-    $data = date('l jS \of F Y h:i:s A');
+    $data = 0;
 
     $query = "INSERT into News(titolo, testo, autore, data) VALUES('" . $titolo . "','" . $testo . "','" . $autore . "','" . $data . "')";
     $success = $conn->query($query);
