@@ -8,9 +8,10 @@
     <meta name="keywords" content="asap, festival, biglietti, lineup, info"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <meta http-equiv="Content-Script-Type" content="text/javascript"/>
-    <link rel="stylesheet" type="text/css" href="style-m.css" />
-    <link rel="stylesheet" type="text/css" href="style-d.css"/>
-    <link rel="shortcut icon" href="images/asapdef.png"/>
+        <link rel="stylesheet" type="text/css" href="style-m.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="style-d.css" media="screen"/>
+        <link rel="stylesheet" type="text/css" href="style-s.css" media="print"/>
+        <link rel="shortcut icon" href="images/asapdef.png"/>
 </head>
 
     <body id="Ptickets">
@@ -29,12 +30,12 @@
                     </div>
                     <div id="click-content">
                         <ul>
-                            <li><a href="homepage.html">HOMEPAGE</a></li>
-                            <li><a href="line-up.html">LINE-UP</a></li>
-                            <li><a href="tickets.html">TICKETS</a></li>
-                            <li><a href="news.html">NEWS</a></li>
-                            <li><a href="trip.html">TRIP</a></li>
-                            <li><a href="info.html">INFO</a></li>
+                            <li><a href="homepage.html"><span xml:lang="eng">HOMEPAGE</span></a></li>
+                            <li><a href="line-up.html"><span xml:lang="eng">LINE UP</span></a></li>
+                            <li><a href="tickets.html"><span xml:lang="eng">TICKETS</span></a></li>
+                            <li><a href="news.html"><span xml:lang="eng">NEWS</span></a></li>
+                            <li><a href="trip.html"><span xml:lang="eng">TRIP</span></a></li>
+                            <li><a href="info.html"><span xml:lang="eng">INFO</span></a></li>
                         </ul>
                     </div>
                 </div>
@@ -56,32 +57,41 @@
                     <div class="lineUpSumUp">
                         <h3>Giorno 1</h3>
                         <input class="purButton" type="button" value="Acquista" />
-                        <p class="artists">Duran Duran <br />Moderat<br />The Bloody Beetroots (Live)<br />Soulwax<br />Frank Carter & The Rattlesnakes<br />
-                                          The Horrors<br />M+A<br />Clap! Clap!<br />Godblesscomputers<br />Pop X<br />Demonology Hifi<br />Slydigs<br />Slander<br />
-                                          Istituto Italiano di Cumbia All Stars<br />Vettori<br />Wora Wora Washington<br />I’m Not a Blonde<br />La Scimmia<br />
-                                          Le Luci Del Nord<br />Donato D’Deejay<br />
-                        </p>
+                        <ul class="artists">
+                            <li>Liam Gallagher</li>
+                            <li>Bud Spencer Blues Explosions</li>
+                            <li>Adele</li>
+                            <li>Marracash e Gu&#233; Pequeno</li>
+                            <li>Stromae</li>
+                            <li>Franco Battiato</li>
+                        </ul>
                     </div>
                     <div class="lineUpSumUp">
                         <h3>Giorno 2</h3>
                         <input class="purButton" type="button" value="Acquista" />
-                        <p class="artists">
-                            Duran Duran <br />Moderat<br />The Bloody Beetroots (Live)<br />Soulwax<br />Frank Carter & The Rattlesnakes<br />
-                            The Horrors<br />M+A<br />Clap! Clap!<br />Godblesscomputers<br />Pop X<br />Demonology Hifi<br />Slydigs<br />Slander<br />
-                            Istituto Italiano di Cumbia All Stars<br />Vettori<br />Wora Wora Washington<br />I’m Not a Blonde<br />La Scimmia<br />
-                            Le Luci Del Nord<br />Donato D’Deejay<br />
-                        </p>
+                        <ul class="artists">
+                            <li>Tyler The creator</li>
+                            <li>John Legend</li>
+                            <li>Rihanna</li>
+                            <li>Bon Iver</li>
+                            <li>Steve Aoki</li>
+                            <li>Red hot Chili Peppers</li>
+                        </ul>
                     </div>
                     <div class="lineUpSumUp">
                         <h3>Giorno 3</h3>
                         <input class="purButton" type="button" value="Acquista" />
-                        <p class="artists">
-                            Duran Duran <br />Elio e le Storie Tese<br />The Bloody Beetroots (Live)<br />Soulwax<br />Frank Carter & The Rattlesnakes<br />
-                            The Horrors<br />M+A<br />Clap! Clap!<br />Godblesscomputers<br />Pop X<br />Demonology Hifi<br />Slydigs<br />Slander<br />
-                            Istituto Italiano di Cumbia All Stars<br />Vettori<br />Wora Wora Washington<br />I’m Not a Blonde<br />La Scimmia<br />
-                            Le Luci Del Nord<br />Donato D’Deejay<br />
-                        </p>
+                        <ul class="artists">
+                            <li>Elio e le storie Tese</li>
+                            <li>Rolling Stones</li>
+                            <li>Jovanotti</li>
+                            <li>Kendrick Lamar</li>
+                            <li>Mac Demarco</li>
+                            <li>Martin Garrix</li>
+                        </ul>
                     </div>
+
+                    <div id="break2"></div>
 
                 </div>
                 <div id="Prezzi">

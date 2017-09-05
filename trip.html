@@ -8,8 +8,9 @@
     <meta name="keywords" content="asap, festival, biglietti, lineup, info"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <meta http-equiv="Content-Script-Type" content="text/javascript"/>
-    <link rel="stylesheet" type="text/css" href="style-m.css" />
-    <link rel="stylesheet" type="text/css" href="style-d.css"/>
+        <link rel="stylesheet" type="text/css" href="style-m.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="style-d.css" media="screen"/>
+        <link rel="stylesheet" type="text/css" href="style-s.css" media="print"/>
     <link rel="shortcut icon" href="images/asapdef.png"/>
 </head>
 
@@ -28,12 +29,12 @@
                     </div>
                     <div id="click-content">
                         <ul>
-                            <li><a href="homepage.html">HOMEPAGE</a></li>
-                            <li><a href="line-up.html">LINE-UP</a></li>
-                            <li><a href="tickets.html">TICKETS</a></li>
-                            <li><a href="news.html">NEWS</a></li>
-                            <li><a href="trip.html">TRIP</a></li>
-                            <li><a href="info.html">INFO</a></li>
+                            <li><a href="homepage.html"><span xml:lang="eng">HOMEPAGE</span></a></li>
+                            <li><a href="line-up.html"><span xml:lang="eng">LINE UP</span></a></li>
+                            <li><a href="tickets.html"><span xml:lang="eng">TICKETS</span></a></li>
+                            <li><a href="news.html"><span xml:lang="eng">NEWS</span></a></li>
+                            <li><a href="trip.html"><span xml:lang="eng">TRIP</span></a></li>
+                            <li><a href="info.html"><span xml:lang="eng">INFO</span></a></li>
                         </ul>
                     </div>
                 </div>
@@ -64,40 +65,39 @@
                     </div>
                 </div>
 
-                <div class="paragraph">
+                <div class="paragraph" >
                     <div class="textBlock">
                         <h2>Come Arrivare...</h2>
 
-                        <p>
-                            I viaggi organizzati per l'edizione 2017 di ASAP Music Festival -
-                            *cittàdadecidere* sono in vendita! Iscriviti alla nostra Newsletter
-                            e seguici su</p> <a hrerf="#fb">Facebook</a>
-                        <p>
-                            per rimanere aggiornato.
+                        <p>I viaggi organizzati per l'edizione 2017 di ASAP Music Festival -
+                            Padova sono in vendita! Iscriviti alla nostra Newsletter
+                            e seguici su Facebook per rimanere aggiornato.
                             Seguici anche su Telegram per aggiornamenti veloci!
                         </p>
 
                         <h3>VIAGGI ORGANIZZATI IN PULLMAN 2017</h3>
 
                         <p>La Dongiovanni Viaggi Sas organizza viaggi per eventi dal 2004.
-                            Il viaggio in bus è il modo più comodo, ecologico ed economico per raggiungere ASAP.
+                            Il viaggio in bus &#232; il modo pi&#249; comodo, ecologico ed economico per raggiungere ASAP.
                             Tutti i nostri bus sono dotati di area condizionata, e sono accompagnati da un responsabile di viaggio.
-                            Sono previste partenze da molte cittá italiane.
+                            Sono previste partenze da molte citt&#224; italiane.
                         </p>
 
                         <h3>Helpdesk viaggi:</h3>
-                        <p id="helpDesk"> viaggi@asapfestival.it / +39.345 4626273 - da lunedì a venerdì, 10:30 - 13:30</p>
+                        <p id="helpDesk"> viaggi@asapfestival.it / +39.345 4626273 - da luned&#236; a venerd&#236;, 10:30 - 13:30</p>
 
                     </div>
                 </div>
+
+
                 <div class="paragraph">
                     <div class="textBlock">
                         <h4>viaggiando con noi:</h4>
                         <ul id="voyageList">
-                            <li>arriverai direttamente sul posto, all'interno di ASAP Festival - *città* </li>
-                            <li>potrai portarti una valigia,  più la tenda e più uno zainetto/borsa a mano senza costi ulteriori</li>
-                            <li>ti diveterai già durante il viaggio: il festival iniza nel pullman!</li>
-                            <li>Attenzione, per l'edizione 2017 il viaggio è programmato per arrivare il giorno prima dell'inizio del festival (accesso 14 luglio) </li>
+                            <li>arriverai direttamente sul posto, all'interno di ASAP Festival - Padova </li>
+                            <li>potrai portarti una valigia,  pi&#249; la tenda e pi&#249; uno zainetto/borsa a mano senza costi ulteriori</li>
+                            <li>ti diveterai gi&#224; durante il viaggio: il festival iniza nel pullman!</li>
+                            <li>Attenzione, per l'edizione 2017 il viaggio &#232; programmato per arrivare il giorno prima dell'inizio del festival (accesso 14 luglio) </li>
                         </ul>
 
                     </div>
@@ -106,9 +106,9 @@
                     <div class="textBlock">
                         <h4>viaggiando in macchina</h4>
                         <p>
-                            Padova dista solo 245 km da Milano e 488 km da Roma ed entrambe le città sono collegate a Padova da autostrade.
-                            Percorrendo A4 da Milano ed E35 da Roma si raggiunge l'Area del festival, situata presso lo stadio Euganeo, rispettivamente
-                            in 3 e 5 ore, toccando nel tragitto molte città secondarie, se hai posti liberi in macchina condividili per un viaggio più ecologico ed economico!
+                            Padova dista solo 245 km da Milano e 488 km da Roma ed entrambe le citt&#224; sono collegate a Padova da autostrade.
+                            Percorrendo A4 da Milano ed E35 da Roma si raggiunge l'area del festival, situata presso lo stadio Euganeo, rispettivamente
+                            in 3 e 5 ore, toccando nel tragitto molte citt&#224; secondarie, se hai posti liberi in macchina condividili per un viaggio pi&#249; ecologico ed economico!
                             Puoi cercare o offrire passaggio sul nostro gruppo Facebook dedicato.
                         </p>
 
@@ -121,11 +121,16 @@
                     </a>
 
                 </div>
+
+                <div id="break1"></div>
                 <div class="paragraph">
                     <div class="textBlock">
                         <h2>Dove Alloggiare</h2>
-                        <p>Siamo in convenzione con B&amp;Ba "Da Bruno" per il nostro festival. 35€ a persona a notte per un buco. Via dei Muli 35, Napoli IT.</p>
-                        <p>Per ulteriori informazioni chiama il +39 046 754 333. Oppure scrivi a contatti@bnbbruno.it</p>
+                        <p>Siamo in convenzione con B&amp;B  "Da Bruno" per il nostro festival.
+                            Un ottimo pernottamento situato in pieno
+                            centro a Padova per godersi al massimo anche ci&#242; che la citt&#224; ha da offrire!</p>
+                        <p>Per ulteriori informazioni chiama il +39 046 754 333. Oppure scrivi a</p>
+                        <p id="styleIt">contatti@bnbbruno.it</p>
                     </div>
                     <div class="imageWrapper">
                         <div class="overlay">
