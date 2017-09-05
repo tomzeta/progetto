@@ -29,6 +29,18 @@
 
 /*PARTE COMUNE A TUTTI I BREAKPOINT DI HOMEPAGE*/
 
+    #zero{
+        display:block;
+    }
+
+    .slideshow{
+        display:none;
+    }
+
+    #homeButtonContainer{
+        display: none;
+    }
+
     #homeButtonContainer input {
         background-color:#ffec64;
         border-radius:6px;

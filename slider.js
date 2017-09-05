@@ -6,6 +6,7 @@ var slideIndex = 1;
     }
 
     function showDivs(n) {
+
         var i;
         var x = document.getElementsByClassName("lineupimg");
         if (n > x.length) {
