@@ -24,6 +24,23 @@
     }
 
 
+    #error1{
+        margin-top:45%;
+    }
+
+    .errore404{
+        font-weight: bold;
+        font-size:2em;
+        text-align: center;
+    }
+
+    #smileError{
+        font-weight: bold;
+        font-size:4em;
+        text-align: center;
+    }
+
+
 /*FINE PARTE COMUNE A TUTTE LE PAGINE*/
 
 
