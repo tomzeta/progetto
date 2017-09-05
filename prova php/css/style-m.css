@@ -23,6 +23,7 @@
         color:orangered;
     }
 
+
 /*FINE PARTE COMUNE A TUTTE LE PAGINE*/
 
 
@@ -49,6 +50,7 @@
     }
 
     #homeTopcenter h2{
+        text-align: center;
         font-size: 250%;
     }
 
@@ -110,11 +112,60 @@
         margin-right:20%;
     }
 
+
     .homeMore a{
         margin-left:25%;
     }
 
 /*FINE PARTE COMUNE A TUTTI I BREAKPOINT DI HOMEPAGE*/
+
+/*PARTE COMUNE A TUTTI I BREAKPOINT DI NEWS*/
+
+    .newsContent img{
+        width:100%;
+        height:auto;
+        display:block;
+        overflow:hidden;
+        border-radius: 2px;
+    }
+
+    /*LOWCENTER*/
+
+    .NewsContainer{
+        width: 55%;
+        border:1px solid black;
+        border-radius: 5px;
+        background-color: #ffbd0f;
+        margin-left:22%;
+        margin-bottom:10%;
+        padding-bottom:10%;
+
+    }
+
+    .newsContent{
+        background-color: #ffbd0f;
+    }
+
+    .newsContent h2{
+        font-family: "IntroRustG-Base";
+        color: #ff6f00;
+        font-size: 220%;
+        font-weight: bold;
+        margin-top:5%;
+        text-align:center;
+        background-color: #ffbd0f;
+    }
+
+    .newsContent p{
+        text-align: center;
+        font-size:20px;
+        margin: 5% 5%;
+        background-color: #ffbd0f;
+    }
+
+    /*LOWCENTER*/
+
+/*FINE PARTE COMUNE A TUTTI I BREAKPOINT DI NEWS*/
 
 /*PARTE COMUNE A TUTTI I BREAKPOINT DI LINE-UP*/
     .lineupContainer img{
@@ -148,6 +199,11 @@
         margin-right: auto;
         margin-left: auto;
         margin-bottom: 2em;
+    }
+
+    #styleIt{
+        font-weight: bold;
+        font-style: italic;
     }
 
     #topTitle h1 {
@@ -326,7 +382,8 @@
         border: 0px solid;
     }
 
-    .artists {
+    .artists{
+        list-style: none;
         font-weight: bold;
         font-size: 1.5em;
     }
@@ -396,6 +453,185 @@
 }
 
 /*FINE PARTE COMUNE A TUTTI I BREAKPOIN DI INFO*/
+
+
+/*PARTE COMUNE A TUTTI I BREAKPOINT DI REGISTRAZIONE*/
+
+    .mainBody2 {
+        margin-top: 0;
+        margin-bottom: 2em;
+        padding: 0;
+        clear: both;
+        display: inline-block;
+        width: 100%;
+    }
+
+    #Pregistrazione .textBlock {
+        display: inline-block;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 2em;
+    }
+
+    #Pregistrazione #topTitle h1 {
+        font-size: 2em;
+        padding: 0;
+        width: 100%;
+        background-color: #ffaa2d;
+        padding-top: .5em;
+        padding-bottom: .5em;
+        margin-bottom: 0.5em;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    #Pregistrazione #topTitle h2 {
+        font-size: 1.5em;
+        padding: 0;
+        text-align: center;
+    }
+
+    #Pregistrazione .paragraph {
+        clear: both;
+        display: inline-block;
+        padding-top: 2em;
+        padding-bottom: 2em;
+        padding-left: 5%;
+        padding-right: 5%;
+        width: 78%;
+        margin-left: 5%;
+        margin-right: 5%;
+        text-align: center;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        border: 8px solid #ffaa2d;
+        border-radius: 20px;
+    }
+
+    #Pregistrazione .paragraph p {
+        font-size: 1.5em;
+        margin-bottom: .3em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #Pregistrazione input{
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 2px solid #ffaa2d;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    #Pregistrazione input[type=submit] {
+        width: 30%;
+        background-color: #ffaa2d;
+        font-size: 1.5em;
+        color: black;
+        padding: 12px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    #Pregistrazione input[type=submit]:hover {
+        background-color: #ffaa6a;
+    }
+
+/*FINE PARTE COMUNE A TUTTI I BREAKPOINT DI REGISTRAZIONE*/
+
+/*PARTE COMUNE A TUTTI I BREAKPOINT DI REGISTRAZIONE*/
+    .mainBody3 {
+        margin-top: 0;
+        margin-bottom: 2em;
+        padding: 0;
+        clear: both;
+        display: inline-block;
+        width: 100%;
+    }
+
+    #Plogin .textBlock {
+        display: inline-block;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 2em;
+    }
+
+    #Plogin #topTitle h1 {
+        font-size: 2em;
+        padding: 0;
+        width: 100%;
+        background-color: #ffaa2d;
+        padding-top: .5em;
+        padding-bottom: .5em;
+        margin-bottom: 0.5em;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    #Plogin #topTitle h2 {
+        font-size: 1.5em;
+        padding: 0;
+        text-align: center;
+    }
+
+    #Plogin .paragraph {
+        clear: both;
+        display: inline-block;
+        padding-top: 2em;
+        padding-bottom: 2em;
+        padding-left: 5%;
+        padding-right: 5%;
+        width: 78%;
+        margin-left: 5%;
+        margin-right: 5%;
+        text-align: center;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        border: 8px solid #ffaa2d;
+        border-radius: 20px;
+    }
+
+    #Plogin .paragraph p {
+        font-size: 1.5em;
+        margin-bottom: .3em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .ops{
+        display:none;
+    }
+
+    #Plogin input{
+        width: 50%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 2px solid #ffaa2d;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    #Plogin input[type=submit] {
+        width: 30%;
+        background-color: #ffaa2d;
+        font-size: 1.5em;
+        color: black;
+        padding: 12px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    #Plogin input[type=submit]:hover {
+        background-color: #ffaa6a;
+    }
+/*FINE PARTE COMUNE A TUTTI I BREAKPOINT DI LOGIN*/
 
 /*MOBILE CSS PER TUTTE LE PAGINE */
 
@@ -468,7 +704,13 @@
             padding: 0.5em 0;
         }
 
-        #click-content li{
+        #logLink2{
+            display:none;
+        }
+
+
+
+    #click-content li{
             background-color: #ffb612;
             width: 100%;
             font-size: 1.3em;
@@ -479,6 +721,36 @@
 
         #click-content a{
             background-color: #ffb612;
+        }
+        .list {
+            background-color: #ffb612;
+        }
+
+        #logBox{
+            width:20%;
+            padding-top:2%;
+            position:fixed;
+            top:1.5%;
+            right:0;
+            z-index: 100;
+            float:right;
+            text-align: center;
+            letter-spacing:2px;
+            background-color: #ffaa2d;
+        }
+
+        #logBox a{
+            padding:4% 4% 4% 4%;
+            background-color: #ff9600;
+            border:1px solid #ff8b03;
+            font-weight:bold;
+            font-size:1em;
+            border-radius:3px;
+        }
+
+        #logBox #Box{
+            color: black;
+            background-color: #ff9600;
         }
 
         #breadcrumb{
@@ -614,6 +886,12 @@
                 margin-left:23%;
             }
 
+            .homeContainer{
+                width:90%;
+                margin-left:5%;
+                position:relative;
+            }
+
             #homeButtonContainer{
                 width:80%;
                 margin-left:10%;
@@ -682,6 +960,13 @@
         /*LOWCENTER*/
 
     /*FINE HOMEPAGE*/
+
+    /*NEWS*/
+        .NewsContainer{
+            width: 75%;
+            margin-left:12%;
+        }
+    /*FINE NEWS*/
 
     /*INFO*/
 
@@ -812,10 +1097,6 @@
                 margin-bottom: 1.5em;
             }
 
-            #fill span{
-                display:block;
-            }
-
             #motivaz{
                 display: block;
                 background-color: white;
@@ -897,7 +1178,7 @@
             .lineupDescription{
                 width:100%;
                 height:inherit;
-                top:40%;
+                top:50%;
                 left:50%;
                 font-size: 80%;
                 display:block;
@@ -937,6 +1218,10 @@
             border-width: 1px;
         }
 
+        #footerTrip{
+            margin-top:5%;
+            text-align:center;
+        }
 
     /*FINE VIAGGI CSS*/
 
@@ -987,6 +1272,35 @@
         }
 
     /*FINE BIGLIETTI CSS*/
+
+    /*REGISTRAZIONE CSS*/
+        #Pregistrazione input[type=submit] {
+            width: 100%;
+            background-color: #ffaa2d;
+            font-size: 1.5em;
+            color: black;
+            padding: 12px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    /*FINE REGISTRAZIONE CSS*/
+
+    /*LOGIN CSS*/
+        #Plogin input[type=submit] {
+            width: 100%;
+            background-color: #ffaa2d;
+            font-size: 1.5em;
+            color: black;
+            padding: 12px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    /*LOGIN CSS*/
+
 }
 
 /*FINE MOBILE CSS PER TUTTE LE PAGINE */
@@ -1072,6 +1386,41 @@
         }
 
         #click-content a{
+            background-color: #ffb612;
+        }
+
+        #logBox{
+            width:20%;
+            padding-top:2%;
+            position:fixed;
+            top:1.5%;
+            right:0;
+            z-index: 100;
+            float:right;
+            text-align: center;
+            letter-spacing:2px;
+            background-color: #ffaa2d;
+        }
+
+        #logBox a{
+            padding:4% 4% 4% 4%;
+            background-color: #ff9600;
+            border:1px solid #ff8b03;
+            font-weight:bold;
+            font-size:1em;
+            border-radius:3px;
+        }
+
+        #logBox #Box{
+            color: black;
+            background-color: #ff9600;
+        }
+
+        #logLink2{
+            display:none;
+        }
+
+        .list {
             background-color: #ffb612;
         }
 
@@ -1295,6 +1644,13 @@
         /*LOWCENTER*/
 
     /*FINE HOMEPAGE*/
+
+    /*NEWS*/
+        .NewsContainer{
+            width: 65%;
+            margin-left:12%;
+        }
+    /*FINE NEWS*/
 
     /*INFO*/
         /*BODY*/
@@ -1593,6 +1949,36 @@
         }
 
     /*FINE VIAGGI CSS*/
+
+    /*REGISTRAZIONE CSS*/
+
+        #Pregistrazione input[type=submit] {
+            width: 75%;
+            background-color: #ffaa2d;
+            font-size: 1.5em;
+            color: black;
+            padding: 12px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+    /*FINE REGISTRAZIONE CSS*/
+
+    /*LOGIN CSS*/
+        #Plogin input[type=submit] {
+            width: 75%;
+            background-color: #ffaa2d;
+            font-size: 1.5em;
+            color: black;
+            padding: 12px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    /*FINE LOGIN CSS*/
 
 }
 

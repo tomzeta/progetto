@@ -1,4 +1,5 @@
-﻿<?php session_start();
+<?php
+session_start();
     require 'dBconnect.php';
     $conn = Connect();
 
@@ -19,15 +20,12 @@
     $titolo = $_POST['title'];
     $testo = $_POST['testo'];
     $autore = $_SESSION['nome_completo'];
-    $data = 0;
 
-    $query = "INSERT into News(titolo, testo, autore, data) VALUES('" . $titolo . "','" . $testo . "','" . $autore . "','" . $data . "')";
+    $query = "INSERT into News(titolo, testo, autore) VALUES('" . $titolo . "','" . $testo . "','" . $autore . "')";
     $success = $conn->query($query);
     if(!$success){
         die("Non si possono inserire i dati: ".$conn->error);
     }
-
-    echo "Grazie per aver inserito i dati";
-
     $conn->close();
+    header("Location: p_news.php");
 ?>

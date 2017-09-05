@@ -1,0 +1,122 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it" >
+<head>
+<title id="title">ASAP-FESTIVAL</title>
+<meta name="title" content="As Soon As Possible-Festival" />
+<meta name="description" content="Sito festival musicale" />
+<meta name="keywords" content="asap, festival, biglietti, lineup, info"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta http-equiv="Content-Script-Type" content="text/javascript"/>
+<link rel="stylesheet" type="text/css" href="css/style-m.css" />
+<link rel="stylesheet" type="text/css" href="css/style-d.css"/>
+<link rel="stylesheet" type="text/css" href="css/style-s.css" media="print" />
+<link rel="shortcut icon" href="images/asapdef.png"/>
+</head>
+
+<body id="Phome">
+
+<!--HEADER-->
+<script src="menu_button.js" type="text/javascript"></script>
+
+<div id="header">
+<img src="images/asapdef.png" id="logo" alt="ASAP festival logo"/>
+<div class="click">
+<div class="button" id="menubutton" onclick="showmenu()">
+<span class="bar"></span>
+<span class="bar"></span>
+<span class="bar"></span>
+</div>
+<div id="click-content">
+<ul>
+<li><a href="p_home.php">HOMEPAGE</a></li>
+<li><a href="p_line-up.php">LINE-UP</a></li>
+<li><a href="p_tickets.php">TICKETS</a></li>
+<li><a href="p_news.php">NEWS</a></li>
+<li><a href="p_viaggi.php">TRIP</a></li>
+<li><a href="p_info.php">INFO</a></li>
+<li><a href="p_login.php">MyPage</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="breadcrumb">
+<p>Ti trovi in: <span xml:lang="eng">Pagina di amministrazione</span></p>
+</div>
+
+
+﻿<div class="mainBody">
+<h1>Pagina di amministrazione - Benvenuto root</h1>
+<h2>Le news che hai pubblicato fino a questo momento:</h2>
+<form class='bloccoNewsEliminabili' method='post' action='elimina_news.php'>
+<div class="newsEliminabile"><input type="checkbox" name='notizia_erase[]' value="10"><strong>Titolo:</strong>  asdasd <strong>Autore:</strong> Tommaso Zambon</input></div>
+
+<div class="newsEliminabile"><input type="checkbox" name='notizia_erase[]' value="11"><strong>Titolo:</strong>  admin <strong>Autore:</strong> Tommaso Zambon</input></div>
+
+<div class="newsEliminabile"><input type="checkbox" name='notizia_erase[]' value="13"><strong>Titolo:</strong>  asdfasdf <strong>Autore:</strong> Tommaso Zambon</input></div>
+
+<div class="newsEliminabile"><input type="checkbox" name='notizia_erase[]' value="15"><strong>Titolo:</strong>  PI&#217; ACQUA PER TUTTI! <strong>Autore:</strong> Tommaso Zambon</input></div>
+
+<div class="newsEliminabile"><input type="checkbox" name='notizia_erase[]' value="16"><strong>Titolo:</strong>  PIU ACQUA PER TUTTI! <strong>Autore:</strong> Tommaso Zambon</input></div>
+
+<div class="newsEliminabile"><input type="checkbox" name='notizia_erase[]' value="17"><strong>Titolo:</strong>  PIU ACQUA PER TUTTI! <strong>Autore:</strong> Tommaso Zambon</input></div>
+
+<div class="newsEliminabile"><input type="checkbox" name='notizia_erase[]' value="19"><strong>Titolo:</strong>  Nuova News <strong>Autore:</strong> Tommaso Zambon</input></div>
+<input type='submit' name='elimina_news' value='Elimina News'></form>
+
+<h2>Pubblica una nuova news</h2>
+<form name="news_publish" method="post" action="sendToDB.php">
+<label>Titolo: </label> <input type="text" name="title" required/> </br>
+<label>Testo: </label> <input type="text" name="testo" required/> </br>
+<input type="submit" name="postNews" value="Invia" /> </br>
+</form>
+<a href="logout.php">Logout</a>
+</div>
+<!--FOOTER-->
+
+<div id="footer">
+<div id="Fleft">
+<h3>PER I PROFESSIONISTI</h3>
+<ul>
+<li>
+<a href="#Contatt">Contatti</a>
+</li>
+<li>
+<a href="#Partner">Partner</a>
+</li>
+</ul>
+</div>
+<div id="Fcenter">
+
+<div class="FimageContainer">
+<a href="homepage.html">
+<img src="images/asapdef.png" alt="ASAP festival logo"/>
+</a>
+</div>
+
+<div class="footerContent">
+<p class="infoBox">QUANDO</p>
+<p>DAL 15 AL 18</p>
+<p>LUGLIO</p>
+<p>2017</p>
+<p class="infoBox">DOVE</p>
+<p>POMPEI</p>
+<p>NAPOLI</p>
+<p>IT</p>
+</div>
+</div>
+<div id="Fright">
+<h3>SOCIAL</h3>
+<a href="#facebook">
+<img id="fblogo" src="images/fblogo.png" alt="Facebook logo"/>
+</a>
+<a href="#instagram">
+<img id="instalogo" src="images/instalogo.png" alt="Instagram logo"/>
+</a>
+
+</div>
+</div>
+
+<!--FOOTER-->

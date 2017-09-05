@@ -38,9 +38,9 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
 }
 $query="INSERT INTO Messaggi(nome, cognome, email, oggetto, messaggio) VALUES ('" . $nome . "','" . $cognome . "','" . $email . "','" . $oggetto . "','" . $messaggio . "')";
 $res = $conn->query($query);
-if($res) {
-
+if(!$res) {
+    die("Impossibile mandare la richiesta: ".$conn->error);
 }
-
-
+$conn->close();
+header("Location: p_info.php");
 ?>
