@@ -488,6 +488,37 @@
 
     /*FINE LINE-UP*/
 
+    /*ORDINE CSS*/
+
+    #OrdineTopcenter h2 {
+        text-align: center;
+        font-size: 2em;
+
+    }
+
+    #OrdineTopcenter h3 {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    #OrdineTopcenter p{
+        font-size:1.3em;
+    }
+
+    #OrdineMidcenter h2{
+        font-size: 1.5em;
+    }
+
+    .choice {
+        font-size:1em;
+    }
+
+    #OrderButton{
+        font-size:150%;
+    }
+
+    /*FINE ORDINE CSS*/
+
 
 
 }

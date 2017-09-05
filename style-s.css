@@ -560,6 +560,75 @@
     /*FINE REGISTRAZIONE*/
 
 
+    /*ORDINI*/
+
+    #OrdineTopcenter h2 {
+        text-align: center;
+        font-size: 2em;
+        margin-top:5%;
+        margin-bottom:1%;
+    }
+
+    #OrdineTopcenter h3 {
+        font-size: 1.5em;
+        padding-bottom: 1%;
+        text-align: center;
+    }
+
+    #OrdineTopcenter span {
+        color: black;
+        margin-top: 5%;
+        text-align: center;
+    }
+
+    .orderBold{
+        font-weight:bold;
+    }
+
+    .order {
+        margin-left: 2%;
+    }
+
+    .order p {
+        padding-bottom: 1.5%;
+        text-align: center;
+    }
+
+    #OrdineMidcenter h2 {
+        display: none;
+    }
+
+    #OrdineMidcenter p {
+        font-size: 1.5em;
+    }
+
+    #OrdineMidcenter .orderError {
+        margin-top:5%;
+        margin-bottom:5%;
+        text-align:center;
+    }
+
+    .choice{
+        display:none;
+    }
+
+    .insert {
+        font-size: 2em;
+    }
+
+    #OrdineMidcenter .choice{
+        width: 200px;
+        margin: 0 auto;
+    }
+
+    #OrderButton{
+        display:none;
+    }
+
+
+    /*FINE ORDINI*/
+
+
 
 
     /*HEADER*/
